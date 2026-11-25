@@ -18,17 +18,17 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'SHICONS E&C — Tổng thầu Cơ điện (MEP) & Phòng sạch Chuyên sâu',
-  description: 'Công ty Cổ phần Shicons E&C — Nhà thầu hàng đầu chuyên thiết kế, cung cấp và thi công trọn gói hệ thống Cơ điện (M&E / MEP) cho các dự án Nhà máy công nghệ cao, Tòa tháp thương mại, Phòng sạch Dược phẩm & Trung tâm dữ liệu.',
+  title: 'SHICONS E&C',
+  description: 'Công ty Cổ phần Shicons E&C — Nhà thầu chuyên thiết kế, cung cấp và thi công trọn gói hệ thống Cơ điện (M&E / MEP) cho các dự án Nhà máy công nghệ cao, Tòa tháp thương mại, Phòng sạch Dược phẩm & Trung tâm dữ liệu.',
   keywords: [
     'Shicons', 'Shicons E&C', 'nhà thầu cơ điện', 'phòng sạch bán dẫn',
-    'khí sạch bệnh viện', 'HVAC chiller', 'Revit MEP', 'BIM LOD 400',
-    'nhà máy FDI', 'tổng thầu MEP'
+    'khí sạch bệnh viện', 'HVAC chiller', 'Revit MEP',
+    'nhà máy', 'tổng thầu MEP'
   ],
   authors: [{ name: 'Shicons E&C' }],
   openGraph: {
-    title: 'SHICONS E&C — Tổng thầu Cơ điện (MEP) & Phòng sạch Chuyên sâu',
-    description: 'Chuyên gia cơ điện lạnh, phòng sạch bán dẫn, khí y tế bệnh viện và giải pháp thông gió công nghiệp chuẩn quốc tế.',
+    title: 'SHICONS E&C',
+    description: 'Chuyên gia cơ điện lạnh, phòng sạch, khí sạch bệnh viện và giải pháp thông gió công nghiệp.',
     url: 'https://shicons.vn',
     siteName: 'SHICONS E&C',
     locale: 'vi_VN',
