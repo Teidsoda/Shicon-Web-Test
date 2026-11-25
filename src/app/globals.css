@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0040A0;
+  --primary-hover: #004DA0;
+  --navy: #00306E;
+  --deep: #07182E;
+  --accent-red: #ED1C24;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-jakarta), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #111111;
+  background-color: #FFFFFF;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Typography chuẩn tiếng Việt: Giải quyết triệt để lỗi dính dòng khi chữ in hoa có dấu */
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-be-vietnam), sans-serif;
+  line-height: 1.48 !important;
+  letter-spacing: 0.005em !important;
+}
+
+/* Các tiêu đề cỡ lớn từ text-2xl trở lên trên mọi trang */
+h1, h2, .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl {
+  line-height: 1.48 !important;
+}
+
+@media (min-width: 640px) {
+  h1, h2, .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl,
+  .sm\:text-3xl, .sm\:text-4xl, .sm\:text-5xl {
+    line-height: 1.5 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1, h2, .lg\:text-3xl, .lg\:text-4xl, .lg\:text-5xl, .lg\:text-6xl,
+  .xl\:text-4xl, .xl\:text-5xl {
+    line-height: 1.55 !important;
+  }
+}
+
+/* Loại bỏ việc tracking-tight co ép dính các chữ hoa tiếng Việt */
+.tracking-tight {
+  letter-spacing: 0 !important;
+}
+
+/* Watermark Outline text */
+.watermark-text {
+  font-family: var(--font-be-vietnam), sans-serif;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(0, 64, 160, 0.07);
+  user-select: none;
+  pointer-events: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em !important;
+  line-height: 1 !important;
+}
+
+/* Base button shape: strictly square (border radius <= 2px) per spec */
+.btn-shicons {
+  border-radius: 2px;
+  font-family: var(--font-be-vietnam), sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom scrollbar for horizontal carousel if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Google Translate UI overrides: Hide Google top bar & banner, preserve original page layout */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+body {
+  top: 0px !important;
+  position: static !important;
+}
+
+#google_translate_element {
+  display: none !important;
+}
+
+.skiptranslate:not(.goog-te-gadget) {
+  display: none !important;
+}
+
+body > .skiptranslate {
+  display: none !important;
+}
+
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}

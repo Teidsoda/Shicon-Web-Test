@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 44" fill="none">
+    <g transform="translate(4, 6) scale(0.7)">
+      <polygon points="20,0 28,14 20,28 12,14" fill="#ED1C24"/>
+      <polygon points="8,21 16,35 4,42 0,28" fill="#ED1C24"/>
+      <polygon points="32,21 40,28 36,42 24,35" fill="#ED1C24"/>
+    </g>
+    <text x="42" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="900" fill="#222" letter-spacing="1">MITSUBISHI</text>
+    <text x="42" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#E51A1A" letter-spacing="1.5">ELECTRIC</text>
+  </svg>
