@@ -2134,6 +2134,7 @@ export default function AdminPage() {
                       setEditingProductionLine({
                         index: -1,
                         line: {
+                          id: 'line-' + Date.now(),
                           title: '',
                           tag: 'CÔNG NGHỆ GIA CÔNG',
                           desc: '',
@@ -2198,7 +2199,7 @@ export default function AdminPage() {
                         <button
                           onClick={() => {
                             if (confirm(`Bạn có chắc muốn xóa dây chuyền "${line.title}"?`)) {
-                              deleteProductionLine(idx);
+                              deleteProductionLine(line.id);
                               showToast('Đã xóa dây chuyền thành công!');
                             }
                           }}
@@ -3891,7 +3892,7 @@ export default function AdminPage() {
               onSubmit={(e) => {
                 e.preventDefault();
                 if (editingProductionLine.index >= 0) {
-                  updateProductionLine(editingProductionLine.index, editingProductionLine.line);
+                  updateProductionLine(editingProductionLine.line);
                   showToast('Đã cập nhật dây chuyền sản xuất thành công!');
                 } else {
                   addProductionLine(editingProductionLine.line);

@@ -19,6 +19,8 @@ import {
   ProductionLine
 } from '@/data/shiconsData';
 
+export type { ProductionLine };
+
 export interface ExtendedDomainItem extends DomainItem {
   isActive?: boolean;
 }
@@ -226,10 +228,10 @@ interface ContentContextType {
   updateSettings: (newSettings: ContactSettingsData) => void;
 
   // About Page
-  updateAboutData: (data: AboutData) => void;
+  updateAboutData: (data: Partial<AboutData>) => void;
 
   // Manufacturing Page
-  updateManufacturingData: (data: ManufacturingData) => void;
+  updateManufacturingData: (data: Partial<ManufacturingData>) => void;
   updateProductionLine: (line: ProductionLine) => void;
   addProductionLine: (line: ProductionLine) => void;
   deleteProductionLine: (id: string) => void;
@@ -396,12 +398,12 @@ export const ContentProvider: React.FC<{ children: React.ReactNode }> = ({ child
     setSettings(newSettings);
   };
 
-  const updateAboutData = (data: AboutData) => {
-    setAboutData(data);
+  const updateAboutData = (data: Partial<AboutData>) => {
+    setAboutData((prev) => ({ ...prev, ...data }));
   };
 
-  const updateManufacturingData = (data: ManufacturingData) => {
-    setManufacturingData(data);
+  const updateManufacturingData = (data: Partial<ManufacturingData>) => {
+    setManufacturingData((prev) => ({ ...prev, ...data }));
   };
 
   const updateProductionLine = (line: ProductionLine) => {
