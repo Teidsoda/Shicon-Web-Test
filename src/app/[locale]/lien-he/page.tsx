@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import {
   MapPin,
   Phone,
@@ -16,13 +16,20 @@ import {
 } from 'lucide-react';
 import { PageBanner } from '@/components/PageBanner';
 import { useContent } from '@/context/ContentContext';
+import { mapApiErrorCodeToStatusKey } from '@/lib/contactSubmit';
 
 export default function ContactPage() {
   const t = useTranslations('Pages.Contact');
+  const tStatus = useTranslations('FormStatus');
+  const locale = useLocale();
   const { settings, services } = useContent();
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
   const [selectedService, setSelectedService] = useState('');
+  const [lastSubmittedService, setLastSubmittedService] = useState('');
+  const [lastSubmittedName, setLastSubmittedName] = useState('');
+  const [honeypot, setHoneypot] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -32,14 +39,61 @@ export default function ContactPage() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting) return;
+
     if (!formData.name.trim() || !formData.phone.trim() || !formData.email.trim() || !selectedService) {
       setErrorMsg(t('errorMissingFields'));
       return;
     }
+
     setErrorMsg('');
-    setSubmitted(true);
+    setIsSubmitting(true);
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: 'lien-he',
+          name: formData.name.trim(),
+          phone: formData.phone.trim(),
+          email: formData.email.trim(),
+          company: formData.company.trim(),
+          service: selectedService,
+          projectScale: formData.projectScale.trim(),
+          message: formData.message.trim(),
+          pageUrl: typeof window !== 'undefined' ? window.location.href : '',
+          locale,
+          company_website: honeypot,
+        }),
+      });
+
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        setErrorMsg(tStatus(mapApiErrorCodeToStatusKey(data?.code)));
+        return;
+      }
+
+      setLastSubmittedName(formData.name.trim());
+      setLastSubmittedService(selectedService);
+      setSubmitted(true);
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        company: '',
+        projectScale: '',
+        message: '',
+      });
+      setSelectedService('');
+      setHoneypot('');
+    } catch {
+      setErrorMsg(tStatus('networkError'));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -193,8 +247,8 @@ export default function ContactPage() {
                     </h4>
                     <p className="text-xs sm:text-sm text-emerald-700 max-w-md mx-auto leading-relaxed">
                       {t('successDesc', {
-                        name: formData.name || t('defaultPartnerName'),
-                        service: selectedService || t('defaultServiceName'),
+                        name: lastSubmittedName || t('defaultPartnerName'),
+                        service: lastSubmittedService || t('defaultServiceName'),
                       })}
                     </p>
                     <button
@@ -206,6 +260,17 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} noValidate className="space-y-4 text-xs">
+                    {/* Hidden Honeypot */}
+                    <input
+                      type="text"
+                      name="company_website"
+                      value={honeypot}
+                      onChange={(e) => setHoneypot(e.target.value)}
+                      tabIndex={-1}
+                      autoComplete="off"
+                      aria-hidden="true"
+                      className="hidden"
+                    />
                     {errorMsg && (
                       <div className="flex items-center gap-2 p-3 bg-red-50 text-red-700 text-xs rounded-[2px] border border-red-200">
                         <AlertCircle className="w-4 h-4 flex-shrink-0" />
@@ -321,10 +386,11 @@ export default function ContactPage() {
                     <div className="pt-2">
                       <button
                         type="submit"
-                        className="btn-shicons w-full py-3.5 bg-[#ED1C24] hover:bg-[#d0141b] text-white text-xs sm:text-sm font-bold uppercase tracking-wider gap-2 shadow-md justify-center"
+                        disabled={isSubmitting}
+                        className="btn-shicons w-full py-3.5 bg-[#ED1C24] hover:bg-[#d0141b] disabled:opacity-60 disabled:cursor-not-allowed text-white text-xs sm:text-sm font-bold uppercase tracking-wider gap-2 shadow-md justify-center"
                       >
                         <Send className="w-4 h-4" />
-                        <span>{t('submitBtn')}</span>
+                        <span>{isSubmitting ? t('submittingBtn') : t('submitBtn')}</span>
                       </button>
                     </div>
                   </form>

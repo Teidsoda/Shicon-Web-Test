@@ -9,10 +9,10 @@ import {
   ArrowLeft,
   GraduationCap,
   Gift,
-  Send,
 } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { PageBanner } from '@/components/PageBanner';
+import { JobApplicationForm } from '@/components/JobApplicationForm';
 import { JOBS_DATA } from '@/data/shiconsData';
 import { routing } from '@/i18n/routing';
 import { getServerLocalizedData } from '@/lib/getLocalizedData';
@@ -170,63 +170,10 @@ export default async function JobDetailPage({ params }: JobDetailPageProps) {
                   </p>
                 </div>
 
-                <form className="space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
-                        {t('formNameLabel')}
-                      </label>
-                      <input
-                        type="text"
-                        required
-                        placeholder={t('formNamePlaceholder')}
-                        className="w-full px-4 py-2.5 bg-white border border-gray-300 text-xs rounded-[2px] outline-none focus:border-[#0040A0]"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
-                        {t('formPhoneLabel')}
-                      </label>
-                      <input
-                        type="tel"
-                        required
-                        placeholder={t('formPhonePlaceholder')}
-                        className="w-full px-4 py-2.5 bg-white border border-gray-300 text-xs rounded-[2px] outline-none focus:border-[#0040A0]"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
-                      {t('formEmailLabel')}
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      placeholder={t('formEmailPlaceholder')}
-                      className="w-full px-4 py-2.5 bg-white border border-gray-300 text-xs rounded-[2px] outline-none focus:border-[#0040A0]"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
-                      {t('formCvLabel')}
-                    </label>
-                    <input
-                      type="file"
-                      accept=".pdf"
-                      className="w-full px-4 py-2 bg-white border border-dashed border-gray-400 text-xs rounded-[2px] cursor-pointer"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="btn-shicons px-8 py-3 bg-[#0040A0] hover:bg-[#004DA0] text-white text-xs uppercase tracking-wider gap-2 shadow-md"
-                  >
-                    <Send className="w-4 h-4" />
-                    <span>{t('formSubmit')}</span>
-                  </button>
-                </form>
+                <JobApplicationForm
+                  jobTitle={job.title}
+                  jobDepartment={job.department}
+                />
               </div>
             </div>
 

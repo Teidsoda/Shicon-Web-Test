@@ -142,8 +142,20 @@
     "contentPlaceholder": "Mô tả dự án, quy mô, địa điểm hoặc các yêu cầu kỹ thuật cụ thể...",
     "attachmentLabel": "Đính kèm hồ sơ kỹ thuật (nếu có)",
     "dropzoneText": "Nhấp hoặc kéo thả file tại đây",
-    "dropzoneHint": "Định dạng PDF — kích thước tối đa 10MB",
-    "submitButton": "GỬI YÊU CẦU"
+    "dropzoneHint": "Định dạng PDF, DOC, DOCX — kích thước tối đa 10MB",
+    "submitButton": "GỬI YÊU CẦU",
+    "submittingButton": "ĐANG GỬI..."
+  },
+  "FormStatus": {
+    "invalidFileType": "Chỉ chấp nhận tệp định dạng PDF, DOC hoặc DOCX!",
+    "fileTooLarge": "Tệp đính kèm vượt quá giới hạn tối đa 10MB!",
+    "invalidContact": "Số điện thoại hoặc email chưa đúng định dạng. Vui lòng kiểm tra lại hoặc gọi hotline 0919 69 29 79.",
+    "invalidPhone": "Số điện thoại chưa đúng định dạng. Vui lòng kiểm tra lại hoặc gọi hotline 0919 69 29 79.",
+    "invalidEmail": "Địa chỉ email chưa đúng định dạng. Vui lòng kiểm tra lại hoặc gọi hotline 0919 69 29 79.",
+    "missingRequired": "Vui lòng điền đầy đủ các trường thông tin bắt buộc.",
+    "rateLimited": "Bạn đã gửi quá nhiều yêu cầu trong 1 giờ qua. Vui lòng thử lại sau hoặc gọi hotline 0919 69 29 79.",
+    "serverError": "Không thể gửi yêu cầu lúc này do lỗi kết nối máy chủ. Vui lòng thử lại hoặc gọi hotline 0919 69 29 79.",
+    "networkError": "Mất kết nối mạng khi gửi thông tin. Vui lòng kiểm tra lại mạng hoặc gọi hotline 0919 69 29 79."
   },
   "PageBanner": {
     "home": "Trang chủ"
@@ -306,9 +318,12 @@
       "formPhonePlaceholder": "0919 xxx xxx",
       "formEmailLabel": "Địa chỉ Email *",
       "formEmailPlaceholder": "email@example.com",
-      "formCvLabel": "Đính kèm CV ứng tuyển (PDF max 10MB) *",
+      "formCvLabel": "Đính kèm CV ứng tuyển (PDF, DOC, DOCX — tối đa 10MB)",
       "formSubmit": "NỘP HỒ SƠ ỨNG TUYỂN",
+      "formSubmitting": "ĐANG GỬI HỒ SƠ...",
+      "formSuccessTitle": "Nộp Hồ Sơ Ứng Tuyển Thành Công!",
       "formSuccess": "Đã ghi nhận hồ sơ ứng tuyển của bạn! Ban Nhân sự Shicons E&C sẽ liên hệ trong 48 giờ làm việc.",
+      "formSendAnother": "Gửi hồ sơ khác",
       "sidebarSummaryTitle": "TỔNG QUAN VỊ TRÍ",
       "sidebarDeptLabel": "Phòng ban:",
       "sidebarLocLabel": "Địa điểm làm việc:",
@@ -351,6 +366,7 @@
       "messageLabel": "Chi tiết yêu cầu kỹ thuật & Tiến độ dự kiến",
       "messagePlaceholder": "Mô tả tóm tắt yêu cầu thiết kế, tình trạng mặt bằng hoặc tiêu chuẩn áp dụng...",
       "submitBtn": "GỬI YÊU CẦU BÁO GIÁ",
+      "submittingBtn": "ĐANG GỬI YÊU CẦU...",
       "errorMissingFields": "Vui lòng điền đầy đủ Họ tên, Số điện thoại, Email và Hạng mục cơ điện quan tâm!"
     }
   },

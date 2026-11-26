@@ -142,8 +142,20 @@
     "contentPlaceholder": "Describe your project scope, scale, location, or specific technical requirements...",
     "attachmentLabel": "Attach Technical Brief (Optional)",
     "dropzoneText": "Click or drag & drop file here",
-    "dropzoneHint": "PDF format — max file size 10MB",
-    "submitButton": "SUBMIT REQUEST"
+    "dropzoneHint": "PDF, DOC, DOCX format — max file size 10MB",
+    "submitButton": "SUBMIT REQUEST",
+    "submittingButton": "SENDING..."
+  },
+  "FormStatus": {
+    "invalidFileType": "Only PDF, DOC, or DOCX files are accepted!",
+    "fileTooLarge": "Attachment exceeds the 10MB limit!",
+    "invalidContact": "Invalid phone number or email format. Please check and retry, or call our hotline 0919 69 29 79.",
+    "invalidPhone": "Invalid phone number format. Please check and retry, or call our hotline 0919 69 29 79.",
+    "invalidEmail": "Invalid email address format. Please check and retry, or call our hotline 0919 69 29 79.",
+    "missingRequired": "Please fill in all required fields.",
+    "rateLimited": "Too many submissions within the past hour. Please try again later or call our hotline 0919 69 29 79.",
+    "serverError": "Unable to submit your request due to a server error. Please try again or call our hotline 0919 69 29 79.",
+    "networkError": "Network error while submitting your request. Please check your connection or call our hotline 0919 69 29 79."
   },
   "PageBanner": {
     "home": "Home"
@@ -306,9 +318,12 @@
       "formPhonePlaceholder": "0919 xxx xxx",
       "formEmailLabel": "Email Address *",
       "formEmailPlaceholder": "email@example.com",
-      "formCvLabel": "Attach CV (PDF, max 10MB) *",
+      "formCvLabel": "Attach CV (PDF, DOC, DOCX — max 10MB)",
       "formSubmit": "APPLY NOW",
+      "formSubmitting": "SUBMITTING...",
+      "formSuccessTitle": "Application Submitted Successfully!",
       "formSuccess": "Your application has been received! Shicons E&C HR will contact you within 48 business hours.",
+      "formSendAnother": "Submit Another Application",
       "sidebarSummaryTitle": "POSITION SUMMARY",
       "sidebarDeptLabel": "Department:",
       "sidebarLocLabel": "Work Location:",
@@ -351,6 +366,7 @@
       "messageLabel": "Technical Requirements & Target Schedule",
       "messagePlaceholder": "Briefly describe design requirements, site status, or applicable standards...",
       "submitBtn": "REQUEST A CONSULTATION",
+      "submittingBtn": "SENDING REQUEST...",
       "errorMissingFields": "Please fill in your Name, Phone, Email, and MEP Scope of Interest!"
     }
   },
