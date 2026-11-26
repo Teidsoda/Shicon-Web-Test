@@ -104,7 +104,7 @@ export const HeroSlider: React.FC = () => {
               {slide.desc}
             </p>
 
-            <div className="text-xs sm:text-sm font-semibold text-yellow-300/90 font-mono tracking-wide">
+            <div className="text-xs sm:text-sm font-semibold text-white/90 font-mono tracking-wide">
               {slide.stats}
             </div>
 
@@ -173,7 +173,7 @@ export const HeroSlider: React.FC = () => {
           </div>
 
           {/* Bottom Center Scroll Down Indicator */}
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-5 hidden sm:flex flex-col items-center">
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-4 sm:bottom-5 flex flex-col items-center z-20">
             <button
               onClick={handleScrollDown}
               className="flex flex-col items-center text-white/70 hover:text-white transition-colors group focus:outline-none"

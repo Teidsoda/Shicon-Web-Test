@@ -59,7 +59,7 @@ export const NewsSection: React.FC = () => {
                   {featuredNews.categoryLabel}
                 </span>
 
-                <h3 className="text-lg sm:text-2xl font-extrabold text-white uppercase font-heading tracking-normal leading-[1.4] group-hover:text-yellow-300 transition-colors line-clamp-2">
+                <h3 className="text-lg sm:text-2xl font-extrabold text-white uppercase font-heading tracking-normal leading-[1.4] transition-colors line-clamp-2">
                   {featuredNews.title}
                 </h3>
 

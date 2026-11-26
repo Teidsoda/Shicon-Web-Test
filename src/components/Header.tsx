@@ -15,43 +15,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
   const pathname = usePathname();
   const isHomePage = pathname === '/';
   const [isScrolled, setIsScrolled] = useState(false);
-  const [currentLang, setCurrentLang] = useState<'vi' | 'en'>('vi');
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
   const isWhiteLogo = isScrolled || !isHomePage;
-
-  // Sync initial language from googtrans cookie
-  useEffect(() => {
-    if (typeof document !== 'undefined') {
-      const match = document.cookie.match(/googtrans=\/[^/]+\/([a-z]{2})/i);
-      if (match && match[1].toLowerCase() === 'en') {
-        setCurrentLang('en');
-      } else {
-        setCurrentLang('vi');
-      }
-    }
-  }, []);
-
-  const handleLanguageChange = (lang: 'vi' | 'en') => {
-    setCurrentLang(lang);
-    if (typeof window !== 'undefined' && window.triggerGoogleTranslate) {
-      window.triggerGoogleTranslate(lang);
-    } else {
-      const hostname = window.location.hostname;
-      if (lang === 'en') {
-        document.cookie = `googtrans=/vi/en; path=/;`;
-        document.cookie = `googtrans=/vi/en; domain=${hostname}; path=/;`;
-      } else {
-        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
-        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${hostname}; path=/;`;
-        document.cookie = `googtrans=/vi/vi; path=/;`;
-        document.cookie = `googtrans=/vi/vi; domain=${hostname}; path=/;`;
-      }
-      window.location.reload();
-    }
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -132,7 +100,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
             </Link>
           </div>
 
-          {/* Right: Search & Language Switcher (VI & EN - Tự động dịch) */}
+          {/* Right: Search (Future i18n slot reserved here) */}
           <div className="flex items-center gap-2 sm:gap-4 z-10">
             <button
               onClick={() => setIsSearchOpen(true)}
@@ -141,56 +109,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
             >
               <Search className="w-5 h-5 stroke-[2.2]" />
             </button>
-
-            {/* Language Switcher: VI & EN */}
-            <div className="flex items-center gap-1 pl-2 sm:pl-3 border-l border-white/25">
-              <button
-                onClick={() => handleLanguageChange('vi')}
-                aria-label="Tiếng Việt"
-                className={`flex items-center gap-1.5 px-2 py-1 rounded-[2px] transition-all text-xs font-bold ${
-                  currentLang === 'vi'
-                    ? 'bg-white/20 text-white ring-1 ring-white/30 shadow-sm'
-                    : 'text-white/70 hover:text-white hover:bg-white/10'
-                }`}
-                title="Tiếng Việt"
-              >
-                <svg width="16" height="11" viewBox="0 0 18 12" fill="none" className="rounded-[1px] shadow-sm flex-shrink-0">
-                  <rect width="18" height="12" fill="#DA251D" />
-                  <polygon
-                    points="9,2.5 10.18,5.85 13.8,5.85 10.91,8.02 12.09,11.37 9,9.2 5.91,11.37 7.09,8.02 4.2,5.85 7.82,5.85"
-                    fill="#FFFF00"
-                  />
-                </svg>
-                <span className="text-[11px]">VI</span>
-              </button>
-
-              <span className="text-white/40 text-[10px]">|</span>
-
-              <button
-                onClick={() => handleLanguageChange('en')}
-                aria-label="English"
-                className={`flex items-center gap-1.5 px-2 py-1 rounded-[2px] transition-all text-xs font-bold ${
-                  currentLang === 'en'
-                    ? 'bg-white/20 text-white ring-1 ring-white/30 shadow-sm'
-                    : 'text-white/70 hover:text-white hover:bg-white/10'
-                }`}
-                title="English (Tự động dịch)"
-              >
-                <svg width="16" height="11" viewBox="0 0 60 30" fill="none" className="rounded-[1px] shadow-sm flex-shrink-0">
-                  <clipPath id="uk-flag-header">
-                    <rect width="60" height="30" />
-                  </clipPath>
-                  <g clipPath="url(#uk-flag-header)">
-                    <rect width="60" height="30" fill="#012169" />
-                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6" />
-                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" strokeWidth="4" />
-                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10" />
-                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6" />
-                  </g>
-                </svg>
-                <span className="text-[11px]">EN</span>
-              </button>
-            </div>
           </div>
         </div>
       </header>
@@ -274,52 +192,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
                   Gửi yêu cầu báo giá
                 </button>
               )}
-
-              {/* Language Switcher in Drawer */}
-              <div className="pt-3 flex items-center justify-between border-t border-gray-100">
-                <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Ngôn ngữ / Language:</span>
-                <div className="flex items-center gap-1.5">
-                  <button
-                    onClick={() => handleLanguageChange('vi')}
-                    className={`flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold rounded-[2px] transition-all ${
-                      currentLang === 'vi'
-                        ? 'bg-[#0040A0] text-white shadow-sm'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
-                  >
-                    <svg width="14" height="10" viewBox="0 0 18 12" fill="none" className="rounded-[1px]">
-                      <rect width="18" height="12" fill="#DA251D" />
-                      <polygon
-                        points="9,2.5 10.18,5.85 13.8,5.85 10.91,8.02 12.09,11.37 9,9.2 5.91,11.37 7.09,8.02 4.2,5.85 7.82,5.85"
-                        fill="#FFFF00"
-                      />
-                    </svg>
-                    <span>VI</span>
-                  </button>
-                  <button
-                    onClick={() => handleLanguageChange('en')}
-                    className={`flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold rounded-[2px] transition-all ${
-                      currentLang === 'en'
-                        ? 'bg-[#0040A0] text-white shadow-sm'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
-                  >
-                    <svg width="14" height="10" viewBox="0 0 60 30" fill="none" className="rounded-[1px]">
-                      <clipPath id="uk-flag-drawer">
-                        <rect width="60" height="30" />
-                      </clipPath>
-                      <g clipPath="url(#uk-flag-drawer)">
-                        <rect width="60" height="30" fill="#012169" />
-                        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6" />
-                        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" strokeWidth="4" />
-                        <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10" />
-                        <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6" />
-                      </g>
-                    </svg>
-                    <span>EN</span>
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
 

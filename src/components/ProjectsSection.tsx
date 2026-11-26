@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ChevronRight, ChevronLeft, ArrowRight } from 'lucide-react';
 import { useContent } from '@/context/ContentContext';
@@ -8,12 +8,22 @@ import { useContent } from '@/context/ContentContext';
 export const ProjectsSection: React.FC = () => {
   const { projects } = useContent();
   const [carouselIndex, setCarouselIndex] = useState(0);
+  const [cardsPerView, setCardsPerView] = useState(2);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 640px)');
+    const updateView = () => setCardsPerView(mq.matches ? 2 : 1);
+    updateView();
+    mq.addEventListener('change', updateView);
+    return () => mq.removeEventListener('change', updateView);
+  }, []);
 
   if (!projects || projects.length === 0) return null;
 
   const featuredProject = projects[0];
   const carouselProjects = projects.length > 1 ? projects.slice(1) : [projects[0]];
-  const maxIndex = Math.max(0, carouselProjects.length - 2);
+  const maxIndex = Math.max(0, carouselProjects.length - cardsPerView);
+  const safeCarouselIndex = Math.min(carouselIndex, maxIndex);
 
   const handleNext = () => {
     setCarouselIndex((prev) => Math.min(prev + 1, maxIndex));
@@ -111,7 +121,7 @@ export const ProjectsSection: React.FC = () => {
           </div>
 
           {/* Right: Carousel Grid of remaining projects */}
-          <div className="lg:col-span-7 flex flex-col justify-between h-full">
+          <div className="lg:col-span-7 flex flex-col">
             {/* Carousel Navigation Controls */}
             <div className="flex items-center justify-between pb-4 mb-4 border-b border-gray-300">
               <span className="text-xs font-bold uppercase tracking-wider text-gray-500">
@@ -120,10 +130,10 @@ export const ProjectsSection: React.FC = () => {
               <div className="flex items-center gap-2">
                 <button
                   onClick={handlePrev}
-                  disabled={carouselIndex === 0}
+                  disabled={safeCarouselIndex === 0}
                   aria-label="Dự án trước"
                   className={`w-8 h-8 rounded-[2px] flex items-center justify-center border ${
-                    carouselIndex === 0
+                    safeCarouselIndex === 0
                       ? 'border-gray-200 text-gray-300 cursor-not-allowed bg-gray-50'
                       : 'border-gray-400 text-gray-700 hover:bg-[#0040A0] hover:border-[#0040A0] hover:text-white transition-colors bg-white'
                   }`}
@@ -132,10 +142,10 @@ export const ProjectsSection: React.FC = () => {
                 </button>
                 <button
                   onClick={handleNext}
-                  disabled={carouselIndex >= maxIndex}
+                  disabled={safeCarouselIndex >= maxIndex}
                   aria-label="Dự án tiếp"
                   className={`w-8 h-8 rounded-[2px] flex items-center justify-center border ${
-                    carouselIndex >= maxIndex
+                    safeCarouselIndex >= maxIndex
                       ? 'border-gray-200 text-gray-300 cursor-not-allowed bg-gray-50'
                       : 'border-gray-400 text-gray-700 hover:bg-[#0040A0] hover:border-[#0040A0] hover:text-white transition-colors bg-white'
                   }`}
@@ -148,15 +158,15 @@ export const ProjectsSection: React.FC = () => {
             {/* Carousel Viewport with smooth transform */}
             <div className="overflow-hidden">
               <div
-                className="flex transition-transform duration-500 ease-out gap-4"
+                className="flex transition-transform duration-500 ease-out -mx-2"
                 style={{
-                  transform: `translateX(-${carouselIndex * 50}%)`,
+                  transform: `translateX(-${safeCarouselIndex * (100 / cardsPerView)}%)`,
                 }}
               >
                 {carouselProjects.map((proj) => (
                   <div
                     key={proj.id}
-                    className="w-full sm:w-[calc(50%-8px)] lg:w-[calc(50%-8px)] flex-shrink-0"
+                    className="w-full sm:w-1/2 flex-shrink-0 px-2"
                   >
                     <Link
                       href={`/du-an/${proj.slug}`}
@@ -176,8 +186,8 @@ export const ProjectsSection: React.FC = () => {
 
                       {/* White Caption below */}
                       <div className="p-4 bg-white flex flex-col justify-between flex-1 space-y-2">
-                        <div>
-                          <p className="text-[10px] font-semibold text-[#0040A0] uppercase tracking-wider mb-1">
+                        <div className="min-w-0">
+                          <p className="text-[10px] font-semibold text-[#0040A0] uppercase tracking-wider mb-1 truncate">
                             {proj.categoryLabel}
                           </p>
                           <h4 className="text-xs sm:text-sm font-extrabold text-shicons-heading uppercase font-heading tracking-normal line-clamp-2 group-hover:text-[#0040A0] transition-colors leading-[1.45]">
@@ -185,9 +195,9 @@ export const ProjectsSection: React.FC = () => {
                           </h4>
                         </div>
 
-                        <div className="pt-2 border-t border-gray-100 text-[11px] text-gray-500 font-mono flex items-center justify-between">
-                          <span className="truncate">{proj.location}</span>
-                          <span className="font-bold text-gray-700 flex-shrink-0 ml-1">
+                        <div className="pt-2 border-t border-gray-100 text-[11px] text-gray-500 font-mono flex items-center justify-between gap-2">
+                          <span className="truncate min-w-0">{proj.location}</span>
+                          <span className="font-bold text-gray-700 flex-shrink-0">
                             {proj.year}
                           </span>
                         </div>

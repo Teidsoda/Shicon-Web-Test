@@ -108,7 +108,7 @@ export const ServiceBanners: React.FC = () => {
 
               {/* Bottom: English Subtitle + Uppercase Domain Title with Wide Letter Spacing */}
               <div className="relative z-10 text-center space-y-2">
-                <p className="text-[10px] sm:text-[11px] font-bold text-[#ED1C24] group-hover:text-yellow-300 transition-colors uppercase tracking-[0.25em]">
+                <p className="text-[10px] sm:text-[11px] font-bold text-[#ED1C24] transition-colors uppercase tracking-[0.25em]">
                   {domain.enTitle}
                 </p>
 
