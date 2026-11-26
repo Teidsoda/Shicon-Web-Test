@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useLocale, useTranslations } from 'next-intl';
+import { Link, usePathname } from '@/i18n/navigation';
 import { Menu, X, Search, PhoneCall } from 'lucide-react';
 import { Logo } from './Logo';
 import { CONTACT_INFO } from '@/data/shiconsData';
@@ -12,6 +12,8 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
+  const locale = useLocale();
+  const t = useTranslations('Header');
   const pathname = usePathname();
   const isHomePage = pathname === '/';
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,15 +49,17 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
   }, [isDrawerOpen]);
 
   const menuItems = [
-    { label: 'Trang chủ', href: '/' },
-    { label: 'Về chúng tôi', href: '/ve-chung-toi' },
-    { label: 'Lĩnh vực', href: '/linh-vuc-hoat-dong' },
-    { label: 'Dự án', href: '/du-an' },
-    { label: 'Sản xuất', href: '/san-xuat' },
-    { label: 'Tin tức', href: '/tin-tuc' },
-    { label: 'Tuyển dụng', href: '/tuyen-dung' },
-    { label: 'Liên hệ', href: '/lien-he' },
+    { label: t('nav.home'), href: '/' },
+    { label: t('nav.about'), href: '/ve-chung-toi' },
+    { label: t('nav.domains'), href: '/linh-vuc-hoat-dong' },
+    { label: t('nav.projects'), href: '/du-an' },
+    { label: t('nav.manufacturing'), href: '/san-xuat' },
+    { label: t('nav.news'), href: '/tin-tuc' },
+    { label: t('nav.careers'), href: '/tuyen-dung' },
+    { label: t('nav.contact'), href: '/lien-he' },
   ];
+
+  const searchTags = t.raw('searchTags') as string[];
 
   const handleNavClick = (item: { href: string }) => {
     setIsDrawerOpen(false);
@@ -83,7 +87,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
           <div className="flex items-center z-10">
             <button
               onClick={() => setIsDrawerOpen(true)}
-              aria-label="Mở Menu điều hướng"
+              aria-label={t('openMenu')}
               className="p-2 text-white hover:text-white/80 transition-colors focus:outline-none focus:ring-2 focus:ring-white/40 rounded-[2px]"
             >
               <Menu className="w-7 h-7 stroke-[2.2]" />
@@ -100,15 +104,46 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
             </Link>
           </div>
 
-          {/* Right: Search (Future i18n slot reserved here) */}
-          <div className="flex items-center gap-2 sm:gap-4 z-10">
+          {/* Right: Search & VI | EN Language Switcher (never translated) */}
+          <div className="flex items-center gap-1.5 sm:gap-3 z-10">
             <button
               onClick={() => setIsSearchOpen(true)}
-              aria-label="Tìm kiếm"
+              aria-label={t('search')}
               className="p-2 text-white hover:text-white/80 transition-colors focus:outline-none focus:ring-2 focus:ring-white/40 rounded-[2px]"
             >
               <Search className="w-5 h-5 stroke-[2.2]" />
             </button>
+
+            <div
+              className="flex items-center gap-1 pl-2 sm:pl-3 border-l border-white/25 text-[11px] sm:text-xs tracking-wider select-none"
+              aria-label="Language switcher"
+            >
+              <Link
+                href={pathname || '/'}
+                locale="vi"
+                aria-current={locale === 'vi' ? 'page' : undefined}
+                className={`px-1.5 py-0.5 transition-all rounded-[2px] ${
+                  locale === 'vi'
+                    ? 'font-extrabold text-white underline underline-offset-4 decoration-2 decoration-[#ED1C24]'
+                    : 'font-medium text-white/70 hover:text-white'
+                }`}
+              >
+                VI
+              </Link>
+              <span className="text-white/40" aria-hidden="true">|</span>
+              <Link
+                href={pathname || '/'}
+                locale="en"
+                aria-current={locale === 'en' ? 'page' : undefined}
+                className={`px-1.5 py-0.5 transition-all rounded-[2px] ${
+                  locale === 'en'
+                    ? 'font-extrabold text-white underline underline-offset-4 decoration-2 decoration-[#ED1C24]'
+                    : 'font-medium text-white/70 hover:text-white'
+                }`}
+              >
+                EN
+              </Link>
+            </div>
           </div>
         </div>
       </header>
@@ -138,7 +173,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
             <Logo variant="color" showText={true} />
             <button
               onClick={() => setIsDrawerOpen(false)}
-              aria-label="Đóng Menu"
+              aria-label={t('closeMenu')}
               className="p-2 text-gray-500 hover:text-shicons-dark transition-colors rounded-[2px]"
             >
               <X className="w-6 h-6 stroke-[2.2]" />
@@ -168,8 +203,44 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
             </nav>
 
             <div className="pt-6 mt-6 space-y-4">
+              {/* Language Switcher in Drawer (VI | EN never translated) */}
+              <div className="flex items-center justify-between pb-3 border-b border-gray-100">
+                <span className="text-xs font-bold uppercase tracking-wider text-gray-500">
+                  VI | EN
+                </span>
+                <div className="flex items-center gap-1.5 text-xs">
+                  <Link
+                    href={pathname || '/'}
+                    locale="vi"
+                    onClick={() => setIsDrawerOpen(false)}
+                    aria-current={locale === 'vi' ? 'page' : undefined}
+                    className={`px-2.5 py-1 rounded-[2px] transition-all ${
+                      locale === 'vi'
+                        ? 'bg-[#0040A0] text-white font-bold shadow-sm'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium'
+                    }`}
+                  >
+                    VI
+                  </Link>
+                  <span className="text-gray-300" aria-hidden="true">|</span>
+                  <Link
+                    href={pathname || '/'}
+                    locale="en"
+                    onClick={() => setIsDrawerOpen(false)}
+                    aria-current={locale === 'en' ? 'page' : undefined}
+                    className={`px-2.5 py-1 rounded-[2px] transition-all ${
+                      locale === 'en'
+                        ? 'bg-[#0040A0] text-white font-bold shadow-sm'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium'
+                    }`}
+                  >
+                    EN
+                  </Link>
+                </div>
+              </div>
+
               <p className="text-xs text-gray-500 font-semibold tracking-wider uppercase">
-                Hỗ trợ tư vấn 24/7
+                {t('support247')}
               </p>
               <a
                 href={`tel:${CONTACT_INFO.primaryHotline}`}
@@ -177,7 +248,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
               >
                 <PhoneCall className="w-5 h-5 flex-shrink-0" />
                 <span className="font-bold text-sm tracking-wide">
-                  Hotline: {CONTACT_INFO.hotlines[0]}
+                  {t('hotlineLabel')}: {CONTACT_INFO.hotlines[0]}
                 </span>
               </a>
 
@@ -189,7 +260,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
                   }}
                   className="w-full btn-shicons py-3 bg-[#0040A0] hover:bg-[#004DA0] text-white text-sm"
                 >
-                  Gửi yêu cầu báo giá
+                  {t('requestQuote')}
                 </button>
               )}
             </div>
@@ -197,7 +268,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
 
           {/* Drawer Footer */}
           <div className="p-5 bg-gray-50 border-t border-gray-100 text-xs text-gray-500 text-center">
-            © 2026 Shicons E&C. All rights reserved.
+            {t('copyright')}
           </div>
         </div>
       </div>
@@ -213,13 +284,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
               <X className="w-5 h-5" />
             </button>
             <h3 className="text-lg font-bold text-shicons-heading uppercase tracking-wide mb-4">
-              Tìm kiếm dự án & thông tin
+              {t('searchModalTitle')}
             </h3>
             <div className="relative">
               <input
                 type="text"
                 autoFocus
-                placeholder="Nhập tên dự án, lĩnh vực hoặc công nghệ..."
+                placeholder={t('searchPlaceholder')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 focus:border-[#0040A0] focus:ring-1 focus:ring-[#0040A0] outline-none text-sm rounded-[2px]"
@@ -227,8 +298,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
               <Search className="w-5 h-5 text-gray-400 absolute left-3 top-3.5" />
             </div>
             <div className="mt-4 text-xs text-gray-500 flex flex-wrap gap-2">
-              <span className="font-medium text-gray-600">Gợi ý:</span>
-              {['Intel', 'Tân Sơn Nhất', 'Phòng sạch', 'BIM Revit', 'Bel Việt Nam'].map((tag) => (
+              <span className="font-medium text-gray-600">{t('searchSuggestionsLabel')}</span>
+              {searchTags.map((tag) => (
                 <button
                   key={tag}
                   onClick={() => setSearchQuery(tag)}
@@ -244,7 +315,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsult }) => {
                 onClick={() => setIsSearchOpen(false)}
                 className="btn-shicons px-5 py-2.5 bg-[#0040A0] text-white text-xs hover:bg-[#004DA0]"
               >
-                Xem tất cả dự án
+                {t('viewAllProjects')}
               </Link>
             </div>
           </div>

@@ -1,6 +1,15 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
+import { useLocale, useMessages } from 'next-intl';
+import {
+  localizeProjects,
+  localizeDomains,
+  localizeNews,
+  localizeJobs,
+  localizePartners,
+  localizeProductionLines,
+} from '@/lib/getLocalizedData';
 import { 
   HERO_SLIDES, 
   PROJECTS_DATA, 
@@ -440,9 +449,13 @@ export const ContentProvider: React.FC<{ children: React.ReactNode }> = ({ child
     localStorage.removeItem(STORAGE_KEY);
   };
 
-  return (
-    <ContentContext.Provider
-      value={{
+  const locale = useLocale();
+  const messages = useMessages() as Record<string, any>;
+  const dataMsg = messages?.Data as Record<string, any> | undefined;
+
+  const localizedValue = useMemo(() => {
+    if (locale !== 'en' || !dataMsg) {
+      return {
         heroBanners,
         projects,
         services,
@@ -452,6 +465,60 @@ export const ContentProvider: React.FC<{ children: React.ReactNode }> = ({ child
         settings,
         aboutData,
         manufacturingData,
+      };
+    }
+
+    const localizedHeroBanners = heroBanners.map((b) => {
+      const tr = dataMsg.heroSlides?.[b.id];
+      return tr ? { ...b, ...tr } : b;
+    });
+
+    const localizedAbout: AboutData = {
+      ...aboutData,
+      ...(dataMsg.about || {}),
+      companyStats: dataMsg.companyStats || aboutData.companyStats,
+    };
+
+    const localizedManufacturing: ManufacturingData = {
+      ...manufacturingData,
+      ...(dataMsg.manufacturing || {}),
+      productionLines: localizeProductionLines(manufacturingData.productionLines, dataMsg),
+    };
+
+    const localizedSettings: ContactSettingsData = {
+      ...settings,
+      ...(dataMsg.contact || {}),
+    };
+
+    return {
+      heroBanners: localizedHeroBanners,
+      projects: localizeProjects(projects, dataMsg),
+      services: localizeDomains(services, dataMsg),
+      news: localizeNews(news, dataMsg),
+      jobs: localizeJobs(jobs, dataMsg),
+      partners: localizePartners(partners, dataMsg),
+      settings: localizedSettings,
+      aboutData: localizedAbout,
+      manufacturingData: localizedManufacturing,
+    };
+  }, [
+    locale,
+    dataMsg,
+    heroBanners,
+    projects,
+    services,
+    news,
+    jobs,
+    partners,
+    settings,
+    aboutData,
+    manufacturingData,
+  ]);
+
+  return (
+    <ContentContext.Provider
+      value={{
+        ...localizedValue,
         updateHeroBanner,
         toggleHeroBanner,
         addProject,

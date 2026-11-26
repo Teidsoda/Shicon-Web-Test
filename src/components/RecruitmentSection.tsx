@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { HardHat, Compass, Briefcase, MapPin, DollarSign, ArrowRight } from 'lucide-react';
 import { useContent } from '@/context/ContentContext';
 
@@ -10,6 +11,7 @@ interface RecruitmentSectionProps {
 }
 
 export const RecruitmentSection: React.FC<RecruitmentSectionProps> = ({ onOpenConsult }) => {
+  const t = useTranslations('RecruitmentSection');
   const { jobs } = useContent();
   const activeJobs = jobs.filter((j) => j.status === 'active');
 
@@ -54,14 +56,14 @@ export const RecruitmentSection: React.FC<RecruitmentSectionProps> = ({ onOpenCo
         {/* Centered Heading */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-2">
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0040A0] block">
-            CƠ HỘI NGHỀ NGHIỆP
+            {t('eyebrow')}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-shicons-heading uppercase font-heading tracking-normal leading-[1.45] sm:leading-[1.5]">
-            TUYỂN DỤNG NHÂN TÀI
+            {t('title')}
           </h2>
           <div className="w-12 h-1 bg-[#ED1C24] mx-auto rounded-[1px] mt-2" />
           <p className="text-xs sm:text-sm text-gray-500 pt-2">
-            Gia nhập đội ngũ kỹ sư tinh hoa Shicons E&amp;C — Môi trường chuyên nghiệp, chế độ đãi ngộ vượt trội và cơ hội làm chủ công nghệ BIM M&amp;E tiên tiến.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -103,7 +105,7 @@ export const RecruitmentSection: React.FC<RecruitmentSectionProps> = ({ onOpenCo
                 </div>
 
                 <div className="text-[11px] text-gray-400 font-mono pt-1">
-                  Hạn nộp: {job.deadline} • {job.experience}
+                  {t('deadlineLabel')}: {job.deadline} • {job.experience}
                 </div>
               </div>
             </Link>
@@ -116,7 +118,7 @@ export const RecruitmentSection: React.FC<RecruitmentSectionProps> = ({ onOpenCo
             href="/tuyen-dung"
             className="btn-shicons px-10 py-3.5 border-2 border-gray-400 text-shicons-dark hover:border-[#0040A0] hover:bg-[#0040A0] hover:text-white text-xs sm:text-sm tracking-wider uppercase gap-2 group shadow-sm inline-flex"
           >
-            <span>XEM TẤT CẢ VỊ TRÍ TUYỂN DỤNG</span>
+            <span>{t('viewAllJobs')}</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
 
@@ -125,7 +127,7 @@ export const RecruitmentSection: React.FC<RecruitmentSectionProps> = ({ onOpenCo
               onClick={onOpenConsult}
               className="btn-shicons px-10 py-3.5 bg-[#ED1C24] hover:bg-[#d0141b] text-white text-xs sm:text-sm tracking-wider uppercase shadow-sm inline-flex"
             >
-              NỘP HỒ SƠ NHANH
+              {t('quickApply')}
             </button>
           )}
         </div>

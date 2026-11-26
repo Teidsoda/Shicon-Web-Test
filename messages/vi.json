@@ -1,0 +1,859 @@
+{
+  "Metadata": {
+    "homeTitle": "SHICONS E&C — Tổng thầu Cơ điện (MEP) & Phòng sạch Chuyên sâu",
+    "homeDescription": "Công ty Cổ phần Shicons E&C — Nhà thầu hàng đầu chuyên thiết kế, cung cấp và thi công trọn gói hệ thống Cơ điện (M&E / MEP) cho các dự án Nhà máy công nghệ cao, Tòa tháp thương mại, Phòng sạch Dược phẩm & Trung tâm dữ liệu.",
+    "aboutTitle": "Về Chúng Tôi | SHICONS E&C",
+    "aboutDescription": "Hơn một thập kỷ tiên phong cung cấp giải pháp Cơ điện (M&E / MEP) toàn diện, ứng dụng công nghệ BIM và năng lực thi công thực chiến.",
+    "domainsTitle": "Lĩnh Vực Hoạt Động Cơ Điện (MEP) | SHICONS E&C",
+    "domainsDescription": "Tổng thầu Cơ điện MEP Shicons E&C chuyên sâu 5 hệ thống mũi nhọn: HVAC & Phòng sạch, Điện & ELV/BMS, PCCC, Cấp thoát nước và Dịch vụ O&M bảo trì công nghiệp.",
+    "domainNotFoundTitle": "Không tìm thấy lĩnh vực | SHICONS E&C",
+    "projectsTitle": "Hồ Sơ Dự Án Tiêu Biểu | SHICONS E&C",
+    "projectsDescription": "Khẳng định năng lực thực chiến qua các công trình nhà máy FDI công nghệ cao, bệnh viện tiêu chuẩn quốc tế và hạ tầng trọng điểm quốc gia.",
+    "projectNotFoundTitle": "Không tìm thấy dự án | SHICONS E&C",
+    "manufacturingTitle": "Năng Lực Sản Xuất & Chế Tạo Thiết Bị | SHICONS E&C",
+    "manufacturingDescription": "Chủ động 100% chuỗi cung ứng vật tư cơ điện với Nhà máy sản xuất 10.000 m² tại Bình Dương, làm chủ công nghệ gia công chính xác cao.",
+    "newsTitle": "Tin Tức & Góc Kỹ Thuật | SHICONS E&C",
+    "newsDescription": "Cập nhật tiến độ dự án, các dấu mốc cất nóc, trúng thầu và bài viết chia sẻ kinh nghiệm kỹ thuật cơ điện chuyên sâu từ Shicons E&C.",
+    "newsNotFoundTitle": "Không tìm thấy bài viết | SHICONS E&C",
+    "careersTitle": "Tuyển Dụng Nhân Tài | SHICONS E&C",
+    "careersDescription": "Gia nhập đội ngũ kỹ sư tinh hoa Shicons E&C — Làm chủ công nghệ BIM Revit MEP, mức lương hấp dẫn và lộ trình thăng tiến rõ ràng.",
+    "careerDetailTitleSuffix": "Tuyển dụng SHICONS E&C",
+    "careerNotFoundTitle": "Không tìm thấy vị trí tuyển dụng | SHICONS E&C",
+    "contactTitle": "Liên Hệ & Yêu Cầu Báo Giá Kỹ Thuật | SHICONS E&C",
+    "contactDescription": "Đội ngũ kỹ sư chuyên gia Shicons E&C luôn sẵn sàng hỗ trợ khảo sát, tư vấn giải pháp tối ưu chi phí và bóc tách khối lượng BIM cho dự án của bạn.",
+    "notFoundTitle": "404 — Không tìm thấy trang | SHICONS E&C"
+  },
+  "Header": {
+    "openMenu": "Mở Menu điều hướng",
+    "closeMenu": "Đóng Menu",
+    "search": "Tìm kiếm",
+    "nav": {
+      "home": "Trang chủ",
+      "about": "Về chúng tôi",
+      "domains": "Lĩnh vực",
+      "projects": "Dự án",
+      "manufacturing": "Sản xuất",
+      "news": "Tin tức",
+      "careers": "Tuyển dụng",
+      "contact": "Liên hệ"
+    },
+    "support247": "Hỗ trợ tư vấn 24/7",
+    "hotlineLabel": "Hotline",
+    "requestQuote": "Gửi yêu cầu báo giá",
+    "copyright": "© 2026 Shicons E&C. All rights reserved.",
+    "searchModalTitle": "Tìm kiếm dự án & thông tin",
+    "searchPlaceholder": "Nhập tên dự án, lĩnh vực hoặc công nghệ...",
+    "searchSuggestionsLabel": "Gợi ý:",
+    "searchTags": ["Intel", "Tân Sơn Nhất", "Phòng sạch", "BIM Revit", "Bel Việt Nam"],
+    "viewAllProjects": "Xem tất cả dự án"
+  },
+  "Hero": {
+    "exploreProjects": "Khám phá dự án tiêu biểu",
+    "companyProfile": "Hồ sơ năng lực (PDF)",
+    "prevSlide": "Slide trước",
+    "nextSlide": "Slide sau",
+    "goToSlide": "Chuyển tới slide {index}",
+    "scrollDown": "Kéo xuống",
+    "featuredBadge": "Dự án thực tế"
+  },
+  "AboutSection": {
+    "imageAlt": "Đội ngũ kỹ sư Shicons E&C tại xưởng và công trường",
+    "learnMoreBtn": "Tìm hiểu năng lực Shicons E&C",
+    "viewProjectsBtn": "Xem hồ sơ công trình"
+  },
+  "ServiceBanners": {
+    "eyebrow": "NĂNG LỰC CỐT LÕI",
+    "titleCount": "{count} LĨNH VỰC HOẠT ĐỘNG CHUYÊN SÂU",
+    "titleDefault": "LĨNH VỰC HOẠT ĐỘNG CHUYÊN SÂU",
+    "subtitle": "Giải pháp tổng thể từ Thiết kế BIM, Thi công lắp đặt đến Kiểm định & Bảo trì cơ điện công nghiệp.",
+    "allDomains": "Tất cả lĩnh vực",
+    "emptyState": "Chưa có lĩnh vực nào được bật hiển thị. Vui lòng kích hoạt trong trang Quản trị."
+  },
+  "ProjectsSection": {
+    "eyebrow": "HỒ SƠ CÔNG TRÌNH",
+    "title": "DỰ ÁN TIÊU BIỂU",
+    "viewAll": "XEM TẤT CẢ DỰ ÁN",
+    "details": "Chi tiết",
+    "featuredListTitle": "CÔNG TRÌNH TIÊU BIỂU ({count})",
+    "prevProject": "Dự án trước",
+    "nextProject": "Dự án tiếp"
+  },
+  "NewsSection": {
+    "eyebrow": "BẢN TIN HOẠT ĐỘNG",
+    "title": "TIN TỨC & SỰ KIỆN",
+    "viewAll": "Xem tất cả tin tức",
+    "readMore": "Đọc tiếp"
+  },
+  "RecruitmentSection": {
+    "eyebrow": "CƠ HỘI NGHỀ NGHIỆP",
+    "title": "TUYỂN DỤNG NHÂN TÀI",
+    "subtitle": "Gia nhập đội ngũ kỹ sư tinh hoa Shicons E&C — Môi trường chuyên nghiệp, chế độ đãi ngộ vượt trội và cơ hội làm chủ công nghệ BIM M&E tiên tiến.",
+    "deadlineLabel": "Hạn nộp",
+    "viewAllJobs": "XEM TẤT CẢ VỊ TRÍ TUYỂN DỤNG",
+    "quickApply": "NỘP HỒ SƠ NHANH"
+  },
+  "PartnersSection": {
+    "eyebrow": "MẠNG LƯỚI TOÀN CẦU",
+    "title": "ĐỐI TÁC UY TÍN"
+  },
+  "Footer": {
+    "taxCodeLabel": "Mã số thuế",
+    "contactHeading": "THÔNG TIN LIÊN HỆ",
+    "hqLabel": "Trụ sở",
+    "hotlineLabel": "Hotline",
+    "emailLabel": "Email",
+    "workingHoursLabel": "Giờ làm việc",
+    "websiteLabel": "Website",
+    "categoriesHeading": "DANH MỤC",
+    "links": {
+      "about": "Về chúng tôi",
+      "domains": "Lĩnh vực hoạt động",
+      "projects": "Dự án tiêu biểu",
+      "manufacturing": "Năng lực sản xuất",
+      "news": "Tin tức & Sự kiện",
+      "careers": "Cơ hội tuyển dụng",
+      "contact": "Liên hệ báo giá"
+    },
+    "connectHeading": "KẾT NỐI",
+    "connectSubtitle": "Theo dõi tin tức dự án mới nhất trên mạng xã hội:",
+    "downloadProfile": "Tải Hồ sơ Năng lực (PDF)",
+    "copyright": "© 2026 Copyright Shicons E&C. All rights reserved.",
+    "backToTop": "Lên đầu trang"
+  },
+  "FloatingActions": {
+    "regionLabel": "Kênh liên hệ nhanh",
+    "consultLabel": "Gửi yêu cầu tư vấn",
+    "zaloLabel": "Chat qua Zalo",
+    "callLabel": "Gọi hotline {phone}"
+  },
+  "ConsultModal": {
+    "closeLabel": "Đóng popup",
+    "eyebrow": "YÊU CẦU TƯ VẤN & BÁO GIÁ",
+    "title": "GỬI THÔNG TIN CHO CHÚNG TÔI",
+    "successTitle": "Gửi yêu cầu thành công!",
+    "successDesc": "Cảm ơn quý khách đã gửi thông tin. Đội ngũ chuyên gia Shicons E&C sẽ liên hệ trực tiếp trong vòng 24 giờ làm việc.",
+    "fileTooLarge": "Tệp đính kèm vượt quá 10MB!",
+    "missingRequired": "Vui lòng điền họ tên và thông tin liên hệ!",
+    "nameLabel": "Tên của bạn",
+    "namePlaceholder": "Ví dụ: Nguyễn Văn A",
+    "contactLabel": "Số điện thoại / Email",
+    "contactPlaceholder": "0919 xxx xxx hoặc email@domain.com",
+    "contentLabel": "Nội dung yêu cầu",
+    "contentPlaceholder": "Mô tả dự án, quy mô, địa điểm hoặc các yêu cầu kỹ thuật cụ thể...",
+    "attachmentLabel": "Đính kèm hồ sơ kỹ thuật (nếu có)",
+    "dropzoneText": "Nhấp hoặc kéo thả file tại đây",
+    "dropzoneHint": "Định dạng PDF — kích thước tối đa 10MB",
+    "submitButton": "GỬI YÊU CẦU"
+  },
+  "PageBanner": {
+    "home": "Trang chủ"
+  },
+  "Pages": {
+    "About": {
+      "breadcrumb": "Về chúng tôi",
+      "exploreProjects": "Khám phá Dự án thực tế",
+      "downloadProfile": "Tải Hồ sơ Năng lực (PDF)",
+      "imageAlt": "Đội ngũ kỹ sư Shicons E&C",
+      "guidanceEyebrow": "KIM CHỈ NAM HOẠT ĐỘNG",
+      "guidanceTitle": "Tầm nhìn, Sứ mệnh & Giá trị Cốt lõi",
+      "guidanceSubtitle": "Nền tảng vững chắc định hướng mọi hành động và cam kết kỹ thuật của tập thể Shicons E&C.",
+      "visionFooter": "Mục tiêu dẫn đầu ngành M&E",
+      "missionFooter": "Chất lượng & Bền vững",
+      "coreValuesFooter": "Tôn chỉ hành động",
+      "hseEyebrow": "VĂN HÓA HSE & NĂNG LỰC THỰC CHIẾN",
+      "hsePhotoAlt1": "An toàn HSE tại Shicons",
+      "hsePhotoAlt2": "Đội ngũ kỹ sư Shicons"
+    },
+    "Domains": {
+      "bannerTitle": "Lĩnh Vực Hoạt Động Cơ Điện (MEP)",
+      "bannerSubtitle": "5 mảng năng lực cốt lõi được thiết kế & thi công đồng bộ, làm chủ công nghệ cao và giải pháp số hóa BIM LOD 400.",
+      "breadcrumb": "Lĩnh vực hoạt động",
+      "bannerBadge": "Năng lực Kỹ thuật",
+      "introEyebrow": "GIẢI PHÁP TỔNG THỂ",
+      "introTitle": "Dịch vụ Cơ điện M&E / MEP Toàn diện",
+      "introSubtitle": "Shicons E&C sở hữu năng lực triển khai trọn gói từ khâu khảo sát, mô hình hóa BIM, gia công chế tạo tại xưởng đến đóng điện nghiệm thu tại công trường.",
+      "domainIndexPrefix": "LĨNH VỰC #{code}",
+      "detailButton": "Chi tiết giải pháp kỹ thuật",
+      "detailStandardBadge": "TIÊU CHUẨN: {standard}",
+      "backToList": "Quay lại danh sách lĩnh vực",
+      "overviewTitle": "Tổng quan Giải pháp & Năng lực Kỹ thuật",
+      "subSystemsTitle": "Các Hạng mục Hệ thống Con Chi tiết",
+      "standardsEyebrow": "QUY CHUẨN & TIÊU CHUẨN ÁP DỤNG",
+      "standardsTitle": "Cam kết tuân thủ nghiêm ngặt tiêu chuẩn quốc tế",
+      "consultBoxTitle": "Cần Tư Vấn Thiết Kế MEP?",
+      "consultBoxDesc": "Đội ngũ kỹ sư trưởng Shicons E&C sẵn sàng khảo sát, tư vấn giải pháp tối ưu chi phí và bóc tách khối lượng BIM cho dự án của bạn.",
+      "requestQuote": "Gửi yêu cầu báo giá",
+      "otherDomainsTitle": "LĨNH VỰC KHÁC"
+    },
+    "Projects": {
+      "bannerTitle": "Hồ Sơ Dự Án Tiêu Biểu",
+      "bannerSubtitle": "Khẳng định năng lực thực chiến qua các công trình nhà máy FDI công nghệ cao, bệnh viện tiêu chuẩn quốc tế và hạ tầng trọng điểm quốc gia.",
+      "breadcrumb": "Dự án",
+      "bannerBadge": "Năng lực Thi công",
+      "categories": {
+        "all": "Tất cả dự án",
+        "cleanroom": "Phòng sạch & Công nghệ cao",
+        "industrial": "Nhà máy công nghiệp",
+        "infrastructure": "Hạ tầng kỹ thuật"
+      },
+      "viewDetail": "Xem hồ sơ chi tiết",
+      "backToList": "Quay lại danh sách dự án",
+      "coverBadge": "Ảnh Nhà Máy & Công Trình",
+      "overviewTitle": "Tổng quan Dự án",
+      "highlightsTitle": "Điểm Nổi Bật Về Kỹ Thuật & Công Nghệ Thi Công",
+      "challengesEyebrow": "THÁCH THỨC & GIẢI PHÁP KỸ THUẬT",
+      "challengesSubtitle": "Xử lý thực tế tại công trường",
+      "specsTitle": "THÔNG SỐ CÔNG TRÌNH",
+      "clientLabel": "Chủ đầu tư / Khách hàng:",
+      "locationLabel": "Địa điểm xây dựng:",
+      "yearLabel": "Năm thực hiện:",
+      "scaleLabel": "Quy mô công trình:",
+      "statusLabel": "Tình trạng dự án:",
+      "scopeLabel": "Phạm vi cơ điện (MEP Scope):",
+      "consultEyebrow": "TƯ VẤN DỰ ÁN",
+      "consultTitle": "Bạn Cần Báo Giá Thi Công Dự Án Cơ Điện Tương Tự?",
+      "consultDesc": "Đội ngũ kỹ sư dự toán & thiết kế BIM Shicons sẵn sàng khảo sát hiện trạng và lên giải pháp tối ưu trong 24 giờ.",
+      "consultBtn": "Yêu Cầu Báo Giá Kỹ Thuật",
+      "relatedEyebrow": "CÔNG TRÌNH KHÁC",
+      "relatedTitle": "Dự Án Tiêu Biểu Liên Quan",
+      "viewAll": "Xem tất cả",
+      "galleryTitle": "Hình Ảnh Thi Công Thực Tế",
+      "galleryCount": "{count} ảnh",
+      "galleryStandard": "Tiêu chuẩn 3 ảnh thi công",
+      "galleryAutoSlide": "Tự động trượt ngang",
+      "galleryPhotoLabel": "Ảnh {index}/{total}",
+      "galleryLiveBadge": "Thi công thực tế #{index}",
+      "galleryPrev": "Ảnh trước",
+      "galleryNext": "Ảnh sau",
+      "galleryZoomAlt": "Phóng to ảnh thi công"
+    },
+    "Manufacturing": {
+      "breadcrumb": "Năng lực sản xuất",
+      "factoryAlt": "Xưởng gia công cơ điện Shicons E&C",
+      "qcBadgeLabel": "Quy trình xuất xưởng",
+      "qcBadgeTitle": "Kiểm Định 100% Sản Phẩm Trước Khi Bàn Giao",
+      "linesEyebrow": "DÂY CHUYỀN GIA CÔNG CÔNG NGHỆ CAO",
+      "linesTitle": "3 Dây Chuyền Sản Xuất Trọng Yếu",
+      "linesSubtitle": "Sản phẩm đạt chứng chỉ kiểm định chất lượng, đáp ứng các tiêu chuẩn kỹ thuật khắt khe cho nhà máy FDI và cao ốc hạng A.",
+      "specsHeading": "Thông số kỹ thuật & Tiêu chuẩn:",
+      "ctaEyebrow": "KẾT NỐI SẢN XUẤT",
+      "ctaTitle": "Khách Hàng & Chủ Đầu Tư Có Thể Trực Tiếp Tham Quan Nhà Máy",
+      "ctaDesc": "Chúng tôi luôn sẵn sàng đón tiếp quý đối tác tham quan dây chuyền gia công và kiểm tra thử nghiệm xuất xưởng (FAT) thiết bị.",
+      "ctaBtn": "Đăng Ký Tham Quan Nhà Máy"
+    },
+    "News": {
+      "bannerTitle": "Tin Tức & Góc Kỹ Thuật",
+      "bannerSubtitle": "Cập nhật tiến độ dự án, các dấu mốc cất nóc, trúng thầu và bài viết chia sẻ kinh nghiệm kỹ thuật cơ điện chuyên sâu từ Shicons E&C.",
+      "breadcrumb": "Tin tức",
+      "bannerBadge": "Bản Tin Hoạt Động",
+      "categories": {
+        "all": "Tất cả bài viết",
+        "project": "Tin dự án",
+        "technical": "Góc kỹ thuật MEP",
+        "company": "Hoạt động công ty"
+      },
+      "searchPlaceholder": "Tìm kiếm bài viết...",
+      "detailSubtitle": "Chuyên mục: {category} • Ngày đăng: {date}",
+      "backToList": "Quay lại danh sách tin tức",
+      "closingParagraph1": "Với năng lực thi công và quy trình kiểm soát chất lượng đạt chuẩn quốc tế, Shicons E&C cam kết tiếp tục đồng hành cùng các chủ đầu tư, mang lại những công trình cơ điện an toàn, vận hành bền bỉ và hiệu quả năng lượng vượt trội.",
+      "closingParagraph2": "Để biết thêm thông tin chi tiết về các giải pháp cơ điện và dịch vụ của Shicons E&C, quý khách hàng vui lòng liên hệ trực tiếp hotline hoặc gửi thư về địa chỉ email của công ty.",
+      "authorLabel": "Biên soạn bởi:",
+      "mediaContactBtn": "Liên hệ truyền thông",
+      "sidebarTitle": "Tư Vấn Cơ Điện Chuyên Nghiệp",
+      "sidebarDesc": "Nhận tư vấn thiết kế và báo giá thi công trọn gói cho công trình nhà máy, bệnh viện hoặc cao ốc.",
+      "sidebarBtn": "Gửi yêu cầu báo giá",
+      "relatedTitle": "BÀI VIẾT KHÁC"
+    },
+    "Careers": {
+      "bannerTitle": "Cơ Hội Tuyển Dụng Shicons E&C",
+      "bannerSubtitle": "Gia nhập đội ngũ kỹ sư tinh hoa Shicons E&C — Làm chủ công nghệ BIM Revit MEP, mức lương hấp dẫn và lộ trình thăng tiến rõ ràng.",
+      "breadcrumb": "Tuyển dụng",
+      "bannerBadge": "Phát Triển Sự Nghiệp",
+      "values": {
+        "compTitle": "Đãi Ngộ Cạnh Tranh",
+        "compDesc": "Thu nhập tương xứng năng lực thực chiến, thưởng tiến độ dự án, phụ cấp công trường và bảo hiểm sức khỏe cao cấp 24/7.",
+        "trainTitle": "Đào Tạo Chuyên Sâu",
+        "trainDesc": "Tài trợ các khóa đào tạo nâng cao về Quản lý BIM quốc tế, chứng chỉ an toàn HSE và phương pháp chỉ huy hiện đại.",
+        "envTitle": "Môi Trường Nhân Văn",
+        "envDesc": "Tôn trọng con người, xây dựng văn hóa làm việc minh bạch, đoàn kết và coi an toàn lao động là giá trị sống còn."
+      },
+      "openingsEyebrow": "VỊ TRÍ ĐANG TUYỂN DỤNG",
+      "openingsTitle": "Gia Nhập Đội Ngũ Kỹ Sư Shicons",
+      "openingsNotePrefix": "Hạn nộp hồ sơ hiện tại:",
+      "openingsNoteDate": "31/12/2026",
+      "openingsNoteSuffix": ". Ứng tuyển sớm để được ưu tiên phỏng vấn.",
+      "deadlinePrefix": "Hạn nộp:",
+      "viewAndApply": "Xem chi tiết & Ứng tuyển",
+      "ctaTitle": "Chưa tìm thấy vị trí phù hợp?",
+      "ctaDesc": "Gửi CV và hồ sơ năng lực của bạn về email tuyển dụng: {email} để được lưu trữ vào ngân hàng nhân tài Shicons.",
+      "ctaEmailSubject": "Ứng tuyển vị trí kỹ sư Shicons E&C",
+      "ctaBtn": "Gửi CV trực tiếp",
+      "detailSubtitle": "{department} • Nơi làm việc: {location}",
+      "detailBadge": "MỨC LƯƠNG: {salary}",
+      "backToList": "Quay lại danh sách tuyển dụng",
+      "salaryLabel": "Mức lương:",
+      "experienceLabel": "Kinh nghiệm:",
+      "deadlineLabel": "Hạn nộp hồ sơ:",
+      "descriptionTitle": "Mô Tả Công Việc",
+      "requirementsTitle": "Yêu Cầu Ứng Viên",
+      "benefitsTitle": "Quyền Lợi & Chế Độ Đãi Ngộ",
+      "formEyebrow": "NỘP HỒ SƠ TRỰC TUYẾN",
+      "formTitle": "Ứng Tuyển: {title}",
+      "formDesc": "Điền thông tin và đính kèm CV (định dạng PDF, tối đa 10MB) để Ban Nhân sự liên hệ trong 48 giờ.",
+      "formNameLabel": "Họ và tên *",
+      "formNamePlaceholder": "Nguyễn Văn A",
+      "formPhoneLabel": "Số điện thoại *",
+      "formPhonePlaceholder": "0919 xxx xxx",
+      "formEmailLabel": "Địa chỉ Email *",
+      "formEmailPlaceholder": "email@example.com",
+      "formCvLabel": "Đính kèm CV ứng tuyển (PDF max 10MB) *",
+      "formSubmit": "NỘP HỒ SƠ ỨNG TUYỂN",
+      "formSuccess": "Đã ghi nhận hồ sơ ứng tuyển của bạn! Ban Nhân sự Shicons E&C sẽ liên hệ trong 48 giờ làm việc.",
+      "sidebarSummaryTitle": "TỔNG QUAN VỊ TRÍ",
+      "sidebarDeptLabel": "Phòng ban:",
+      "sidebarLocLabel": "Địa điểm làm việc:",
+      "sidebarSalaryLabel": "Mức lương đề xuất:",
+      "sidebarDeadlineLabel": "Hạn nộp:",
+      "sidebarOtherTitle": "VỊ TRÍ KHÁC"
+    },
+    "Contact": {
+      "breadcrumb": "Liên hệ",
+      "infoEyebrow": "THÔNG TIN DOANH NGHIỆP",
+      "hqLabel": "Trụ sở chính:",
+      "branchLabel": "Văn phòng đại diện:",
+      "factoryLabel": "Nhà máy sản xuất 10.000 m²:",
+      "hotlineLabel": "Hotline hỗ trợ 24/7:",
+      "emailLabel": "Email liên hệ:",
+      "workingHoursLabel": "Giờ làm việc:",
+      "taxCodeLabel": "Mã số thuế:",
+      "mapTitle": "Bản đồ chỉ đường đến Shicons E&C",
+      "formEyebrow": "FORM ĐĂNG KÝ",
+      "formTitle": "Yêu Cầu Khảo Sát & Báo Giá Dự Án",
+      "formSubtitle": "Điền thông tin dự án cơ điện của bạn bên dưới. Chuyên gia dự toán và kỹ sư trưởng Shicons E&C sẽ liên hệ trong 24 giờ.",
+      "successTitle": "Gửi Yêu Cầu Báo Giá Thành Công!",
+      "successDesc": "Cảm ơn Quý khách hàng {name} đã tin tưởng Shicons E&C. Kỹ sư phụ trách mảng {service} sẽ liên hệ với bạn trong thời gian sớm nhất.",
+      "defaultPartnerName": "đối tác",
+      "defaultServiceName": "Cơ điện",
+      "sendAnother": "Gửi thêm yêu cầu khác",
+      "nameLabel": "Họ và tên người liên hệ *",
+      "namePlaceholder": "Ví dụ: Nguyễn Văn A",
+      "phoneLabel": "Số điện thoại *",
+      "phonePlaceholder": "Ví dụ: 0919 692 979",
+      "emailInputLabel": "Email doanh nghiệp *",
+      "emailPlaceholder": "name@company.com",
+      "companyLabel": "Tên công ty / Chủ đầu tư",
+      "companyPlaceholder": "Tên doanh nghiệp của bạn",
+      "serviceLabel": "Hạng mục cơ điện quan tâm *",
+      "servicePlaceholder": "-- Chọn hệ thống cơ điện cần báo giá --",
+      "serviceAllOption": "Tổng thầu trọn gói toàn bộ hệ thống Cơ điện MEP",
+      "scaleLabel": "Quy mô diện tích hoặc công suất dự kiến",
+      "scalePlaceholder": "Ví dụ: Nhà máy 20.000 m², Trạm 22kV 2x2500kVA, Phòng sạch 2.000 m²...",
+      "messageLabel": "Chi tiết yêu cầu kỹ thuật & Tiến độ dự kiến",
+      "messagePlaceholder": "Mô tả tóm tắt yêu cầu thiết kế, tình trạng mặt bằng hoặc tiêu chuẩn áp dụng...",
+      "submitBtn": "GỬI YÊU CẦU BÁO GIÁ",
+      "errorMissingFields": "Vui lòng điền đầy đủ Họ tên, Số điện thoại, Email và Hạng mục cơ điện quan tâm!"
+    }
+  },
+  "NotFound": {
+    "code": "404",
+    "title": "Không tìm thấy trang yêu cầu",
+    "description": "Đường dẫn bạn truy cập không tồn tại hoặc đã được di chuyển. Vui lòng quay lại trang chủ hoặc khám phá các dự án tiêu biểu của Shicons E&C.",
+    "backHome": "Về trang chủ",
+    "viewProjects": "Xem dự án tiêu biểu"
+  },
+  "Data": {
+    "contact": {
+      "companyName": "Công ty Cổ phần Shicons E&C",
+      "tradingName": "SHICONS E&C",
+      "slogan": "Giải pháp Cơ điện Toàn diện - Bền vững - Chuẩn mực Kỹ thuật Cao",
+      "description": "Nhà thầu hàng đầu chuyên thiết kế, cung cấp và thi công trọn gói hệ thống Cơ điện (M&E / MEP) cho các dự án Nhà máy công nghệ cao, Tòa tháp thương mại, Phòng sạch Dược phẩm & Trung tâm dữ liệu.",
+      "address": "78H Đường số 9, Phường Hiệp Bình, TP. Hồ Chí Minh",
+      "branchAddress": "Tòa nhà Landmark 81, 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, TP. Hồ Chí Minh",
+      "factoryAddress": "Đường ĐT 743, KCN Sóng Thần 3, Thành phố Thủ Dầu Một, Tỉnh Bình Dương",
+      "workingHours": "Thứ Hai - Thứ Sáu: 08:00 - 17:30 | Thứ Bảy: 08:00 - 12:00",
+      "bannerTitle": "Liên Hệ & Yêu Cầu Báo Giá Kỹ Thuật",
+      "bannerSubtitle": "Đội ngũ kỹ sư chuyên gia Shicons E&C luôn sẵn sàng hỗ trợ khảo sát, tư vấn giải pháp tối ưu chi phí và bóc tách khối lượng BIM cho dự án của bạn.",
+      "bannerBadge": "Kết Nối Trực Tiếp"
+    },
+    "companyStats": [
+      { "value": "10+", "label": "Năm kinh nghiệm", "sub": "Hành trình khẳng định vị thế nhà thầu MEP uy tín hàng đầu" },
+      { "value": "50+", "label": "Dự án MEP hoàn thành", "sub": "Trải dài trên khắp các khu công nghiệp & đô thị trọng điểm" },
+      { "value": "20+", "label": "Nhân sự & Kỹ sư", "sub": "Đội ngũ giàu kinh nghiệm thực chiến chuyên sâu" },
+      { "value": "10.000+", "label": "Giờ an toàn HSE", "sub": "Cam kết văn hóa an toàn không tai nạn mất ngày công (Zero LTI)" }
+    ],
+    "about": {
+      "bannerTitle": "Về Chúng Tôi – Shicons E&C",
+      "bannerSubtitle": "Hơn một thập kỷ tiên phong cung cấp giải pháp Cơ điện (M&E / MEP) toàn diện, ứng dụng công nghệ BIM và năng lực thi công thực chiến.",
+      "bannerBadge": "Giới thiệu Doanh nghiệp",
+      "overviewBadge": "VỀ CHÚNG TÔI",
+      "overviewTitle": "SHICONS E&C",
+      "overviewParagraphs": [
+        "Công ty Cổ phần Shicons E&C là tổng thầu cơ điện chuyên sâu, tiên phong trong thiết kế và thi công hệ thống cơ điện lạnh (M&E / MEP), phòng sạch công nghệ cao cho các nhà máy FDI, bệnh viện tiêu chuẩn quốc tế và các tòa nhà văn phòng hạng A.",
+        "Với phương châm hành động “Kỹ thuật Chính xác — An toàn Tuyệt đối — Bền vững Cùng Khách hàng”, Shicons luôn áp dụng toàn diện quy trình số hóa mô hình thông tin công trình BIM Revit MEP LOD 400 vào quản lý thi công thực tế, giúp tối ưu hóa chi phí và đảm bảo tiến độ chuẩn xác."
+      ],
+      "experienceYears": "10+",
+      "experienceTitle": "10+ Năm Kinh Nghiệm",
+      "experienceSubtitle": "Nhà thầu Cơ điện chuyên nghiệp",
+      "imageBadgeCategory": "Kỹ thuật & An toàn",
+      "imageBadgeTitle": "BIM Revit MEP LOD 400",
+      "highlights": [
+        "Tiêu chuẩn quốc tế HTM & NFPA",
+        "Kiểm định T&C phòng sạch ISO",
+        "Đội ngũ kỹ sư chứng chỉ hành nghề",
+        "Bảo hành & O&M 24/7 toàn diện"
+      ],
+      "visionTitle": "Tầm nhìn",
+      "visionDesc": "Trở thành Nhà thầu Cơ điện (MEP) hàng đầu khu vực trong phân khúc Nhà máy công nghệ cao, Phòng sạch bán dẫn và Cao ốc thông minh, được đối tác toàn cầu tin tưởng lựa chọn.",
+      "missionTitle": "Sứ mệnh",
+      "missionDesc": "Đem đến cho khách hàng hệ thống cơ điện an toàn, vận hành ổn định và tiết kiệm tối đa năng lượng. Đồng thời xây dựng môi trường làm việc chuyên nghiệp, phát huy tài năng của các kỹ sư Việt.",
+      "coreValuesTitle": "Giá trị Cốt lõi",
+      "coreValues": [
+        { "title": "Chính xác", "desc": "Chuẩn mực kỹ thuật trong từng mối nối, đường cáp và kiểm thử." },
+        { "title": "An toàn", "desc": "An toàn là trên hết (Safety First - Zero LTI)." },
+        { "title": "Cam kết", "desc": "Bàn giao đúng tiến độ, đồng hành và chịu trách nhiệm tới cùng." }
+      ],
+      "hseTitle": "Cam Kết An Toàn Lao Động & Chất Lượng Kỹ Thuật",
+      "hseDesc": "Đối với Shicons E&C, an toàn lao động và kỷ luật kỹ thuật tại công trường không chỉ là quy định mà là sinh mệnh và uy tín danh dự của doanh nghiệp."
+    },
+    "manufacturing": {
+      "bannerTitle": "Năng Lực Sản Xuất & Chế Tạo Thiết Bị",
+      "bannerSubtitle": "Chủ động 100% chuỗi cung ứng vật tư cơ điện với Nhà máy sản xuất 10.000 m² tại Bình Dương, làm chủ công nghệ gia công chính xác cao.",
+      "bannerBadge": "Nhà Máy Chế Tạo Cơ Điện",
+      "factoryTitle": "Nhà máy sản xuất 10.000 m² - Chủ động tiến độ & chất lượng vật tư",
+      "factoryBadge": "HẠ TẦNG CÔNG NGHIỆP HIỆN ĐẠI",
+      "factoryParagraphs": [
+        "Nhằm tối ưu hóa tiến độ và đảm bảo tính đồng bộ kỹ thuật cho các dự án tổng thầu MEP, Shicons E&C đã đầu tư xây dựng nhà máy sản xuất thiết bị và phụ kiện cơ điện quy mô 10.000 m² tại Tỉnh Bình Dương.",
+        "Nhà máy được trang bị đồng bộ các dây chuyền gia công tự động: máy cắt laser/plasma CNC, dây chuyền Auto-Line cán gân ống gió bích TDC/TDF, máy đột dập liên hoàn và xưởng lắp ráp thử nghiệm tủ bảng điện đạt chuẩn an toàn quốc tế."
+      ],
+      "areaStat": "10.000 m²",
+      "areaLabel": "Diện tích nhà xưởng",
+      "ductStat": "300.000 m²",
+      "ductLabel": "Ống gió xuất xưởng/năm",
+      "panelStat": "6300A",
+      "panelLabel": "Tủ điện phân phối MSB"
+    },
+    "heroSlides": {
+      "banner-01": {
+        "badge": "HẠ TẦNG TRỌNG ĐIỂM QUỐC GIA • TP. HỒ CHÍ MINH",
+        "title": "Hạ tầng Cơ điện & Thông gió Nhà ga Quốc tế T3 Tân Sơn Nhất",
+        "desc": "Giải pháp thông gió hút khói phản lực Jetfan 300°C trong 2 giờ, hạ tầng điện động lực và cấp thoát nước quy mô 112.500 m² sàn phục vụ 20 triệu hành khách/năm.",
+        "stats": "112.500 m² • Jetfan 300°C/2h • PCCC Sprinkler • BMS"
+      },
+      "banner-02": {
+        "badge": "CÔNG NGHỆ BÁN DẪN • TP. THỦ ĐỨC",
+        "title": "Tổng thầu Cơ điện (MEP) & Phòng sạch Nhà máy Intel Việt Nam",
+        "desc": "Thiết kế & thi công hệ thống Phòng sạch Class 1000, kiểm soát nhiệt ẩm dung sai khắt khe ±0.5°C & trạm điện nguồn liên tục 24/7 cho sản xuất chip bán dẫn.",
+        "stats": "46.000 m² • Class 1000 • Khí siêu sạch CDA • BIM LOD 400"
+      },
+      "banner-03": {
+        "badge": "CHẾ BIẾN THỰC PHẨM CHÂU ÂU • BÌNH DƯƠNG",
+        "title": "Hạ tầng Năng lượng & Phân phối Điện Động lực Nhà máy Bel Việt Nam",
+        "desc": "Trạm biến áp trung thế 22kV, hệ thống phân phối Busway Schneider Electric và kiểm soát vi khí hậu kho lạnh đạt chuẩn HACCP cho dây chuyền phô mai Con Bò Cười.",
+        "stats": "20.000 m² • Trạm 22kV • Busway Schneider • Chuẩn HACCP"
+      },
+      "banner-04": {
+        "badge": "Y TẾ & PHÒNG MỔ CHUYÊN SÂU • TP. HỒ CHÍ MINH",
+        "title": "Khí Sạch & Kiểm Soát Vi Khí Hậu Phòng Mổ Bệnh Viện An Sinh",
+        "desc": "Hệ thống điều hòa chính xác dòng khí một chiều Laminar Flow, màng lọc HEPA H14, khí y tế trung tâm O2/Air/Vac và hệ thống biến áp cách ly an toàn IT y tế.",
+        "stats": "Phòng mổ vô khuẩn Class 100 • Laminar Flow • HTM 02-01"
+      }
+    },
+    "domains": {
+      "hvac-system": {
+        "enTitle": "HVAC & AIR CONDITIONING",
+        "viTitle": "HỆ THỐNG ĐIỀU HÒA KHÔNG KHÍ",
+        "shortDesc": "Thiết kế & thi công hệ thống Chiller giải nhiệt nước/gió, hệ thống VRV/VRF thông minh và hệ thống phân phối khí lạnh hiệu suất cao.",
+        "fullDesc": "Shicons E&C cung cấp giải pháp tổng thể về điều hòa không khí cho công trình công nghiệp, thương mại và cao ốc văn phòng hạng A. Đội ngũ kỹ sư làm chủ công nghệ cân bằng thủy lực đường ống nước lạnh, động lực học dòng khí (CFD) và tối ưu hóa hệ số hiệu quả năng lượng COP của Chiller Plant.",
+        "standard": "ASHRAE 90.1 / SMACNA",
+        "badge": "ASHRAE 90.1",
+        "features": [
+          "Hệ thống Water Chiller giải nhiệt nước & giải nhiệt gió công suất lớn COP cao",
+          "Hệ thống điều hòa trung tâm biến tần VRV / VRF thông minh cho cao ốc",
+          "Cân bằng thủy lực, phân phối khí lạnh và tích hợp hệ thống điều khiển BMS"
+        ],
+        "subSystems": [
+          { "name": "Hệ thống Water Chiller & AHU/FCU", "desc": "Tối ưu hóa hiệu suất COP cao, tự động điều chỉnh tải thông minh" },
+          { "name": "Điều hòa trung tâm VRV / VRF", "desc": "Tiết kiệm năng lượng vượt trội, phân vùng kiểm soát nhiệt độ linh hoạt" },
+          { "name": "Mạng lưới đường ống nước lạnh & van cân bằng", "desc": "Thi công chuẩn SMACNA / DW144, van cân bằng chênh áp tự động" },
+          { "name": "Tích hợp BMS giám sát năng lượng", "desc": "Tự động hóa toàn diện, giám sát chỉ số kW/ton thời gian thực" }
+        ],
+        "standards": ["ASHRAE 90.1", "SMACNA", "TCVN 5687:2010"]
+      },
+      "hospital-cleanroom": {
+        "enTitle": "HOSPITAL CLEANROOM & MEDICAL GAS",
+        "viTitle": "HỆ THỐNG KHÍ SẠCH PHÒNG MỔ Y TẾ",
+        "shortDesc": "Giải pháp phòng mổ vô trùng dòng khí một chiều (Laminar Flow), màng lọc HEPA H14 và hệ thống khí y tế trung tâm kiểm soát vi khí hậu.",
+        "fullDesc": "Môi trường vô trùng tại các trung tâm phẫu thuật và hồi sức cấp cứu đòi hỏi độ chính xác tuyệt đối. Shicons E&C thiết kế và thi công hệ thống điều hòa khí sạch áp lực dương dòng khí một chiều (Laminar Airflow) với màng lọc HEPA H14, triệt tiêu nguy cơ nhiễm khuẩn chéo theo yêu cầu khắt khe.",
+        "standard": "Áp suất dương • Lọc HEPA H14",
+        "badge": "Laminar Flow / HEPA H14",
+        "features": [
+          "Trần thổi khí một chiều Laminar Flow màng lọc HEPA H14 vô trùng tuyệt đối",
+          "Kiểm soát áp suất dương, độ ẩm và nhiệt độ vô trùng phòng mổ",
+          "Hệ thống khí y tế trung tâm O2, Air, N2O, Vac kiểm soát áp lực tự động"
+        ],
+        "subSystems": [
+          { "name": "Trần mổ vô khuẩn Laminar Airflow", "desc": "Vận tốc gió đồng đều 0.25 - 0.35 m/s, lọc hạt bụi 0.3 µm đạt 99.995%" },
+          { "name": "Kiểm soát vi khí hậu & áp lực phòng", "desc": "Nhiệt độ 20 - 24°C, độ ẩm 50 - 60% RH, áp suất dương bậc cấp > 15 Pa" },
+          { "name": "Hệ thống Khí y tế trung tâm", "desc": "Đường ống đồng khử béo y tế, trạm tạo oxy, khí nén y tế và hút chân không" },
+          { "name": "Hệ thống điện cách ly IT y tế", "desc": "Biến áp cách ly chống giật, giám sát cách điện tự động cho khu vực phẫu thuật" }
+        ],
+        "standards": ["Áp suất dương vi khí hậu", "Lọc HEPA H14", "Dòng khí Laminar Flow", "Khí y tế HTM 02-01"]
+      },
+      "factory-mep-cleanroom": {
+        "enTitle": "INDUSTRIAL MEP & CLEANROOM",
+        "viTitle": "CƠ ĐIỆN & PHÒNG SẠCH NHÀ MÁY",
+        "shortDesc": "Tổng thầu MEP nhà máy bán dẫn, điện tử và dược phẩm: Trạm biến áp 22kV, Busway 6300A, kiểm soát vi khí hậu nhiệt ẩm độ chính xác.",
+        "fullDesc": "Shicons E&C tự hào là đối tác chiến lược của các tập đoàn sản xuất công nghệ cao FDI. Chúng tôi đảm nhận toàn bộ hạ tầng cơ điện phức hợp từ trạm điện 22kV/35kV, hệ thống phân phối Busway công suất lớn đến phòng sạch vi điện tử độ chính xác cao và dược phẩm công nghệ cao.",
+        "standard": "Trạm 22kV • Busway 6300A",
+        "badge": "Vi điện tử / Công nghệ cao",
+        "features": [
+          "Hạ tầng trạm biến áp trung thế 22kV - 35kV & Busway công suất lớn đến 6300A",
+          "Thi công phòng sạch vi điện tử & dược phẩm kiểm soát hạt bụi tuyệt đối",
+          "Hạ tầng khí nén công nghiệp, nước tinh khiết RO/EDI & vi sinh WFI"
+        ],
+        "subSystems": [
+          { "name": "Trạm biến áp & Hệ thống Busway", "desc": "Máy biến áp khô/dầu, tủ phân phối tổng MSB và thanh dẫn Busway mạ bạc" },
+          { "name": "Phòng sạch Vi điện tử & Dược phẩm", "desc": "Quạt lọc FFU thông minh, vách trần panel kháng khuẩn, sàn epoxy ESD" },
+          { "name": "Hệ thống đường ống công nghệ cao", "desc": "Ống vi sinh inox 316L hàn quỹ đạo Orbital, khí sạch siêu tinh khiết CDA" },
+          { "name": "Xử lý nước RO/EDI & Thoát nước thải", "desc": "Hệ thống nước tinh khiết điện trở suất cao và trạm xử lý nước thải chuẩn A" }
+        ],
+        "standards": ["Trạm biến áp 22kV", "Busway 6300A", "Phòng sạch Vi điện tử", "Nước RO/EDI & WFI"]
+      },
+      "ventilation-smoke-exhaust": {
+        "enTitle": "VENTILATION & SMOKE EXHAUST",
+        "viTitle": "THÔNG GIÓ, HÚT KHÓI & TẠO ÁP",
+        "shortDesc": "Hệ thống quạt phản lực Jetfan tầng hầm, hút khói hành lang và tăng áp buồng thang thoát hiểm đạt tiêu chuẩn nghiệm thu an toàn cao nhất.",
+        "fullDesc": "Đảm bảo an toàn sinh mạng thoát nạn khi có sự cố hỏa hoạn là sứ mệnh cốt lõi của hệ thống thông gió chống khói. Shicons E&C cung cấp giải pháp đồng bộ từ quạt phản lực Jetfan thông gió tầng hầm, van chặn lửa liên động hút khói hành lang đến quạt tăng áp buồng thang thoát hiểm theo đúng quy chuẩn an toàn kỹ thuật.",
+        "standard": "Quạt Jetfan 300°C • Van chặn lửa MFD",
+        "badge": "An toàn PCCC / Khói sự cố",
+        "features": [
+          "Hệ thống quạt phản lực Jetfan thông gió tầng hầm kiểm soát nồng độ CO",
+          "Hút khói sự cố đường ống chống cháy chịu nhiệt 300°C trong 2 giờ",
+          "Tăng áp buồng thang bộ và giếng thang máy thoát nạn khẩn cấp"
+        ],
+        "subSystems": [
+          { "name": "Thông gió phản lực Jetfan tầng hầm", "desc": "Tiêu tán khí thải CO tự động qua cảm biến, chuyển tốc độ cao hút khói khi có cháy" },
+          { "name": "Hệ thống Hút khói hành lang", "desc": "Đường ống tôn bọc bông khoáng / sơn chống cháy EI, van gió chặn lửa MFD" },
+          { "name": "Quạt tăng áp buồng thang thoát hiểm", "desc": "Duy trì chênh áp dương 20 - 50 Pa ngăn khói tràn vào cầu thang cứu nạn" },
+          { "name": "Tủ điều khiển liên động PCCC", "desc": "Kích hoạt tự động theo tín hiệu báo cháy địa chỉ, giám sát trạng thái van gió" }
+        ],
+        "standards": ["Quạt Jetfan 300°C/2h", "Van ngăn lửa MFD", "Tạo áp buồng thang 50Pa", "Hút khói hành lang"]
+      },
+      "tc-om-maintenance": {
+        "enTitle": "TESTING, COMMISSIONING & O&M",
+        "viTitle": "T&C, BẢO TRÌ VẬN HÀNH HỆ THỐNG",
+        "shortDesc": "Kiểm định, cân chỉnh TAB (Testing, Adjusting, Balancing), kiểm toán năng lượng và dịch vụ ủy thác vận hành, bảo trì phòng ngừa 24/7.",
+        "fullDesc": "Hệ thống cơ điện chỉ phát huy tối đa tuổi thọ và độ tin cậy khi được chạy thử nghiệm thu (T&C) chuẩn xác và bảo trì định kỳ đúng quy trình kỹ thuật. Shicons E&C cung cấp dịch vụ T&C độc lập theo tiêu chuẩn quốc tế NEBB và các gói ủy thác quản lý vận hành O&M toàn diện với đội ngũ kỹ sư ứng cứu sự cố 24/7.",
+        "standard": "NEBB • ISO 55001",
+        "badge": "NEBB / ISO 55001",
+        "features": [
+          "Kiểm định & cân chỉnh TAB lưu lượng gió, áp suất chuẩn quốc tế NEBB",
+          "Bảo trì phòng ngừa định kỳ (Preventive Maintenance) toàn diện",
+          "Kiểm toán năng lượng tối ưu hóa COP & ứng cứu sự cố khẩn cấp 24/7"
+        ],
+        "subSystems": [
+          { "name": "Thử nghiệm & Cân chỉnh TAB", "desc": "Đo đạc cân bằng lưu lượng khí, nước Chiller bằng máy đo kỹ thuật số chuẩn NEBB" },
+          { "name": "Bảo dưỡng phòng ngừa Chiller & Trạm điện", "desc": "Chụp ảnh nhiệt hồng ngoại FLIR, phân tích dầu máy nén, kiểm tra rung động" },
+          { "name": "Kiểm toán năng lượng (Energy Audit)", "desc": "Phân tích phụ tải thời gian thực, đề xuất giải pháp tiết kiệm điện đến 20%" },
+          { "name": "Phản ứng khẩn cấp trực chốt 24/7", "desc": "Kỹ sư chuyên trách có mặt xử lý sự cố trong vòng 60 phút, sẵn sàng linh kiện thay thế" }
+        ],
+        "standards": ["NEBB Procedural Standards", "ISO 55001", "ASHRAE Guideline 0-2019"]
+      }
+    },
+    "projects": {
+      "proj-intel-vietnam": {
+        "name": "NHÀ MÁY SẢN XUẤT & ĐÓNG GÓI BÁN DẪN INTEL VIỆT NAM",
+        "categoryLabel": "Phòng sạch & Công nghệ cao",
+        "client": "Tập đoàn Intel Corporation (Hoa Kỳ)",
+        "location": "Khu Công nghệ cao TP.HCM (SHTP), TP. Thủ Đức",
+        "year": "2023 - 2024",
+        "scale": "46.000 m² sàn phòng sạch & phụ trợ",
+        "status": "Đã hoàn thành bàn giao",
+        "mepScope": [
+          "Phòng sạch Bán dẫn Class 1000",
+          "Chiller làm lạnh chính xác ±0.5°C",
+          "Điện động lực & Hệ thống lưu điện UPS",
+          "Hệ thống cấp khí siêu sạch CDA",
+          "PCCC chuyên dụng & Cảnh báo sớm VESDA"
+        ],
+        "description": "Dự án nhà máy đóng gói và kiểm định chip bán dẫn quy mô hàng đầu Đông Nam Á của Tập đoàn Intel. Shicons E&C tự hào tham gia thi công các hạng mục cơ điện phụ trợ, đường ống công nghệ và bảo trì phòng sạch công nghệ cao.",
+        "technicalHighlights": [
+          "Thi công hệ thống cấp khí siêu tinh khiết CDA và đường ống vi sinh inox 316L",
+          "Hệ thống điều hòa chính xác kiểm soát nhiệt ẩm độ dung sai ±0.5°C",
+          "Hệ thống điện dự phòng độc lập UPS và máy phát điện liên tục không gián đoạn",
+          "Ứng dụng 100% mô hình BIM Revit MEP Level of Development (LOD) 400"
+        ],
+        "challengesAndSolutions": "Yêu cầu khắt khe về độ chống rung chấn (Vibration Criteria) và chống tĩnh điện ESD cho khu vực sản xuất bán dẫn. Shicons E&C áp dụng giải pháp nối đất độc lập đẳng thế điện trở dưới 0.5 Ohm."
+      },
+      "proj-bel-vietnam": {
+        "name": "NHÀ MÁY SẢN XUẤT PHÔ MAI BEL VIỆT NAM",
+        "categoryLabel": "Nhà máy công nghiệp",
+        "client": "Tập đoàn Bel Group (Cộng hòa Pháp)",
+        "location": "KCN Sóng Thần 3, Tỉnh Bình Dương",
+        "year": "2023 - 2024",
+        "scale": "20.000 m² khuôn viên sản xuất",
+        "status": "Đã hoàn thành bàn giao",
+        "mepScope": [
+          "Hệ thống Điện động lực 22kV",
+          "Trạm biến áp trung thế",
+          "Hệ thống HVAC chế biến thực phẩm",
+          "Kho lạnh bảo quản thành phẩm",
+          "Hệ thống cấp thoát nước & xử lý nước thải"
+        ],
+        "description": "Nhà máy sản xuất phô mai chuẩn Châu Âu của Tập đoàn Bel tại Việt Nam. Shicons E&C đảm nhận thiết kế thi công hệ thống điện động lực, trạm biến áp trung thế và hạ tầng HVAC phục vụ dây chuyền chế biến phô mai Con Bò Cười.",
+        "technicalHighlights": [
+          "Lắp đặt trạm biến áp và hệ thống phân phối Busway Schneider Electric chống cháy nổ",
+          "Hệ thống kiểm soát nhiệt ẩm kho lạnh bảo quản thành phẩm đạt chuẩn HACCP",
+          "Đường ống dẫn hơi và nước lạnh Chiller bọc cách nhiệt foam PIR chống đọng sương"
+        ],
+        "challengesAndSolutions": "Yêu cầu kiểm soát an toàn vệ sinh thực phẩm khắt khe theo chuẩn quốc tế. Hệ thống ống dẫn inox thực phẩm và thông gió phòng sạch được hoàn thiện với độ chính xác cao."
+      },
+      "proj-t3-tan-son-nhat": {
+        "name": "NHÀ GA HÀNH KHÁCH QUỐC TẾ T3 CẢNG HKQT TÂN SƠN NHẤT",
+        "categoryLabel": "Hạ tầng kỹ thuật",
+        "client": "Tổng công ty Cảng hàng không Việt Nam (ACV)",
+        "location": "Quận Tân Bình, TP. Hồ Chí Minh",
+        "year": "2024 - 2025",
+        "scale": "112.500 m² sàn xây dựng (20 triệu khách/năm)",
+        "status": "Đang thi công hoàn thiện",
+        "mepScope": [
+          "Hệ thống Thông gió & Hút khói",
+          "Hệ thống Điện chiếu sáng & Động lực",
+          "Cấp thoát nước",
+          "PCCC Sprinkler tự động",
+          "BMS Quản lý Tòa nhà"
+        ],
+        "description": "Dự án trọng điểm quốc gia nâng công suất khai thác Cảng HKQT Tân Sơn Nhất. Shicons E&C vinh dự tham gia thi công các hạng mục cơ điện phức hợp, đường ống gió thông gió hút khói tầng hầm và hạ tầng điện phục vụ nhà ga.",
+        "technicalHighlights": [
+          "Hệ thống quạt phản lực Jetfan hút khói tầng hầm chịu nhiệt 300°C trong 2 giờ",
+          "Ứng dụng mô hình BIM Revit MEP LOD 400 phối hợp giải quyết xung đột không gian mái vòm",
+          "Hạ tầng tủ điện phân phối và máng cáp chịu lửa tiêu chuẩn chống cháy quốc tế"
+        ],
+        "challengesAndSolutions": "Khối lượng thi công khổng lồ cùng tiến độ bàn giao nghiêm ngặt. Shicons E&C đã áp dụng quy trình tiền chế module tại xưởng và lắp đặt cuốn chiếu tại công trường."
+      },
+      "proj-an-sinh-hospital": {
+        "name": "HỆ THỐNG KHÍ SẠCH & PHÒNG MỔ VÔ KHUẨN BỆNH VIỆN AN SINH",
+        "categoryLabel": "Phòng sạch & Y tế",
+        "client": "Công ty TNHH Bệnh viện An Sinh",
+        "location": "10 Trần Huy Liệu, Phường 11, Quận Phú Nhuận, TP.HCM",
+        "year": "2023 - 2024",
+        "scale": "Cụm phòng mổ vô khuẩn & Khu hỗ trợ sinh sản IVF",
+        "status": "Đã hoàn thành bàn giao",
+        "mepScope": [
+          "Trần mổ Laminar Flow HEPA H14",
+          "Hệ thống Khí y tế trung tâm",
+          "Điều hòa chính xác vi khí hậu",
+          "Điện cách ly IT y tế"
+        ],
+        "description": "Hệ thống phòng phẫu thuật kỹ thuật cao và phòng nuôi cấy phôi IVF tại Bệnh viện Đa khoa An Sinh. Shicons E&C thiết kế thi công hệ thống điều hòa khí sạch áp lực dương, trần thổi một chiều Laminar Flow màng lọc HEPA H14 và hệ thống cấp khí y tế chuyên sâu.",
+        "technicalHighlights": [
+          "Trần thổi khí một chiều Laminar Flow màng lọc HEPA H14 đạt độ sạch Class 100",
+          "Hệ thống khí y tế trung tâm O2, Vac, N2O, Air đạt tiêu chuẩn HTM 02-01",
+          "Biến áp cách ly y tế IT kết hợp hệ thống báo động chạm đất tự động an toàn phẫu thuật"
+        ],
+        "challengesAndSolutions": "Yêu cầu tuyệt đối về độ vô trùng và không rung chấn cho kính hiển vi vi thao tác IVF. Shicons E&C đã bố trí cụm AHU độc lập và hệ thống giảm chấn thủy lực chuyên dụng."
+      },
+      "proj-dhg-pharma": {
+        "name": "NHÀ MÁY DƯỢC PHẨM CÔNG NGHỆ CAO DHG PHARMA",
+        "categoryLabel": "Phòng sạch & Dược phẩm",
+        "client": "Công ty Cổ phần Dược Hậu Giang (DHG Pharma)",
+        "location": "KCN Tân Phú Thạnh, Tỉnh Hậu Giang",
+        "year": "2023",
+        "scale": "Phân xưởng sản xuất Non-Betalactam 35.000 m²",
+        "status": "Đã hoàn thành bàn giao",
+        "mepScope": [
+          "Phòng sạch GMP-Japan / GMP-EU",
+          "Nước tinh khiết RO/WFI",
+          "HVAC Chiller & AHU vi khí hậu",
+          "Khí nén vô trùng",
+          "Xử lý nước thải"
+        ],
+        "description": "Nhà máy dược phẩm tiêu chuẩn Japan-GMP và EU-GMP lớn nhất Đồng bằng Sông Cửu Long. Shicons E&C tham gia thi công các hạng mục phòng sạch kiểm soát hạt bụi, đường ống nước tinh khiết vi sinh WFI và hệ thống điều hòa nhiệt ẩm nghiêm ngặt.",
+        "technicalHighlights": [
+          "Hệ thống nước cất pha tiêm WFI tuần hoàn khép kín inox 316L đánh bóng vi sinh Ra < 0.4 µm",
+          "Kiểm soát chênh áp bậc thang phòng sạch 15 - 30 Pa hạn chế lây nhiễm chéo tuyệt đối",
+          "Hệ thống giám sát SCADA BMS nhiệt ẩm độ và chênh áp thời gian thực 24/7"
+        ],
+        "challengesAndSolutions": "Đáp ứng tiêu chuẩn kép Japan-GMP và EU-GMP với các mốc kiểm định nghiêm ngặt. Shicons E&C hoàn thành công tác Testing & Commissioning đạt 100% tiêu chí ngay từ lần thẩm định đầu tiên."
+      },
+      "proj-hanacos-vietnam": {
+        "name": "NHÀ MÁY SẢN XUẤT DƯỢC MỸ PHẨM HANACOS VIỆT NAM",
+        "categoryLabel": "Phòng sạch & Mỹ phẩm",
+        "client": "Công ty TNHH Hanacos Vietnam (Chuyển giao công nghệ Hàn Quốc)",
+        "location": "KCN Tân Bình mở rộng, TP. Hồ Chí Minh",
+        "year": "2024",
+        "scale": "15.000 m² sàn sản xuất chuẩn cGMP",
+        "status": "Đã hoàn thành bàn giao",
+        "mepScope": [
+          "Phòng sạch cGMP",
+          "Hệ thống HVAC biến tần",
+          "Xử lý nước RO",
+          "Điện động lực & Chiếu sáng LED Cleanroom",
+          "PCCC tự động"
+        ],
+        "description": "Nhà máy gia công mỹ phẩm và sản phẩm chăm sóc sức khỏe hàng đầu miền Nam với dây chuyền công nghệ chuyển giao từ Hanacos Hàn Quốc. Shicons E&C là tổng thầu cơ điện và phòng sạch cGMP cho toàn bộ phân xưởng sản xuất.",
+        "technicalHighlights": [
+          "Phòng sạch đạt tiêu chuẩn cGMP ASEAN với hệ thống quạt lọc trần FFU màng lọc HEPA",
+          "Hệ thống cấp nước tinh khiết 2 cấp RO đạt tiêu chuẩn vi sinh",
+          "Giải pháp chiếu sáng LED Cleanroom kháng ẩm và kháng hóa chất tẩy rửa"
+        ],
+        "challengesAndSolutions": "Phân chia vùng sạch và áp suất chênh lệch giữa khu pha chế hóa chất và khu đóng gói vô trùng. Shicons E&C ứng dụng van điều khiển VAV tự động kiểm soát lưu lượng chính xác."
+      }
+    },
+    "news": {
+      "post-1": {
+        "title": "Shicons E&C tổ chức Lễ Cất nóc và bàn giao giai đoạn 1 gói thầu MEP Nhà máy Pegatron",
+        "categoryLabel": "Tin dự án",
+        "date": "15 Tháng 10, 2024",
+        "excerpt": "Vượt qua các mốc tiến độ khắt khe, Ban chỉ huy công trường Shicons E&C đã chính thức hoàn thành đóng điện trạm 22kV và chạy thử nghiệm thu hệ thống HVAC phân xưởng chính.",
+        "content": "Sáng ngày 15/10/2024, tại KKT Đình Vũ (Hải Phòng), Công ty Cổ phần Shicons E&C cùng Chủ đầu tư Pegatron Corporation và các đơn vị tư vấn giám sát đã long trọng tổ chức Lễ cất nóc và bàn giao giai đoạn 1 gói thầu Cơ điện. Dự án đạt chuẩn 100% an toàn lao động không tai nạn (Zero LTI) tuân thủ tiêu chuẩn HSE, thể hiện tính kỷ luật và năng lực quản lý dự án xuất sắc của tập thể Shicons E&C.",
+        "author": "Ban Truyền thông Shicons"
+      },
+      "post-2": {
+        "title": "Shicons E&C trúng thầu gói thầu Tổng thầu Cơ điện Tòa tháp Tài chính Capital One",
+        "categoryLabel": "Tin dự án",
+        "date": "28 Tháng 09, 2024",
+        "excerpt": "Gói thầu trị giá hơn 280 tỷ đồng đánh dấu bước tiến lớn khẳng định vị thế của Shicons E&C trong phân khúc cao ốc văn phòng hạng A chuẩn quốc tế.",
+        "content": "Sau quá trình đấu thầu quốc tế nghiêm ngặt, Tập đoàn Capital Land đã chính thức trao thầu gói thầu thiết kế và thi công hệ thống Cơ điện toàn diện cho Shicons E&C. Công trình áp dụng tiêu chuẩn LEED Gold đòi hỏi các giải pháp tiết kiệm năng lượng đột phá.",
+        "author": "Ban Kế hoạch & Đấu thầu"
+      },
+      "post-3": {
+        "title": "Ứng dụng mô hình BIM Revit MEP LOD 400 trong giải quyết xung đột đường ống không gian hẹp",
+        "categoryLabel": "Góc kỹ thuật MEP",
+        "date": "12 Tháng 09, 2024",
+        "excerpt": "Chia sẻ kinh nghiệm thực chiến từ Phòng Kỹ thuật & Thiết kế Shicons E&C về việc phối hợp mô hình không gian 3D giúp tiết kiệm 15% thời gian thi công tại công trường.",
+        "content": "Trong các công trình công nghiệp hiện đại, mật độ đường ống gió, máng cáp, ống cứu hỏa và đường ống công nghệ cực kỳ dày đặc. Việc ứng dụng công nghệ BIM (Building Information Modeling) ở cấp độ LOD 400 cho phép các kỹ sư Shicons E&C bóc tách Shop Drawing chính xác tới từng phụ kiện mặt bích, loại bỏ 100% va chạm trước khi chuyển sang giai đoạn gia công.",
+        "author": "ThS. KS. Nguyễn Hoàng Nam - Giám đốc Kỹ thuật"
+      },
+      "post-4": {
+        "title": "Hội thảo an toàn HSE: Cam kết Văn hóa 'An toàn là trên hết' tại mọi công trường Shicons",
+        "categoryLabel": "Hoạt động công ty",
+        "date": "25 Tháng 08, 2024",
+        "excerpt": "Chiến dịch 'Safety First - Zero Accident' được phát động toàn diện với sự tham gia của 100% cán bộ kỹ sư và công nhân tại tất cả các dự án trên cả nước.",
+        "content": "Tại Shicons E&C, an toàn lao động không phải là một khẩu hiệu mà là văn hóa cốt lõi. Ban lãnh đạo công ty đã trực tiếp thị sát, trao bằng khen cho các Ban chỉ huy có thành tích xuất sắc trong việc duy trì chuẩn 100% an toàn lao động không tai nạn (Zero LTI) trên toàn quốc.",
+        "author": "Ban An toàn & Môi trường HSE"
+      }
+    },
+    "jobs": {
+      "job-1": {
+        "title": "Chỉ huy trưởng Cơ điện (MEP Project Manager)",
+        "department": "Ban Quản lý Dự án",
+        "location": "Bắc Ninh / Hải Phòng",
+        "salary": "35.000.000 - 55.000.000 VNĐ",
+        "deadline": "31/12/2026",
+        "experience": "Tối thiểu 7 năm kinh nghiệm",
+        "description": [
+          "Quản lý toàn diện tiến độ, chất lượng, ngân sách và an toàn thi công gói thầu Cơ điện tại công trường.",
+          "Làm việc trực tiếp với Chủ đầu tư, Tư vấn giám sát và các Nhà thầu phụ để giải quyết các vướng mắc kỹ thuật.",
+          "Chỉ đạo công tác bóc tách vật tư, lập tiến độ thi công chi tiết và phê duyệt biện pháp thi công.",
+          "Tổ chức công tác nghiệm thu đóng điện, chạy thử liên động (T&C) và bàn giao công trình."
+        ],
+        "requirements": [
+          "Tốt nghiệp Đại học chuyên ngành Điện, Cơ điện, Kỹ thuật Nhiệt lạnh (ĐH Bách Khoa, ĐH Xây Dựng hoặc tương đương).",
+          "Có chứng chỉ hành nghề Giám sát thi công xây dựng hạng I hoặc II.",
+          "Tối thiểu 3 năm kinh nghiệm ở vị trí tương đương tại các dự án Nhà máy FDI hoặc Tòa tháp cao tầng.",
+          "Khả năng giao tiếp tiếng Anh tốt trong công việc."
+        ],
+        "benefits": [
+          "Mức lương cạnh tranh theo năng lực + Thưởng tiến độ dự án hấp dẫn.",
+          "Bảo hiểm sức khỏe cao cấp Bảo Việt 24/7.",
+          "Hỗ trợ chỗ ở và công tác phí đầy đủ cho các dự án xa.",
+          "Lộ trình thăng tiến rõ ràng lên vị trí Giám đốc Dự án Vùng."
+        ]
+      },
+      "job-2": {
+        "title": "Kỹ sư Thiết kế & Điều phối BIM / Revit MEP",
+        "department": "Phòng Kỹ thuật & BIM",
+        "location": "Trụ sở TP. HCM / Chi nhánh Hà Nội",
+        "salary": "20.000.000 - 32.000.000 VNĐ",
+        "deadline": "31/12/2026",
+        "experience": "Từ 3 - 5 năm kinh nghiệm",
+        "description": [
+          "Xây dựng mô hình 3D Revit MEP các hệ thống HVAC, Điện, Cấp thoát nước, PCCC theo tiêu chuẩn LOD 350 - 400.",
+          "Kiểm tra va chạm (Clash Detection) bằng Navisworks, đề xuất phương án xử lý xung đột không gian kỹ thuật.",
+          "Xuất bản vẽ Shop Drawing chi tiết phục vụ thi công và chế tạo ngoài công trường.",
+          "Phối hợp với Ban chỉ huy cập nhật mô hình As-built hoàn công."
+        ],
+        "requirements": [
+          "Thành thạo phần mềm Revit MEP, Navisworks Manage, AutoCAD.",
+          "Am hiểu các tiêu chuẩn thiết kế cơ điện hiện hành (TCVN, QCVN, ASHRAE, NFPA).",
+          "Kỹ năng làm việc nhóm tốt, tỉ mỉ và trách nhiệm cao với sản phẩm bản vẽ."
+        ],
+        "benefits": [
+          "Làm việc trong môi trường chuyên nghiệp, trang bị máy tính trạm đồ họa chuyên dụng cấu hình cao.",
+          "Thưởng tháng 13 + thưởng hiệu quả dự án hàng quý.",
+          "Được tài trợ tham gia các khóa đào tạo chuyên sâu về Quản lý BIM quốc tế."
+        ]
+      },
+      "job-3": {
+        "title": "Kỹ sư Giám sát Thi công Điện & Điện nhẹ (Site Electrical Engineer)",
+        "department": "Ban Quản lý Dự án",
+        "location": "Bình Dương / Đồng Nai",
+        "salary": "16.000.000 - 24.000.000 VNĐ",
+        "deadline": "31/12/2026",
+        "experience": "Từ 2 năm kinh nghiệm",
+        "description": [
+          "Trực tiếp giám sát thi công hệ thống điện trung thế, hạ thế, thang máng cáp, Busway và hệ thống chiếu sáng.",
+          "Giám sát việc tuân thủ các quy định an toàn điện và an toàn lao động tại khu vực phụ trách.",
+          "Kiểm tra chất lượng vật tư đầu vào theo đúng mẫu mã và quy cách đã được duyệt.",
+          "Lập hồ sơ nghiệm thu công việc hàng ngày với Tư vấn giám sát."
+        ],
+        "requirements": [
+          "Tốt nghiệp Cao đẳng/Đại học chuyên ngành Kỹ thuật Điện, Hệ thống điện, Tự động hóa.",
+          "Đọc hiểu tốt bản vẽ thiết kế và bản vẽ thi công Shop Drawing.",
+          "Chăm chỉ, chịu được áp lực tiến độ công trường."
+        ],
+        "benefits": [
+          "Phụ cấp công trường, tiền ăn ca và tiền điện thoại hàng tháng.",
+          "Chế độ bảo hiểm đầy đủ theo quy định của Luật lao động.",
+          "Được kèm cặp bởi các Chuyên gia Cơ điện giàu kinh nghiệm."
+        ]
+      }
+    },
+    "partners": {
+      "partner-1": { "tag": "HVAC Chiller & VRV", "typeLabel": "Đối tác thiết bị" },
+      "partner-2": { "tag": "Điều hòa & Cơ điện", "typeLabel": "Đối tác thiết bị" },
+      "partner-3": { "tag": "Thiết bị điện & BMS", "typeLabel": "Đối tác thiết bị" },
+      "partner-4": { "tag": "Chiller & HVAC", "typeLabel": "Đối tác thiết bị" },
+      "partner-5": { "tag": "Điều hòa trung tâm", "typeLabel": "Đối tác thiết bị" },
+      "partner-6": { "tag": "Thông gió & Điều hòa", "typeLabel": "Đối tác thiết bị" },
+      "partner-7": { "tag": "Lọc khí & Phòng sạch", "typeLabel": "Đối tác thiết bị" },
+      "partner-9": { "tag": "Panel Phòng sạch", "typeLabel": "Đối tác thiết bị" }
+    },
+    "productionLines": {
+      "ductwork": {
+        "title": "Gia Công Ống Gió & Phụ Kiện HVAC",
+        "desc": "Hệ thống máy cắt plasma CNC và dây chuyền Auto-Line V gia công ống gió vuông bích TDC/TDF, ống xoắn tròn và phụ kiện tiêu âm.",
+        "specs": [
+          "Công suất gia công: 300.000 m² ống gió/năm",
+          "Độ dày tôn mạ kẽm: 0.48 mm – 1.5 mm (Z80 – Z275)",
+          "Sản xuất van dập lửa MFD, van chặn khói MD và cửa gió khuếch tán",
+          "Kiểm định độ kín gió theo chuẩn kỹ thuật áp suất cao"
+        ],
+        "tag": "Ductwork Fabrication"
+      },
+      "switchboard": {
+        "title": "Chế Tạo Tủ Bảng Điện Công Nghiệp (MSB / MCC / DB)",
+        "desc": "Lắp ráp và kiểm định tủ phân phối tổng MSB đến 6300A, tủ điều khiển trung tâm MCC, tủ tụ bù tự động và tủ chuyển nguồn ATS.",
+        "specs": [
+          "Dòng định mức: Lên đến 6300A, điện áp cách điện 1000V",
+          "Cấp bảo vệ vỏ tủ: IP43 – IP55 trong nhà và ngoài trời",
+          "Đồng thanh dẫn cái mạ bạc tinh khiết 99.99%, form tủ 2b đến 4b",
+          "Thử nghiệm xuất xưởng FAT toàn diện trước khi bàn giao công trình"
+        ],
+        "tag": "Switchboard Assembly"
+      },
+      "cable-tray": {
+        "title": "Sản Xuất Thang Máng Cáp & Phụ Kiện Đỡ Cáp",
+        "desc": "Dây chuyền đột dập CNC và chấn tự động gia công thang cáp (Cable Ladder), máng cáp (Cable Tray) và khay cáp mạ kẽm nhúng nóng.",
+        "specs": [
+          "Vật liệu: Thép mạ kẽm cuộn, Inox 304, mạ kẽm nhúng nóng, sơn tĩnh điện",
+          "Độ dày vật liệu: 1.2 mm, 1.5 mm, 2.0 mm, 2.5 mm",
+          "Khả năng chịu tải cơ học cao, chống rung lắc và chống võng",
+          "Đầy đủ co lơ, cút chữ T, chữ thập và giá treo chuyên dụng"
+        ],
+        "tag": "Cable Support Systems"
+      }
+    }
+  }
+}

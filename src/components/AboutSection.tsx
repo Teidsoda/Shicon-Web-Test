@@ -1,25 +1,18 @@
 'use client';
 
 import React, { useEffect, useState, useRef } from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
 import { useContent } from '@/context/ContentContext';
 
-const DEFAULT_HIGHLIGHTS = [
-  'Tiêu chuẩn quốc tế HTM & NFPA',
-  'Kiểm định T&C phòng sạch ISO',
-  'Đội ngũ kỹ sư chứng chỉ hành nghề',
-  'Bảo hành & O&M 24/7 toàn diện'
-];
-
 export const AboutSection: React.FC = () => {
+  const t = useTranslations('AboutSection');
   const { aboutData } = useContent();
   const [hasAnimated, setHasAnimated] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const highlights = (aboutData.highlights && aboutData.highlights.length > 0)
-    ? aboutData.highlights
-    : DEFAULT_HIGHLIGHTS;
+  const highlights = aboutData.highlights || [];
 
   const stats = (aboutData.companyStats && aboutData.companyStats.length > 0)
     ? aboutData.companyStats
@@ -67,17 +60,17 @@ export const AboutSection: React.FC = () => {
               <div className="relative h-[360px] sm:h-[440px] w-full overflow-hidden shadow-xl rounded-[2px] bg-slate-900 group">
                 <img
                   src={aboutData.overviewImage || '/images/about/doi-ngu-shicons.jpg'}
-                  alt="Đội ngũ kỹ sư Shicons E&C tại xưởng và công trường"
+                  alt={t('imageAlt')}
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
 
                 {/* Sub-badge over image */}
                 <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md p-3.5 border-l-4 border-[#0040A0] shadow-lg max-w-[260px]">
                   <p className="text-[10px] font-bold uppercase tracking-wider text-gray-500">
-                    {aboutData.imageBadgeCategory || 'Kỹ thuật & An toàn'}
+                    {aboutData.imageBadgeCategory}
                   </p>
                   <p className="text-xs font-extrabold text-[#0040A0] uppercase font-heading mt-0.5">
-                    {aboutData.imageBadgeTitle || 'BIM Revit MEP LOD 400'}
+                    {aboutData.imageBadgeTitle}
                   </p>
                 </div>
               </div>
@@ -134,7 +127,7 @@ export const AboutSection: React.FC = () => {
                 href="/ve-chung-toi"
                 className="btn-shicons px-7 py-3.5 border border-gray-400 text-shicons-dark hover:border-[#0040A0] hover:bg-[#0040A0] hover:text-white text-xs sm:text-sm tracking-wider gap-2 group"
               >
-                <span>Tìm hiểu năng lực Shicons E&C</span>
+                <span>{t('learnMoreBtn')}</span>
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
 
@@ -142,7 +135,7 @@ export const AboutSection: React.FC = () => {
                 href="/du-an"
                 className="btn-shicons px-7 py-3.5 bg-[#ED1C24] hover:bg-[#d0141b] text-white text-xs sm:text-sm tracking-wider gap-2"
               >
-                <span>Xem hồ sơ công trình</span>
+                <span>{t('viewProjectsBtn')}</span>
               </Link>
             </div>
           </div>

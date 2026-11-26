@@ -1,12 +1,16 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { ArrowUp, MapPin, Phone, Mail, Globe, Clock, ShieldCheck } from 'lucide-react';
 import { Logo } from './Logo';
-import { CONTACT_INFO } from '@/data/shiconsData';
+import { useContent } from '@/context/ContentContext';
 
 export const Footer: React.FC = () => {
+  const t = useTranslations('Footer');
+  const { settings } = useContent();
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -19,21 +23,21 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-4 space-y-4">
             <Logo variant="color" showText={true} />
             <h3 className="text-sm font-extrabold text-shicons-heading uppercase tracking-wide font-heading pt-2">
-              {CONTACT_INFO.companyName}
+              {settings.companyName}
             </h3>
             <p className="text-xs text-gray-600 leading-relaxed max-w-sm">
-              {CONTACT_INFO.description}
+              {settings.description}
             </p>
             <div className="pt-2 flex items-center gap-2 text-xs font-semibold text-[#0040A0]">
               <ShieldCheck className="w-4 h-4 text-[#ED1C24]" />
-              <span>Mã số thuế: {CONTACT_INFO.taxCode}</span>
+              <span>{t('taxCodeLabel')}: {settings.taxCode}</span>
             </div>
           </div>
 
           {/* Col 2: Contact Information (~4 cols) */}
           <div className="lg:col-span-4 space-y-3">
             <h4 className="text-base font-extrabold text-shicons-heading uppercase tracking-wider font-heading">
-              THÔNG TIN LIÊN HỆ
+              {t('contactHeading')}
             </h4>
             {/* Short blue bar ~40px under title */}
             <div className="w-10 h-0.5 bg-[#0040A0] rounded-[1px] mb-3" />
@@ -42,20 +46,20 @@ export const Footer: React.FC = () => {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#0040A0] flex-shrink-0 mt-0.5" />
                 <span>
-                  <strong className="text-shicons-dark">Trụ sở:</strong> {CONTACT_INFO.address}
+                  <strong className="text-shicons-dark">{t('hqLabel')}:</strong> {settings.address}
                 </span>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#ED1C24] flex-shrink-0" />
                 <span>
-                  <strong className="text-shicons-dark">Hotline:</strong>{' '}
-                  <a href={`tel:${CONTACT_INFO.hotlines[0]}`} className="hover:text-[#ED1C24] transition-colors font-bold">
-                    {CONTACT_INFO.hotlines[0]}
+                  <strong className="text-shicons-dark">{t('hotlineLabel')}:</strong>{' '}
+                  <a href={`tel:${settings.hotlines[0]}`} className="hover:text-[#ED1C24] transition-colors font-bold">
+                    {settings.hotlines[0]}
                   </a>
                   {' – '}
-                  <a href={`tel:${CONTACT_INFO.hotlines[1]}`} className="hover:text-[#ED1C24] transition-colors font-bold">
-                    {CONTACT_INFO.hotlines[1]}
+                  <a href={`tel:${settings.hotlines[1]}`} className="hover:text-[#ED1C24] transition-colors font-bold">
+                    {settings.hotlines[1]}
                   </a>
                 </span>
               </div>
@@ -63,9 +67,9 @@ export const Footer: React.FC = () => {
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#0040A0] flex-shrink-0" />
                 <span>
-                  <strong className="text-shicons-dark">Email:</strong>{' '}
-                  <a href={`mailto:${CONTACT_INFO.email}`} className="hover:text-[#0040A0] transition-colors">
-                    {CONTACT_INFO.email}
+                  <strong className="text-shicons-dark">{t('emailLabel')}:</strong>{' '}
+                  <a href={`mailto:${settings.email}`} className="hover:text-[#0040A0] transition-colors">
+                    {settings.email}
                   </a>
                 </span>
               </div>
@@ -73,15 +77,15 @@ export const Footer: React.FC = () => {
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-[#0040A0] flex-shrink-0" />
                 <span>
-                  <strong className="text-shicons-dark">Giờ làm việc:</strong> {CONTACT_INFO.workingHours}
+                  <strong className="text-shicons-dark">{t('workingHoursLabel')}:</strong> {settings.workingHours}
                 </span>
               </div>
 
               <div className="flex items-center gap-2.5">
                 <Globe className="w-4 h-4 text-[#0040A0] flex-shrink-0" />
                 <span>
-                  <strong className="text-shicons-dark">Website:</strong>{' '}
-                  {CONTACT_INFO.websites.join(' / ')}
+                  <strong className="text-shicons-dark">{t('websiteLabel')}:</strong>{' '}
+                  {settings.websites.join(' / ')}
                 </span>
               </div>
             </div>
@@ -90,44 +94,44 @@ export const Footer: React.FC = () => {
           {/* Col 3: Categories Links (~2 cols) */}
           <div className="lg:col-span-2 space-y-3">
             <h4 className="text-base font-extrabold text-shicons-heading uppercase tracking-wider font-heading">
-              DANH MỤC
+              {t('categoriesHeading')}
             </h4>
             <div className="w-10 h-0.5 bg-[#0040A0] rounded-[1px] mb-3" />
 
             <ul className="space-y-2 text-xs font-medium text-gray-700">
               <li>
                 <Link href="/ve-chung-toi" className="hover:text-[#0040A0] transition-colors">
-                  Về chúng tôi
+                  {t('links.about')}
                 </Link>
               </li>
               <li>
                 <Link href="/linh-vuc-hoat-dong" className="hover:text-[#0040A0] transition-colors">
-                  Lĩnh vực hoạt động
+                  {t('links.domains')}
                 </Link>
               </li>
               <li>
                 <Link href="/du-an" className="hover:text-[#0040A0] transition-colors">
-                  Dự án tiêu biểu
+                  {t('links.projects')}
                 </Link>
               </li>
               <li>
                 <Link href="/san-xuat" className="hover:text-[#0040A0] transition-colors">
-                  Năng lực sản xuất
+                  {t('links.manufacturing')}
                 </Link>
               </li>
               <li>
                 <Link href="/tin-tuc" className="hover:text-[#0040A0] transition-colors">
-                  Tin tức & Sự kiện
+                  {t('links.news')}
                 </Link>
               </li>
               <li>
                 <Link href="/tuyen-dung" className="hover:text-[#0040A0] transition-colors">
-                  Cơ hội tuyển dụng
+                  {t('links.careers')}
                 </Link>
               </li>
               <li>
                 <Link href="/lien-he" className="hover:text-[#0040A0] transition-colors">
-                  Liên hệ báo giá
+                  {t('links.contact')}
                 </Link>
               </li>
             </ul>
@@ -136,18 +140,18 @@ export const Footer: React.FC = () => {
           {/* Col 4: Social Links (~2 cols) */}
           <div className="lg:col-span-2 space-y-3">
             <h4 className="text-base font-extrabold text-shicons-heading uppercase tracking-wider font-heading">
-              KẾT NỐI
+              {t('connectHeading')}
             </h4>
             <div className="w-10 h-0.5 bg-[#0040A0] rounded-[1px] mb-3" />
 
             <p className="text-xs text-gray-500 mb-3">
-              Theo dõi tin tức dự án mới nhất trên mạng xã hội:
+              {t('connectSubtitle')}
             </p>
 
             <div className="flex items-center gap-3">
               {/* Facebook Button */}
               <a
-                href={CONTACT_INFO.facebookUrl}
+                href={settings.facebookUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook Shicons"
@@ -160,7 +164,7 @@ export const Footer: React.FC = () => {
 
               {/* Zalo Button */}
               <a
-                href={CONTACT_INFO.zaloUrl}
+                href={settings.zaloUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Zalo Shicons"
@@ -173,12 +177,12 @@ export const Footer: React.FC = () => {
             {/* Profile PDF Download */}
             <div className="pt-4">
               <a
-                href={CONTACT_INFO.profilePdfUrl}
+                href={settings.profilePdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0040A0] hover:text-[#ED1C24] transition-colors"
               >
-                <span>Tải Hồ sơ Năng lực (PDF)</span>
+                <span>{t('downloadProfile')}</span>
                 <span className="text-sm">↗</span>
               </a>
             </div>
@@ -188,13 +192,13 @@ export const Footer: React.FC = () => {
         {/* Bottom copyright row + Back to top button */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <div>
-            © 2026 Copyright Shicons E&C. All rights reserved.
+            {t('copyright')}
           </div>
 
           {/* Round outline back to top button */}
           <button
             onClick={scrollToTop}
-            aria-label="Lên đầu trang"
+            aria-label={t('backToTop')}
             className="w-9 h-9 rounded-full border border-gray-400 text-gray-600 hover:text-white hover:bg-[#0040A0] hover:border-[#0040A0] flex items-center justify-center transition-colors"
           >
             <ArrowUp className="w-4 h-4" />

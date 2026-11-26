@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { ChevronRight } from 'lucide-react';
 
 interface BreadcrumbItem {
@@ -22,6 +25,8 @@ export const PageBanner: React.FC<PageBannerProps> = ({
   badge,
   bgImage = '/images/projects/nha-may-intel.jpg',
 }) => {
+  const t = useTranslations('PageBanner');
+
   return (
     <div className="relative w-full pt-32 pb-16 sm:pt-40 sm:pb-20 bg-[#00306E] overflow-hidden text-white">
       {/* Background Image */}
@@ -44,7 +49,7 @@ export const PageBanner: React.FC<PageBannerProps> = ({
         {/* Breadcrumbs */}
         <nav className="flex items-center gap-2 text-xs font-semibold text-white/75 uppercase tracking-wider mb-4">
           <Link href="/" className="hover:text-white transition-colors">
-            Trang chủ
+            {t('home')}
           </Link>
           {breadcrumbs.map((item, idx) => (
             <React.Fragment key={idx}>

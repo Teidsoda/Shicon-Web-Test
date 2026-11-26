@@ -1,11 +1,13 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { Clock, ArrowRight } from 'lucide-react';
 import { useContent } from '@/context/ContentContext';
 
 export const NewsSection: React.FC = () => {
+  const t = useTranslations('NewsSection');
   const { news } = useContent();
 
   if (!news || news.length === 0) return null;
@@ -19,10 +21,10 @@ export const NewsSection: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 pb-4 border-b border-gray-300">
           <div>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0040A0] block mb-1">
-              BẢN TIN HOẠT ĐỘNG
+              {t('eyebrow')}
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-shicons-heading uppercase font-heading tracking-normal leading-[1.45] sm:leading-[1.5]">
-              TIN TỨC &amp; SỰ KIỆN
+              {t('title')}
             </h2>
           </div>
 
@@ -30,7 +32,7 @@ export const NewsSection: React.FC = () => {
             href="/tin-tuc"
             className="btn-shicons px-6 py-2.5 border border-gray-400 text-shicons-dark hover:border-[#0040A0] hover:bg-[#0040A0] hover:text-white text-xs tracking-wider gap-2 group self-start sm:self-auto"
           >
-            <span>Xem tất cả tin tức</span>
+            <span>{t('viewAll')}</span>
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -110,7 +112,7 @@ export const NewsSection: React.FC = () => {
                 <div className="pt-3 mt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-500">
                   <span className="font-mono">{item.date}</span>
                   <span className="text-[#0040A0] font-bold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
-                    <span>Đọc tiếp</span>
+                    <span>{t('readMore')}</span>
                     <ArrowRight className="w-3 h-3" />
                   </span>
                 </div>

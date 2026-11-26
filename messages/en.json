@@ -1,0 +1,859 @@
+{
+  "Metadata": {
+    "homeTitle": "SHICONS E&C — Turnkey MEP & Cleanroom General Contractor",
+    "homeDescription": "Shicons E&C — Leading MEP (Mechanical, Electrical & Plumbing) general contractor specializing in design, supply, and turnkey installation for high-tech factories, Grade-A towers, pharmaceutical cleanrooms, and data centers.",
+    "aboutTitle": "About Us | SHICONS E&C",
+    "aboutDescription": "Over a decade of pioneering comprehensive MEP solutions, BIM Revit MEP LOD 400 digitization, and field-proven execution.",
+    "domainsTitle": "Our Expertise | SHICONS E&C",
+    "domainsDescription": "Shicons E&C delivers 5 specialized MEP pillars: HVAC Systems, Hospital Cleanroom & Medical Gas Systems, Industrial MEP & Cleanroom, Ventilation & Smoke Exhaust, and T&C / O&M.",
+    "domainNotFoundTitle": "Expertise Not Found | SHICONS E&C",
+    "projectsTitle": "Featured Projects | SHICONS E&C",
+    "projectsDescription": "Proven engineering capability across high-tech FDI manufacturing plants, international hospitals, and national infrastructure landmarks.",
+    "projectNotFoundTitle": "Project Not Found | SHICONS E&C",
+    "manufacturingTitle": "Manufacturing & Fabrication Capacity | SHICONS E&C",
+    "manufacturingDescription": "100% in-house MEP supply chain control with our 10,000 m² fabrication plant in Binh Duong Province.",
+    "newsTitle": "News & Technical Insights | SHICONS E&C",
+    "newsDescription": "Project milestones, topping-out ceremonies, contract awards, and practical MEP engineering insights from Shicons E&C.",
+    "newsNotFoundTitle": "Article Not Found | SHICONS E&C",
+    "careersTitle": "Careers | SHICONS E&C",
+    "careersDescription": "Join Shicons E&C's elite engineering team — master BIM Revit MEP technology with competitive compensation and clear career progression.",
+    "careerDetailTitleSuffix": "Careers at SHICONS E&C",
+    "careerNotFoundTitle": "Position Not Found | SHICONS E&C",
+    "contactTitle": "Contact & Technical Quotation | SHICONS E&C",
+    "contactDescription": "Shicons E&C senior engineers are ready to support site surveys, cost-optimized MEP solutions, and BIM quantity take-offs for your project.",
+    "notFoundTitle": "404 — Page Not Found | SHICONS E&C"
+  },
+  "Header": {
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close menu",
+    "search": "Search",
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "domains": "Our Expertise",
+      "projects": "Projects",
+      "manufacturing": "Manufacturing",
+      "news": "News",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "support247": "24/7 Technical Consultation",
+    "hotlineLabel": "Hotline",
+    "requestQuote": "Request a Consultation",
+    "copyright": "© 2026 Shicons E&C. All rights reserved.",
+    "searchModalTitle": "Search Projects & Information",
+    "searchPlaceholder": "Enter project name, expertise, or technology...",
+    "searchSuggestionsLabel": "Suggestions:",
+    "searchTags": ["Intel", "Tan Son Nhat", "Cleanroom", "BIM Revit", "Bel Vietnam"],
+    "viewAllProjects": "View All Projects"
+  },
+  "Hero": {
+    "exploreProjects": "Explore Featured Projects",
+    "companyProfile": "Company Profile (PDF)",
+    "prevSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "goToSlide": "Go to slide {index}",
+    "scrollDown": "Scroll down",
+    "featuredBadge": "Featured Project"
+  },
+  "AboutSection": {
+    "imageAlt": "Shicons E&C engineering team at fabrication plant and project site",
+    "learnMoreBtn": "Explore Shicons E&C Capabilities",
+    "viewProjectsBtn": "View Project Portfolio"
+  },
+  "ServiceBanners": {
+    "eyebrow": "CORE CAPABILITIES",
+    "titleCount": "{count} SPECIALIZED MEP PILLARS",
+    "titleDefault": "SPECIALIZED MEP PILLARS",
+    "subtitle": "End-to-end solutions from BIM Design and Turnkey Installation to Testing, Commissioning & Industrial Maintenance.",
+    "allDomains": "All Expertise",
+    "emptyState": "No expertise pillars are currently active. Please enable them in the Admin panel."
+  },
+  "ProjectsSection": {
+    "eyebrow": "PROJECT PORTFOLIO",
+    "title": "FEATURED PROJECTS",
+    "viewAll": "VIEW ALL PROJECTS",
+    "details": "Details",
+    "featuredListTitle": "FEATURED PROJECTS ({count})",
+    "prevProject": "Previous project",
+    "nextProject": "Next project"
+  },
+  "NewsSection": {
+    "eyebrow": "NEWSROOM",
+    "title": "NEWS & EVENTS",
+    "viewAll": "View All News",
+    "readMore": "Read more"
+  },
+  "RecruitmentSection": {
+    "eyebrow": "CAREER OPPORTUNITIES",
+    "title": "CAREERS",
+    "subtitle": "Join Shicons E&C's elite engineering team — a professional environment, competitive compensation, and hands-on mastery of advanced BIM MEP.",
+    "deadlineLabel": "Deadline",
+    "viewAllJobs": "VIEW ALL OPEN POSITIONS",
+    "quickApply": "APPLY NOW"
+  },
+  "PartnersSection": {
+    "eyebrow": "GLOBAL NETWORK",
+    "title": "OUR PARTNERS"
+  },
+  "Footer": {
+    "taxCodeLabel": "Tax Code",
+    "contactHeading": "CONTACT INFORMATION",
+    "hqLabel": "Headquarters",
+    "hotlineLabel": "Hotline",
+    "emailLabel": "Email",
+    "workingHoursLabel": "Working Hours",
+    "websiteLabel": "Website",
+    "categoriesHeading": "NAVIGATION",
+    "links": {
+      "about": "About Us",
+      "domains": "Our Expertise",
+      "projects": "Featured Projects",
+      "manufacturing": "Manufacturing",
+      "news": "News & Events",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "connectHeading": "CONNECT",
+    "connectSubtitle": "Follow our latest project updates on social media:",
+    "downloadProfile": "Download Company Profile (PDF)",
+    "copyright": "© 2026 Copyright Shicons E&C. All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "FloatingActions": {
+    "regionLabel": "Quick contact channels",
+    "consultLabel": "Request a Consultation",
+    "zaloLabel": "Chat via Zalo",
+    "callLabel": "Call hotline {phone}"
+  },
+  "ConsultModal": {
+    "closeLabel": "Close modal",
+    "eyebrow": "CONSULTATION & QUOTATION",
+    "title": "REQUEST A CONSULTATION",
+    "successTitle": "Request Submitted Successfully!",
+    "successDesc": "Thank you for contacting us. Shicons E&C's engineering team will reach out to you within 24 business hours.",
+    "fileTooLarge": "Attachment exceeds the 10MB limit!",
+    "missingRequired": "Please enter your full name and contact information!",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "e.g., Nguyen Van A",
+    "contactLabel": "Phone Number / Email",
+    "contactPlaceholder": "0919 xxx xxx or email@domain.com",
+    "contentLabel": "Project Requirements",
+    "contentPlaceholder": "Describe your project scope, scale, location, or specific technical requirements...",
+    "attachmentLabel": "Attach Technical Brief (Optional)",
+    "dropzoneText": "Click or drag & drop file here",
+    "dropzoneHint": "PDF format — max file size 10MB",
+    "submitButton": "SUBMIT REQUEST"
+  },
+  "PageBanner": {
+    "home": "Home"
+  },
+  "Pages": {
+    "About": {
+      "breadcrumb": "About Us",
+      "exploreProjects": "Explore Real Projects",
+      "downloadProfile": "Download Company Profile (PDF)",
+      "imageAlt": "Shicons E&C Engineering Team",
+      "guidanceEyebrow": "GUIDING PRINCIPLES",
+      "guidanceTitle": "Vision, Mission & Core Values",
+      "guidanceSubtitle": "The solid foundation guiding every action and technical commitment of Shicons E&C.",
+      "visionFooter": "Industry Leadership in MEP",
+      "missionFooter": "Quality & Sustainability",
+      "coreValuesFooter": "Guiding Principles",
+      "hseEyebrow": "HSE CULTURE & EXECUTION CAPACITY",
+      "hsePhotoAlt1": "HSE Safety at Shicons E&C",
+      "hsePhotoAlt2": "Shicons E&C Engineering Team"
+    },
+    "Domains": {
+      "bannerTitle": "Our Expertise in MEP (Mechanical, Electrical & Plumbing)",
+      "bannerSubtitle": "5 specialized core pillars designed and executed synchronously with high-tech mastery and BIM LOD 400 digitization.",
+      "breadcrumb": "Our Expertise",
+      "bannerBadge": "Technical Capabilities",
+      "introEyebrow": "INTEGRATED SOLUTIONS",
+      "introTitle": "Turnkey MEP Engineering Services",
+      "introSubtitle": "Shicons E&C delivers end-to-end execution from site survey, BIM modeling, and in-house fabrication to energizing and commissioning on site.",
+      "domainIndexPrefix": "PILLAR #{code}",
+      "detailButton": "Technical Solution Details",
+      "detailStandardBadge": "STANDARD: {standard}",
+      "backToList": "Back to Our Expertise",
+      "overviewTitle": "Solution Overview & Technical Capabilities",
+      "subSystemsTitle": "Detailed Sub-Systems Breakdown",
+      "standardsEyebrow": "CODES & STANDARDS",
+      "standardsTitle": "Strict Compliance with International Standards",
+      "consultBoxTitle": "Need MEP Design Consultation?",
+      "consultBoxDesc": "Shicons E&C lead engineers are ready to conduct site surveys, optimize system costs, and prepare BIM quantity take-offs for your project.",
+      "requestQuote": "Request a Consultation",
+      "otherDomainsTitle": "OTHER EXPERTISE"
+    },
+    "Projects": {
+      "bannerTitle": "Featured Projects",
+      "bannerSubtitle": "Proven field execution across high-tech FDI manufacturing plants, international hospitals, and national infrastructure landmarks.",
+      "breadcrumb": "Projects",
+      "bannerBadge": "Execution Track Record",
+      "categories": {
+        "all": "All Projects",
+        "cleanroom": "Cleanroom & High-Tech",
+        "industrial": "Industrial Plants",
+        "infrastructure": "Technical Infrastructure"
+      },
+      "viewDetail": "View Project Dossier",
+      "backToList": "Back to Projects",
+      "coverBadge": "Facility & Construction Overview",
+      "overviewTitle": "Project Overview",
+      "highlightsTitle": "Technical & Construction Highlights",
+      "challengesEyebrow": "ENGINEERING CHALLENGES & SOLUTIONS",
+      "challengesSubtitle": "On-site execution excellence",
+      "specsTitle": "PROJECT SPECIFICATIONS",
+      "clientLabel": "Client / Investor:",
+      "locationLabel": "Location:",
+      "yearLabel": "Completion Year:",
+      "scaleLabel": "Project Scale:",
+      "statusLabel": "Project Status:",
+      "scopeLabel": "MEP Scope:",
+      "consultEyebrow": "PROJECT CONSULTATION",
+      "consultTitle": "Need a Quotation for a Similar MEP Project?",
+      "consultDesc": "Shicons E&C estimation and BIM design engineers are ready to survey your site and propose an optimized solution within 24 hours.",
+      "consultBtn": "Request a Technical Quote",
+      "relatedEyebrow": "MORE PROJECTS",
+      "relatedTitle": "Related Featured Projects",
+      "viewAll": "View All",
+      "galleryTitle": "On-Site Construction Gallery",
+      "galleryCount": "{count} photos",
+      "galleryStandard": "Standard 3 construction photos",
+      "galleryAutoSlide": "Auto-sliding gallery",
+      "galleryPhotoLabel": "Photo {index}/{total}",
+      "galleryLiveBadge": "On-site #{index}",
+      "galleryPrev": "Previous photo",
+      "galleryNext": "Next photo",
+      "galleryZoomAlt": "Enlarged construction photo"
+    },
+    "Manufacturing": {
+      "breadcrumb": "Manufacturing",
+      "factoryAlt": "Shicons E&C MEP Fabrication Plant",
+      "qcBadgeLabel": "Factory Quality Control",
+      "qcBadgeTitle": "100% Inspection Prior to Site Delivery",
+      "linesEyebrow": "HIGH-TECH FABRICATION LINES",
+      "linesTitle": "3 Core Manufacturing Lines",
+      "linesSubtitle": "Quality-certified MEP components meeting stringent specifications for FDI factories and Grade-A towers.",
+      "specsHeading": "Technical Specifications & Standards:",
+      "ctaEyebrow": "FACTORY VISIT",
+      "ctaTitle": "Clients & Investors Are Welcome to Tour Our Plant",
+      "ctaDesc": "We welcome partners to inspect our fabrication lines and witness Factory Acceptance Testing (FAT) of electrical switchboards.",
+      "ctaBtn": "Schedule a Factory Visit"
+    },
+    "News": {
+      "bannerTitle": "News & Technical Insights",
+      "bannerSubtitle": "Project milestones, topping-out ceremonies, contract awards, and practical MEP engineering insights from Shicons E&C.",
+      "breadcrumb": "News",
+      "bannerBadge": "Newsroom",
+      "categories": {
+        "all": "All Articles",
+        "project": "Project News",
+        "technical": "MEP Insights",
+        "company": "Company Activities"
+      },
+      "searchPlaceholder": "Search articles...",
+      "detailSubtitle": "Category: {category} • Published: {date}",
+      "backToList": "Back to News",
+      "closingParagraph1": "With international-grade construction capacity and quality control, Shicons E&C remains committed to delivering safe, reliable, and energy-efficient MEP facilities for every client.",
+      "closingParagraph2": "For more information about our MEP solutions and services, please contact our hotline directly or send an inquiry via email.",
+      "authorLabel": "Prepared by:",
+      "mediaContactBtn": "Media Inquiry",
+      "sidebarTitle": "Professional MEP Consultation",
+      "sidebarDesc": "Receive turnkey MEP design consultation and quotation for factories, hospitals, or commercial towers.",
+      "sidebarBtn": "Request a Consultation",
+      "relatedTitle": "OTHER ARTICLES"
+    },
+    "Careers": {
+      "bannerTitle": "Careers at Shicons E&C",
+      "bannerSubtitle": "Join Shicons E&C's elite engineering team — master BIM Revit MEP technology with competitive compensation and clear career progression.",
+      "breadcrumb": "Careers",
+      "bannerBadge": "Career Growth",
+      "values": {
+        "compTitle": "Competitive Compensation",
+        "compDesc": "Performance-driven salary, project milestone bonuses, site allowances, and 24/7 premium health insurance.",
+        "trainTitle": "Specialized Training",
+        "trainDesc": "Sponsored advanced courses in international BIM Management, HSE safety certification, and modern site leadership.",
+        "envTitle": "People-First Culture",
+        "envDesc": "Transparent, collaborative engineering culture where workplace safety and human well-being come first."
+      },
+      "openingsEyebrow": "OPEN POSITIONS",
+      "openingsTitle": "Join the Shicons Engineering Team",
+      "openingsNotePrefix": "Current application deadline:",
+      "openingsNoteDate": "December 31, 2026",
+      "openingsNoteSuffix": ". Apply early for priority interviews.",
+      "deadlinePrefix": "Deadline:",
+      "viewAndApply": "View Details & Apply Now",
+      "ctaTitle": "Don't See a Matching Role?",
+      "ctaDesc": "Send your CV and portfolio to our recruitment email: {email} to join the Shicons talent pool.",
+      "ctaEmailSubject": "Engineering Application — Shicons E&C",
+      "ctaBtn": "Send CV Directly",
+      "detailSubtitle": "{department} • Location: {location}",
+      "detailBadge": "SALARY: {salary}",
+      "backToList": "Back to Careers",
+      "salaryLabel": "Compensation:",
+      "experienceLabel": "Experience:",
+      "deadlineLabel": "Application Deadline:",
+      "descriptionTitle": "Job Description",
+      "requirementsTitle": "Candidate Requirements",
+      "benefitsTitle": "Benefits & Perks",
+      "formEyebrow": "ONLINE APPLICATION",
+      "formTitle": "Apply Now: {title}",
+      "formDesc": "Complete the form and attach your CV (PDF, max 10MB). Our HR team will respond within 48 hours.",
+      "formNameLabel": "Full Name *",
+      "formNamePlaceholder": "Nguyen Van A",
+      "formPhoneLabel": "Phone Number *",
+      "formPhonePlaceholder": "0919 xxx xxx",
+      "formEmailLabel": "Email Address *",
+      "formEmailPlaceholder": "email@example.com",
+      "formCvLabel": "Attach CV (PDF, max 10MB) *",
+      "formSubmit": "APPLY NOW",
+      "formSuccess": "Your application has been received! Shicons E&C HR will contact you within 48 business hours.",
+      "sidebarSummaryTitle": "POSITION SUMMARY",
+      "sidebarDeptLabel": "Department:",
+      "sidebarLocLabel": "Work Location:",
+      "sidebarSalaryLabel": "Offered Salary:",
+      "sidebarDeadlineLabel": "Deadline:",
+      "sidebarOtherTitle": "OTHER POSITIONS"
+    },
+    "Contact": {
+      "breadcrumb": "Contact",
+      "infoEyebrow": "COMPANY INFORMATION",
+      "hqLabel": "Headquarters:",
+      "branchLabel": "Representative Office:",
+      "factoryLabel": "10,000 m² Fabrication Plant:",
+      "hotlineLabel": "24/7 Support Hotline:",
+      "emailLabel": "Contact Email:",
+      "workingHoursLabel": "Working Hours:",
+      "taxCodeLabel": "Tax Code:",
+      "mapTitle": "Directions to Shicons E&C",
+      "formEyebrow": "INQUIRY FORM",
+      "formTitle": "Request Site Survey & Project Quotation",
+      "formSubtitle": "Share your MEP project details below. Shicons E&C estimation specialists and lead engineers will respond within 24 hours.",
+      "successTitle": "Quotation Request Submitted!",
+      "successDesc": "Thank you, {name}, for trusting Shicons E&C. Our lead engineer for {service} will contact you shortly.",
+      "defaultPartnerName": "valued partner",
+      "defaultServiceName": "MEP",
+      "sendAnother": "Submit Another Request",
+      "nameLabel": "Contact Person *",
+      "namePlaceholder": "e.g., Nguyen Van A",
+      "phoneLabel": "Phone Number *",
+      "phonePlaceholder": "e.g., 0919 692 979",
+      "emailInputLabel": "Business Email *",
+      "emailPlaceholder": "name@company.com",
+      "companyLabel": "Company / Investor Name",
+      "companyPlaceholder": "Your company name",
+      "serviceLabel": "MEP Scope of Interest *",
+      "servicePlaceholder": "-- Select MEP system for quotation --",
+      "serviceAllOption": "Turnkey MEP (Mechanical, Electrical & Plumbing) Package",
+      "scaleLabel": "Estimated Area or Capacity",
+      "scalePlaceholder": "e.g., 20,000 m² Plant, 22kV 2x2500kVA Substation, 2,000 m² Cleanroom...",
+      "messageLabel": "Technical Requirements & Target Schedule",
+      "messagePlaceholder": "Briefly describe design requirements, site status, or applicable standards...",
+      "submitBtn": "REQUEST A CONSULTATION",
+      "errorMissingFields": "Please fill in your Name, Phone, Email, and MEP Scope of Interest!"
+    }
+  },
+  "NotFound": {
+    "code": "404",
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved. Please return to the homepage or explore Shicons E&C's featured projects.",
+    "backHome": "Back to Home",
+    "viewProjects": "Featured Projects"
+  },
+  "Data": {
+    "contact": {
+      "companyName": "Shicons E&C Joint Stock Company",
+      "tradingName": "SHICONS E&C",
+      "slogan": "Comprehensive MEP Solutions - Sustainable - High Engineering Standards",
+      "description": "Leading contractor specializing in design, supply, and turnkey installation of MEP (Mechanical, Electrical & Plumbing) systems for high-tech factories, commercial towers, pharmaceutical cleanrooms & data centers.",
+      "address": "78H Street No. 9, Hiep Binh Ward, Ho Chi Minh City",
+      "branchAddress": "Landmark 81, 720A Dien Bien Phu, Ward 22, Binh Thanh District, Ho Chi Minh City",
+      "factoryAddress": "DT 743 Road, Song Than 3 Industrial Park, Thu Dau Mot City, Binh Duong Province",
+      "workingHours": "Monday - Friday: 08:00 - 17:30 | Saturday: 08:00 - 12:00",
+      "bannerTitle": "Contact & Technical Quotation Request",
+      "bannerSubtitle": "Shicons E&C senior engineers are ready to support site surveys, cost-optimized solutions, and BIM quantity take-offs for your project.",
+      "bannerBadge": "Direct Connection"
+    },
+    "companyStats": [
+      { "value": "10+", "label": "Years of Experience", "sub": "Over a decade establishing our position as a leading MEP contractor" },
+      { "value": "50+", "label": "Completed MEP Projects", "sub": "Across major industrial parks and key urban developments" },
+      { "value": "20+", "label": "Engineers & Specialists", "sub": "Seasoned engineering team with deep field execution expertise" },
+      { "value": "10,000+", "label": "Safe Working Hours (Zero LTI)", "sub": "Unwavering commitment to a Zero Lost-Time Injury safety culture" }
+    ],
+    "about": {
+      "bannerTitle": "About Us – Shicons E&C",
+      "bannerSubtitle": "Over a decade of pioneering comprehensive MEP (Mechanical, Electrical & Plumbing) solutions, BIM digitization, and field-proven execution.",
+      "bannerBadge": "Corporate Profile",
+      "overviewBadge": "ABOUT US",
+      "overviewTitle": "SHICONS E&C",
+      "overviewParagraphs": [
+        "Shicons E&C Joint Stock Company is a specialized MEP (Mechanical, Electrical & Plumbing) general contractor, pioneering the design and installation of HVAC, MEP, and high-tech cleanroom systems for FDI factories, international hospitals, and Grade-A office towers.",
+        "Guided by our motto “Precision Engineering — Absolute Safety — Sustainable Partnership”, Shicons integrates BIM Revit MEP LOD 400 digitization across site management to optimize costs and guarantee schedule precision."
+      ],
+      "experienceYears": "10+",
+      "experienceTitle": "10+ Years of Experience",
+      "experienceSubtitle": "Professional MEP General Contractor",
+      "imageBadgeCategory": "Engineering & Safety",
+      "imageBadgeTitle": "BIM Revit MEP LOD 400",
+      "highlights": [
+        "International HTM & NFPA Standards",
+        "ISO Cleanroom T&C Certification",
+        "Licensed Senior Engineering Team",
+        "Comprehensive 24/7 Warranty & O&M"
+      ],
+      "visionTitle": "Vision",
+      "visionDesc": "To become the region's leading MEP contractor in high-tech manufacturing, semiconductor cleanrooms, and smart commercial towers, trusted by global partners.",
+      "missionTitle": "Mission",
+      "missionDesc": "To deliver safe, reliable, and energy-efficient MEP systems while cultivating a professional engineering environment that empowers Vietnamese talent.",
+      "coreValuesTitle": "Core Values",
+      "coreValues": [
+        { "title": "Precision", "desc": "Engineering rigor in every joint, cable tray, and commissioning test." },
+        { "title": "Safety", "desc": "Safety First — Zero LTI across all project sites." },
+        { "title": "Commitment", "desc": "On-time handover and end-to-end accountability." }
+      ],
+      "hseTitle": "Commitment to Workplace Safety & Engineering Quality",
+      "hseDesc": "At Shicons E&C, occupational safety and site engineering discipline are not merely regulations—they are the lifeblood and honor of our company."
+    },
+    "manufacturing": {
+      "bannerTitle": "Manufacturing & Equipment Fabrication",
+      "bannerSubtitle": "100% control of our MEP supply chain with a 10,000 m² fabrication plant in Binh Duong Province, mastering precision manufacturing.",
+      "bannerBadge": "MEP Fabrication Plant",
+      "factoryTitle": "10,000 m² Fabrication Plant – Schedule & Quality Control",
+      "factoryBadge": "MODERN INDUSTRIAL INFRASTRUCTURE",
+      "factoryParagraphs": [
+        "To optimize schedules and ensure technical consistency for turnkey MEP contracts, Shicons E&C invested in a 10,000 m² MEP equipment and accessory manufacturing plant in Binh Duong Province.",
+        "The facility is equipped with automated fabrication lines: CNC laser/plasma cutters, Auto-Line V TDC/TDF duct forming lines, continuous punching machines, and an international-standard electrical switchboard assembly & testing workshop."
+      ],
+      "areaStat": "10,000 m²",
+      "areaLabel": "Factory Floor Area",
+      "ductStat": "300,000 m²",
+      "ductLabel": "Annual Ductwork Output",
+      "panelStat": "6300A",
+      "panelLabel": "MSB Distribution Panels"
+    },
+    "heroSlides": {
+      "banner-01": {
+        "badge": "NATIONAL KEY INFRASTRUCTURE • HO CHI MINH CITY",
+        "title": "MEP & Ventilation Infrastructure for Tan Son Nhat Terminal 3",
+        "desc": "300°C/2h Jetfan smoke-exhaust ventilation, power distribution, and water supply & drainage across 112,500 m² GFA serving 20 million passengers annually.",
+        "stats": "112,500 m² • Jetfan 300°C/2h • Sprinkler Fire Protection • BMS"
+      },
+      "banner-02": {
+        "badge": "SEMICONDUCTOR TECH • THU DUC CITY",
+        "title": "Turnkey MEP & Cleanroom Contractor for Intel Vietnam Plant",
+        "desc": "Design & build of Class 1000 Cleanrooms with strict ±0.5°C thermal-humidity control and 24/7 uninterrupted power supply for semiconductor assembly.",
+        "stats": "46,000 m² • Class 1000 • Ultra-Pure CDA • BIM LOD 400"
+      },
+      "banner-03": {
+        "badge": "EUROPEAN FOOD PROCESSING • BINH DUONG",
+        "title": "Power Infrastructure & Distribution for Bel Vietnam Plant",
+        "desc": "22kV medium-voltage substation, Schneider Electric Busway distribution, and HACCP-compliant cold-storage climate control for The Laughing Cow cheese lines.",
+        "stats": "20,000 m² • 22kV Substation • Schneider Busway • HACCP"
+      },
+      "banner-04": {
+        "badge": "HEALTHCARE & SURGICAL SUITES • HO CHI MINH CITY",
+        "title": "Cleanroom & Climate Control for An Sinh Hospital Operating Theatres",
+        "desc": "Precision Laminar Flow unidirectional air conditioning, HEPA H14 filtration, centralized medical gas (O2/Air/Vac), and medical IT isolation power.",
+        "stats": "Class 100 Sterile OR • Laminar Flow • HTM 02-01"
+      }
+    },
+    "domains": {
+      "hvac-system": {
+        "enTitle": "HVAC SYSTEMS",
+        "viTitle": "HVAC SYSTEMS",
+        "shortDesc": "Design & installation of water/air-cooled Chillers, smart VRV/VRF systems, and high-efficiency conditioned air distribution.",
+        "fullDesc": "Shicons E&C delivers comprehensive HVAC Systems for industrial plants, commercial developments, and Grade-A office towers. Our engineers master chilled-water hydraulic balancing, Computational Fluid Dynamics (CFD), and Chiller Plant COP optimization.",
+        "standard": "ASHRAE 90.1 / SMACNA",
+        "badge": "ASHRAE 90.1",
+        "features": [
+          "High-COP water-cooled and air-cooled Water Chiller systems",
+          "Smart inverter VRV / VRF central air conditioning for commercial towers",
+          "Hydraulic balancing, chilled-air distribution, and BMS integration"
+        ],
+        "subSystems": [
+          { "name": "Water Chiller & AHU/FCU Systems", "desc": "High-COP optimization with intelligent automated load modulation" },
+          { "name": "VRV / VRF Central Air Conditioning", "desc": "Superior energy efficiency with flexible multi-zone temperature control" },
+          { "name": "Chilled Water Piping & Balancing Valves", "desc": "Installed to SMACNA / DW144 standards with automatic differential pressure control" },
+          { "name": "BMS Energy Monitoring Integration", "desc": "Full automation with real-time kW/ton plant efficiency tracking" }
+        ],
+        "standards": ["ASHRAE 90.1", "SMACNA", "TCVN 5687:2010"]
+      },
+      "hospital-cleanroom": {
+        "enTitle": "HOSPITAL CLEANROOM & MEDICAL GAS SYSTEMS",
+        "viTitle": "HOSPITAL CLEANROOM & MEDICAL GAS SYSTEMS",
+        "shortDesc": "Sterile operating theatre solutions featuring Laminar Flow ceilings, HEPA H14 filtration, and centralized medical gas systems.",
+        "fullDesc": "Sterile surgical suites and ICUs demand absolute precision. Shicons E&C designs and builds positive-pressure Laminar Airflow cleanrooms with HEPA H14 filtration, eliminating cross-contamination risks under strict healthcare protocols.",
+        "standard": "Positive Pressure • HEPA H14",
+        "badge": "Laminar Flow / HEPA H14",
+        "features": [
+          "Laminar Flow ceiling plenums with HEPA H14 filtration for absolute sterility",
+          "Strict positive pressure, humidity, and temperature control for OR suites",
+          "Centralized O2, Medical Air, N2O, and Vacuum gas systems with automated pressure monitoring"
+        ],
+        "subSystems": [
+          { "name": "Sterile Laminar Airflow Ceilings", "desc": "Uniform 0.25–0.35 m/s velocity with 99.995% filtration efficiency at 0.3 µm" },
+          { "name": "Microclimate & Room Pressure Control", "desc": "20–24°C temperature, 50–60% RH, and > 15 Pa cascading positive pressure" },
+          { "name": "Centralized Medical Gas Systems", "desc": "Medical-grade degreased copper piping, oxygen plants, medical air, and vacuum stations" },
+          { "name": "Medical IT Isolation Power", "desc": "Shock-proof isolation transformers with automated insulation fault monitoring" }
+        ],
+        "standards": ["Positive Pressure Control", "HEPA H14 Filtration", "Laminar Flow", "HTM 02-01 Medical Gas"]
+      },
+      "factory-mep-cleanroom": {
+        "enTitle": "INDUSTRIAL MEP & CLEANROOM",
+        "viTitle": "INDUSTRIAL MEP & CLEANROOM",
+        "shortDesc": "Turnkey MEP for semiconductor, electronics & pharma plants: 22kV substations, 6300A Busway, and precision cleanroom climate control.",
+        "fullDesc": "Shicons E&C is a trusted partner of global FDI manufacturers. We deliver complex industrial MEP infrastructure from 22kV/35kV substations and high-capacity Busway distribution to ultra-clean microelectronics and pharmaceutical cleanrooms.",
+        "standard": "22kV Substation • 6300A Busway",
+        "badge": "Microelectronics / High-Tech",
+        "features": [
+          "22kV–35kV medium-voltage substations and high-capacity Busway up to 6300A",
+          "Microelectronics and pharmaceutical cleanrooms with strict particulate control",
+          "Industrial compressed air, RO/EDI purified water, and WFI sanitary piping"
+        ],
+        "subSystems": [
+          { "name": "Substations & Busway Distribution", "desc": "Dry/oil transformers, MSB main switchboards, and silver-plated Busway risers" },
+          { "name": "Microelectronics & Pharma Cleanrooms", "desc": "Smart FFU fan filter units, antimicrobial panel partitions, and ESD epoxy flooring" },
+          { "name": "High-Purity Process Piping", "desc": "Orbital-welded SS 316L sanitary tubing and ultra-pure CDA compressed air" },
+          { "name": "RO/EDI Water & Wastewater Treatment", "desc": "High-resistivity purified water plants and Grade-A wastewater treatment" }
+        ],
+        "standards": ["22kV Substation", "6300A Busway", "Microelectronics Cleanroom", "RO/EDI & WFI Water"]
+      },
+      "ventilation-smoke-exhaust": {
+        "enTitle": "VENTILATION, SMOKE EXHAUST & PRESSURIZATION",
+        "viTitle": "VENTILATION, SMOKE EXHAUST & PRESSURIZATION",
+        "shortDesc": "Basement Jetfan ventilation, corridor smoke exhaust, and stairwell pressurization systems engineered for maximum life-safety compliance.",
+        "fullDesc": "Protecting occupant evacuation during fire emergencies is the core mission of smoke-control ventilation. Shicons E&C provides integrated Jetfan basement ventilation, fire-rated smoke exhaust ductwork, and stairwell pressurization systems.",
+        "standard": "Jetfan 300°C • MFD Fire Dampers",
+        "badge": "Fire & Smoke Safety",
+        "features": [
+          "Basement Jetfan ventilation with automated CO concentration control",
+          "Fire-rated smoke exhaust ductwork certified for 300°C for 2 hours",
+          "Emergency stairwell and elevator shaft pressurization"
+        ],
+        "subSystems": [
+          { "name": "Basement Jetfan Ventilation", "desc": "Sensor-driven CO dispersion switching automatically to high-speed smoke extraction" },
+          { "name": "Corridor Smoke Exhaust", "desc": "Rockwool-insulated / EI fire-rated ductwork with motorized MFD fire dampers" },
+          { "name": "Stairwell Pressurization Fans", "desc": "Maintains 20–50 Pa positive differential pressure to keep escape stairs smoke-free" },
+          { "name": "Fire-Interlocked Control Panels", "desc": "Automated activation via addressable fire alarm signals with damper status feedback" }
+        ],
+        "standards": ["Jetfan 300°C/2h", "MFD Fire Dampers", "50 Pa Stairwell Pressurization", "Smoke Exhaust"]
+      },
+      "tc-om-maintenance": {
+        "enTitle": "TESTING, COMMISSIONING & MAINTENANCE (T&C / O&M)",
+        "viTitle": "TESTING, COMMISSIONING & MAINTENANCE (T&C / O&M)",
+        "shortDesc": "TAB (Testing, Adjusting, Balancing), energy audits, and 24/7 outsourced facility operations & preventive maintenance.",
+        "fullDesc": "MEP systems achieve peak longevity and reliability only through precise Testing & Commissioning (T&C) and disciplined preventive maintenance. Shicons E&C offers independent NEBB-standard T&C and 24/7 O&M contracts.",
+        "standard": "NEBB • ISO 55001",
+        "badge": "NEBB / ISO 55001",
+        "features": [
+          "Airflow and hydronic TAB balancing to international NEBB standards",
+          "Comprehensive scheduled Preventive Maintenance programs",
+          "Energy audits for Chiller COP optimization & 24/7 emergency response"
+        ],
+        "subSystems": [
+          { "name": "TAB Testing & Balancing", "desc": "Digital airflow and chilled-water balancing certified to NEBB procedures" },
+          { "name": "Chiller & Substation Preventive Maintenance", "desc": "FLIR thermal imaging, compressor oil analysis, and vibration diagnostics" },
+          { "name": "Energy Audit & Optimization", "desc": "Real-time load profiling delivering up to 20% electrical energy savings" },
+          { "name": "24/7 Emergency Standby Response", "desc": "Dedicated engineers on-site within 60 minutes with ready spare-parts stock" }
+        ],
+        "standards": ["NEBB Procedural Standards", "ISO 55001", "ASHRAE Guideline 0-2019"]
+      }
+    },
+    "projects": {
+      "proj-intel-vietnam": {
+        "name": "INTEL VIETNAM SEMICONDUCTOR ASSEMBLY & TEST FACILITY",
+        "categoryLabel": "Cleanroom & High-Tech",
+        "client": "Intel Corporation (USA)",
+        "location": "Saigon Hi-Tech Park (SHTP), Thu Duc City",
+        "year": "2023 - 2024",
+        "scale": "46,000 m² cleanroom & utility floor area",
+        "status": "Completed & Handed Over",
+        "mepScope": [
+          "Class 1000 Semiconductor Cleanroom",
+          "Precision Chiller ±0.5°C",
+          "Power Distribution & UPS Systems",
+          "Ultra-Pure CDA Gas Supply",
+          "Specialized Fire Protection & VESDA"
+        ],
+        "description": "One of Southeast Asia's largest semiconductor assembly and test facilities operated by Intel Corporation. Shicons E&C executed auxiliary MEP packages, process piping, and high-tech cleanroom maintenance.",
+        "technicalHighlights": [
+          "Installed ultra-pure CDA compressed air and orbital-welded SS 316L sanitary piping",
+          "Precision air conditioning maintaining ±0.5°C temperature and humidity tolerance",
+          "Redundant UPS and continuous backup generator systems for zero power interruption",
+          "100% BIM Revit MEP Level of Development (LOD) 400 coordination"
+        ],
+        "challengesAndSolutions": "Strict Vibration Criteria and ESD protection requirements for semiconductor manufacturing. Shicons E&C implemented dedicated equipotential grounding below 0.5 Ohm."
+      },
+      "proj-bel-vietnam": {
+        "name": "BEL VIETNAM CHEESE MANUFACTURING PLANT",
+        "categoryLabel": "Industrial Plants",
+        "client": "Bel Group (France)",
+        "location": "Song Than 3 Industrial Park, Binh Duong Province",
+        "year": "2023 - 2024",
+        "scale": "20,000 m² manufacturing campus",
+        "status": "Completed & Handed Over",
+        "mepScope": [
+          "22kV Power Distribution",
+          "Medium-Voltage Substation",
+          "Food-Grade HVAC Systems",
+          "Finished Goods Cold Storage",
+          "Water Supply & Wastewater Treatment"
+        ],
+        "description": "European-standard cheese production plant of Bel Group in Vietnam. Shicons E&C delivered design and installation of power distribution, 22kV substation, and HVAC infrastructure for The Laughing Cow production lines.",
+        "technicalHighlights": [
+          "Installed explosion-proof Schneider Electric substation and Busway distribution",
+          "HACCP-compliant cold storage temperature and humidity control systems",
+          "Steam and chilled-water piping insulated with anti-condensation PIR foam"
+        ],
+        "challengesAndSolutions": "Stringent international food-hygiene compliance. Food-grade stainless steel piping and cleanroom ventilation were executed to exact tolerances."
+      },
+      "proj-t3-tan-son-nhat": {
+        "name": "TAN SON NHAT INTERNATIONAL AIRPORT TERMINAL 3",
+        "categoryLabel": "Technical Infrastructure",
+        "client": "Airports Corporation of Vietnam (ACV)",
+        "location": "Tan Binh District, Ho Chi Minh City",
+        "year": "2024 - 2025",
+        "scale": "112,500 m² GFA (20M passengers/year)",
+        "status": "Under Construction",
+        "mepScope": [
+          "Ventilation & Smoke Exhaust",
+          "Power & Lighting Systems",
+          "Water Supply & Drainage",
+          "Automated Sprinkler System",
+          "Building Management System (BMS)"
+        ],
+        "description": "A flagship national infrastructure project expanding Tan Son Nhat International Airport capacity. Shicons E&C executes complex MEP packages, basement Jetfan smoke exhaust ductwork, and terminal electrical infrastructure.",
+        "technicalHighlights": [
+          "Basement Jetfan smoke extraction rated at 300°C for 2 hours",
+          "BIM Revit MEP LOD 400 coordination resolving complex arched-roof spatial clashes",
+          "Fire-rated distribution switchboards and cable trays meeting international codes"
+        ],
+        "challengesAndSolutions": "Massive installation volume on an aggressive handover schedule. Shicons E&C deployed off-site modular prefabrication and rolling site installation."
+      },
+      "proj-an-sinh-hospital": {
+        "name": "AN SINH HOSPITAL STERILE OPERATING THEATRES & IVF CLEANROOMS",
+        "categoryLabel": "Cleanroom & Healthcare",
+        "client": "An Sinh Hospital Co., Ltd.",
+        "location": "10 Tran Huy Lieu, Ward 11, Phu Nhuan District, HCMC",
+        "year": "2023 - 2024",
+        "scale": "Sterile Operating Theatres & IVF Suites",
+        "status": "Completed & Handed Over",
+        "mepScope": [
+          "Laminar Flow HEPA H14 Ceilings",
+          "Centralized Medical Gas Systems",
+          "Precision Microclimate Control",
+          "Medical IT Isolation Power"
+        ],
+        "description": "High-tech surgical suites and IVF embryology cleanrooms at An Sinh General Hospital. Shicons E&C designed and built positive-pressure cleanroom HVAC, Laminar Flow HEPA H14 ceilings, and centralized medical gas systems.",
+        "technicalHighlights": [
+          "Laminar Flow HEPA H14 ceiling plenums achieving Class 100 sterility",
+          "Centralized O2, Vacuum, N2O, and Medical Air compliant with HTM 02-01",
+          "Medical IT isolation transformers with automated ground-fault alarms"
+        ],
+        "challengesAndSolutions": "Zero-vibration and absolute sterility requirements for IVF micromanipulators. Shicons E&C installed independent AHU units with custom hydraulic vibration isolators."
+      },
+      "proj-dhg-pharma": {
+        "name": "DHG PHARMA HIGH-TECH PHARMACEUTICAL FACTORY",
+        "categoryLabel": "Cleanroom & Pharmaceuticals",
+        "client": "DHG Pharmaceutical JSC (DHG Pharma)",
+        "location": "Tan Phu Thanh Industrial Park, Hau Giang Province",
+        "year": "2023",
+        "scale": "35,000 m² Non-Betalactam Production Plant",
+        "status": "Completed & Handed Over",
+        "mepScope": [
+          "Japan-GMP / EU-GMP Cleanrooms",
+          "RO/WFI Purified Water",
+          "Precision Chiller & AHU HVAC",
+          "Sterile Compressed Air",
+          "Wastewater Treatment"
+        ],
+        "description": "The largest Japan-GMP and EU-GMP pharmaceutical manufacturing complex in the Mekong Delta. Shicons E&C delivered particulate-controlled cleanrooms, sanitary WFI water loops, and strict thermal-humidity HVAC systems.",
+        "technicalHighlights": [
+          "Closed-loop SS 316L WFI water system electropolished to Ra < 0.4 µm",
+          "15–30 Pa cascading cleanroom pressure differentials preventing cross-contamination",
+          "24/7 real-time SCADA BMS monitoring of temperature, humidity, and pressure"
+        ],
+        "challengesAndSolutions": "Dual compliance with Japan-GMP and EU-GMP validation audits. Shicons E&C passed Testing & Commissioning at 100% on the very first inspection."
+      },
+      "proj-hanacos-vietnam": {
+        "name": "HANACOS VIETNAM COSMETICS MANUFACTURING FACTORY",
+        "categoryLabel": "Cleanroom & Cosmetics",
+        "client": "Hanacos Vietnam Co., Ltd. (Korean Tech Transfer)",
+        "location": "Tan Binh Expanded Industrial Park, Ho Chi Minh City",
+        "year": "2024",
+        "scale": "15,000 m² cGMP production facility",
+        "status": "Completed & Handed Over",
+        "mepScope": [
+          "cGMP Cleanrooms",
+          "Inverter HVAC Systems",
+          "RO Water Treatment",
+          "Power & Cleanroom LED Lighting",
+          "Automated Fire Protection"
+        ],
+        "description": "Leading southern cosmetics and personal-care plant built with Korean technology transfer. Shicons E&C served as turnkey MEP and cGMP cleanroom contractor for all manufacturing workshops.",
+        "technicalHighlights": [
+          "ASEAN cGMP cleanrooms equipped with ceiling FFU HEPA filtration units",
+          "Two-stage RO purified water plant meeting microbiological standards",
+          "Moisture- and chemical-resistant Cleanroom LED lighting solutions"
+        ],
+        "challengesAndSolutions": "Zoning pressure differentials between chemical compounding and sterile packaging rooms. Shicons E&C deployed automated VAV dampers for exact airflow control."
+      }
+    },
+    "news": {
+      "post-1": {
+        "title": "Shicons E&C Celebrates Topping-Out & Phase 1 MEP Handover at Pegatron Plant",
+        "categoryLabel": "Project News",
+        "date": "October 15, 2024",
+        "excerpt": "Meeting tight schedule milestones, the Shicons E&C site team successfully energized the 22kV substation and commissioned the main workshop HVAC systems.",
+        "content": "On October 15, 2024, at Dinh Vu Economic Zone (Hai Phong), Shicons E&C joined Pegatron Corporation and supervision consultants to celebrate the topping-out and Phase 1 MEP handover. The project achieved 100% Zero LTI safety compliance under HSE standards, demonstrating Shicons E&C's project discipline.",
+        "author": "Shicons Communications Team"
+      },
+      "post-2": {
+        "title": "Shicons E&C Awarded Turnkey MEP Contract for Capital One Financial Tower",
+        "categoryLabel": "Project News",
+        "date": "September 28, 2024",
+        "excerpt": "The VND 280+ billion contract marks a major milestone reinforcing Shicons E&C's standing in international Grade-A commercial towers.",
+        "content": "Following a rigorous international tender, Capital Land officially awarded the turnkey MEP design-and-build contract to Shicons E&C. Targeting LEED Gold certification, the project incorporates breakthrough energy-saving MEP solutions.",
+        "author": "Tendering & Planning Dept."
+      },
+      "post-3": {
+        "title": "Applying BIM Revit MEP LOD 400 to Resolve MEP Clashes in Tight Spaces",
+        "categoryLabel": "MEP Insights",
+        "date": "September 12, 2024",
+        "excerpt": "Field lessons from Shicons E&C's Engineering & Design Team on 3D spatial coordination cutting on-site installation time by 15%.",
+        "content": "Modern industrial facilities pack dense ductwork, cable trays, fire sprinklers, and process piping into tight ceiling plenums. Using BIM at LOD 400 enables Shicons E&C engineers to extract exact Shop Drawings down to every flange and eliminate 100% of clashes before fabrication.",
+        "author": "M.Eng. Nguyen Hoang Nam – Technical Director"
+      },
+      "post-4": {
+        "title": "HSE Safety Workshop: 'Safety First' Culture Across All Shicons Project Sites",
+        "categoryLabel": "Company Activities",
+        "date": "August 25, 2024",
+        "excerpt": "The 'Safety First – Zero Accident' campaign rolled out nationwide with 100% participation from engineers and site crews.",
+        "content": "At Shicons E&C, occupational safety is not a slogan—it is our core culture. Executive leadership conducted site inspections and recognized project teams maintaining 100% Zero LTI records nationwide.",
+        "author": "HSE & Environment Dept."
+      }
+    },
+    "jobs": {
+      "job-1": {
+        "title": "MEP Project Manager",
+        "department": "Project Management Dept.",
+        "location": "Bac Ninh / Hai Phong",
+        "salary": "VND 35,000,000 – 55,000,000",
+        "deadline": "December 31, 2026",
+        "experience": "Minimum 7 years experience",
+        "description": [
+          "Lead full schedule, quality, budget, and HSE safety execution for site MEP packages.",
+          "Coordinate directly with Clients, Supervision Consultants, and Subcontractors to resolve technical issues.",
+          "Oversee material take-offs, detailed master schedules, and method statement approvals.",
+          "Direct energization, Testing & Commissioning (T&C), and final client handover."
+        ],
+        "requirements": [
+          "Bachelor's degree in Electrical, MEP, or HVAC Engineering.",
+          "Valid Class I or Class II Construction Supervision License.",
+          "At least 3 years in an equivalent role on FDI factory or high-rise tower projects.",
+          "Strong English communication skills for technical coordination."
+        ],
+        "benefits": [
+          "Competitive salary + attractive project completion bonuses.",
+          "24/7 Bao Viet premium health insurance.",
+          "Full accommodation and travel allowances for remote sites.",
+          "Clear career path toward Regional Project Director."
+        ]
+      },
+      "job-2": {
+        "title": "BIM / Revit MEP Design & Coordination Engineer",
+        "department": "Engineering & BIM Dept.",
+        "location": "HCMC HQ / Hanoi Branch",
+        "salary": "VND 20,000,000 – 32,000,000",
+        "deadline": "December 31, 2026",
+        "experience": "3–5 years experience",
+        "description": [
+          "Develop 3D Revit MEP models for HVAC, Electrical, Plumbing, and Fire Protection at LOD 350–400.",
+          "Run Clash Detection in Navisworks and propose spatial routing resolutions.",
+          "Generate detailed Shop Drawings for off-site fabrication and field installation.",
+          "Coordinate with site teams to update As-built BIM models."
+        ],
+        "requirements": [
+          "Proficiency in Revit MEP, Navisworks Manage, and AutoCAD.",
+          "Solid knowledge of MEP codes and standards (TCVN, QCVN, ASHRAE, NFPA).",
+          "Strong teamwork, attention to detail, and accountability for drawing quality."
+        ],
+        "benefits": [
+          "Professional workspace equipped with high-spec graphic workstations.",
+          "13th-month salary + quarterly project performance bonuses.",
+          "Sponsored international BIM Management training certifications."
+        ]
+      },
+      "job-3": {
+        "title": "Site Electrical & ELV Engineer",
+        "department": "Project Management Dept.",
+        "location": "Binh Duong / Dong Nai",
+        "salary": "VND 16,000,000 – 24,000,000",
+        "deadline": "December 31, 2026",
+        "experience": "From 2 years experience",
+        "description": [
+          "Supervise site installation of MV/LV power, cable ladders/trays, Busway, and lighting systems.",
+          "Enforce electrical safety and workplace HSE compliance across assigned zones.",
+          "Inspect incoming materials against approved specifications and submittals.",
+          "Prepare daily inspection and acceptance documentation with consultants."
+        ],
+        "requirements": [
+          "College or Bachelor's degree in Electrical Engineering, Power Systems, or Automation.",
+          "Strong ability to read design drawings and Shop Drawings.",
+          "Diligent and resilient under fast-paced site schedules."
+        ],
+        "benefits": [
+          "Monthly site, meal, and phone allowances.",
+          "Full social & health insurance per Vietnamese Labor Law.",
+          "Direct mentorship from senior MEP specialists."
+        ]
+      }
+    },
+    "partners": {
+      "partner-1": { "tag": "HVAC Chiller & VRV", "typeLabel": "Equipment Partner" },
+      "partner-2": { "tag": "HVAC & MEP Solutions", "typeLabel": "Equipment Partner" },
+      "partner-3": { "tag": "Electrical & BMS", "typeLabel": "Equipment Partner" },
+      "partner-4": { "tag": "Chiller & HVAC", "typeLabel": "Equipment Partner" },
+      "partner-5": { "tag": "Central Air Conditioning", "typeLabel": "Equipment Partner" },
+      "partner-6": { "tag": "Ventilation & HVAC", "typeLabel": "Equipment Partner" },
+      "partner-7": { "tag": "Air Filtration & Cleanroom", "typeLabel": "Equipment Partner" },
+      "partner-9": { "tag": "Cleanroom Panels", "typeLabel": "Equipment Partner" }
+    },
+    "productionLines": {
+      "ductwork": {
+        "title": "HVAC Ductwork & Accessories Fabrication",
+        "desc": "CNC plasma cutters and Auto-Line V forming lines producing TDC/TDF rectangular ducts, spiral round ducts, and acoustic silencers.",
+        "specs": [
+          "Fabrication capacity: 300,000 m² of ductwork/year",
+          "Galvanized steel thickness: 0.48 mm – 1.5 mm (Z80 – Z275)",
+          "Manufacturing of MFD fire dampers, MD smoke dampers, and air diffusers",
+          "High-pressure air leakage testing compliance"
+        ],
+        "tag": "Ductwork Fabrication"
+      },
+      "switchboard": {
+        "title": "Industrial Electrical Switchboards (MSB / MCC / DB)",
+        "desc": "Assembly and testing of MSB main switchboards up to 6300A, MCC motor control centers, capacitor banks, and ATS transfer panels.",
+        "specs": [
+          "Rated current: Up to 6300A, 1000V insulation rating",
+          "Enclosure protection: IP43 – IP55 indoor and outdoor",
+          "99.99% pure silver-plated copper busbars, Form 2b to 4b",
+          "Full Factory Acceptance Testing (FAT) prior to delivery"
+        ],
+        "tag": "Switchboard Assembly"
+      },
+      "cable-tray": {
+        "title": "Cable Ladders, Trays & Support Systems",
+        "desc": "CNC punching and automated bending lines producing cable ladders, cable trays, and hot-dip galvanized support systems.",
+        "specs": [
+          "Materials: Pre-galvanized steel, SS 304, hot-dip galvanized, powder-coated",
+          "Material thickness: 1.2 mm, 1.5 mm, 2.0 mm, 2.5 mm",
+          "High mechanical load capacity with anti-vibration and anti-sag rigidity",
+          "Complete range of elbows, tees, crosses, and custom hangers"
+        ],
+        "tag": "Cable Support Systems"
+      }
+    }
+  }
+}

@@ -1,11 +1,13 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { ChevronRight, ChevronLeft, ArrowRight } from 'lucide-react';
 import { useContent } from '@/context/ContentContext';
 
 export const ProjectsSection: React.FC = () => {
+  const t = useTranslations('ProjectsSection');
   const { projects } = useContent();
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [cardsPerView, setCardsPerView] = useState(2);
@@ -50,10 +52,10 @@ export const ProjectsSection: React.FC = () => {
 
           <div>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0040A0] block mb-1">
-              HỒ SƠ CÔNG TRÌNH
+              {t('eyebrow')}
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-shicons-heading uppercase font-heading tracking-normal leading-[1.45] sm:leading-[1.5]">
-              DỰ ÁN TIÊU BIỂU
+              {t('title')}
             </h2>
           </div>
 
@@ -62,7 +64,7 @@ export const ProjectsSection: React.FC = () => {
             href="/du-an"
             className="btn-shicons px-8 py-3.5 bg-[#0040A0] hover:bg-[#004DA0] text-white text-xs sm:text-sm tracking-wider uppercase shadow-md gap-2 self-start sm:self-auto"
           >
-            <span>XEM TẤT CẢ DỰ ÁN</span>
+            <span>{t('viewAll')}</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -110,7 +112,7 @@ export const ProjectsSection: React.FC = () => {
                     {featuredProject.client}
                   </span>
                   <div className="inline-flex items-center gap-2 text-xs font-bold text-[#ED1C24] group-hover:text-[#d0141b] tracking-wider uppercase">
-                    <span>Chi tiết</span>
+                    <span>{t('details')}</span>
                     <span className="w-6 h-6 rounded-full bg-[#0040A0] text-white flex items-center justify-center group-hover:bg-[#ED1C24] transition-colors">
                       <ChevronRight className="w-3.5 h-3.5 stroke-[2.5]" />
                     </span>
@@ -125,13 +127,13 @@ export const ProjectsSection: React.FC = () => {
             {/* Carousel Navigation Controls */}
             <div className="flex items-center justify-between pb-4 mb-4 border-b border-gray-300">
               <span className="text-xs font-bold uppercase tracking-wider text-gray-500">
-                CÔNG TRÌNH TIÊU BIỂU ({carouselProjects.length})
+                {t('featuredListTitle', { count: carouselProjects.length })}
               </span>
               <div className="flex items-center gap-2">
                 <button
                   onClick={handlePrev}
                   disabled={safeCarouselIndex === 0}
-                  aria-label="Dự án trước"
+                  aria-label={t('prevProject')}
                   className={`w-8 h-8 rounded-[2px] flex items-center justify-center border ${
                     safeCarouselIndex === 0
                       ? 'border-gray-200 text-gray-300 cursor-not-allowed bg-gray-50'
@@ -143,7 +145,7 @@ export const ProjectsSection: React.FC = () => {
                 <button
                   onClick={handleNext}
                   disabled={safeCarouselIndex >= maxIndex}
-                  aria-label="Dự án tiếp"
+                  aria-label={t('nextProject')}
                   className={`w-8 h-8 rounded-[2px] flex items-center justify-center border ${
                     safeCarouselIndex >= maxIndex
                       ? 'border-gray-200 text-gray-300 cursor-not-allowed bg-gray-50'

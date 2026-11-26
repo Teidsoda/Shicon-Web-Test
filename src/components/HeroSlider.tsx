@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
 import { ChevronLeft, ChevronRight, ChevronsDown, FileText, ArrowRight } from 'lucide-react';
 import { useContent } from '@/context/ContentContext';
 
 export const HeroSlider: React.FC = () => {
+  const t = useTranslations('Hero');
   const { heroBanners, settings } = useContent();
   const activeSlides = heroBanners.filter((b) => b.isActive !== false);
   const slides = activeSlides.length > 0 ? activeSlides : heroBanners;
@@ -114,7 +116,7 @@ export const HeroSlider: React.FC = () => {
                 href="#du-an"
                 className="btn-shicons px-6 sm:px-8 py-3.5 bg-[#ED1C24] hover:bg-[#d0141b] text-white text-xs sm:text-sm shadow-lg gap-2"
               >
-                <span>Khám phá dự án tiêu biểu</span>
+                <span>{t('exploreProjects')}</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
@@ -125,7 +127,7 @@ export const HeroSlider: React.FC = () => {
                 className="btn-shicons px-6 sm:px-8 py-3.5 bg-transparent border border-white hover:bg-white hover:text-[#0040A0] text-white text-xs sm:text-sm gap-2"
               >
                 <FileText className="w-4 h-4" />
-                <span>Hồ sơ năng lực (PDF)</span>
+                <span>{t('companyProfile')}</span>
               </a>
             </div>
           </div>
@@ -138,14 +140,14 @@ export const HeroSlider: React.FC = () => {
             <div className="flex items-center gap-1.5">
               <button
                 onClick={prevSlide}
-                aria-label="Slide trước"
+                aria-label={t('prevSlide')}
                 className="w-9 h-9 flex items-center justify-center bg-white/10 hover:bg-white/25 border border-white/30 text-white rounded-[2px] transition-colors"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button
                 onClick={nextSlide}
-                aria-label="Slide sau"
+                aria-label={t('nextSlide')}
                 className="w-9 h-9 flex items-center justify-center bg-white/10 hover:bg-white/25 border border-white/30 text-white rounded-[2px] transition-colors"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -158,7 +160,7 @@ export const HeroSlider: React.FC = () => {
                 <button
                   key={i}
                   onClick={() => setCurrentSlide(i)}
-                  aria-label={`Chuyển tới slide ${i + 1}`}
+                  aria-label={t('goToSlide', { index: i + 1 })}
                   className={`h-2 transition-all duration-300 rounded-[1px] ${
                     i === safeSlideIndex ? 'w-8 bg-[#ED1C24]' : 'w-2.5 bg-white/40 hover:bg-white/70'
                   }`}
@@ -179,7 +181,7 @@ export const HeroSlider: React.FC = () => {
               className="flex flex-col items-center text-white/70 hover:text-white transition-colors group focus:outline-none"
             >
               <span className="text-[11px] font-bold uppercase tracking-[0.2em] mb-1">
-                Kéo xuống
+                {t('scrollDown')}
               </span>
               <ChevronsDown className="w-5 h-5 animate-bounce text-[#ED1C24] group-hover:text-white transition-colors" />
             </button>

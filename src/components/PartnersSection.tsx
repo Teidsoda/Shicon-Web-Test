@@ -1,9 +1,11 @@
 'use client';
 
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import { useContent } from '@/context/ContentContext';
 
 export const PartnersSection: React.FC = () => {
+  const t = useTranslations('PartnersSection');
   const { partners } = useContent();
   const activePartners = partners.filter((p) => p.isActive !== false);
 
@@ -15,10 +17,10 @@ export const PartnersSection: React.FC = () => {
         {/* Section Heading */}
         <div className="mb-12">
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0040A0] block mb-1">
-            MẠNG LƯỚI TOÀN CẦU
+            {t('eyebrow')}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-shicons-heading uppercase font-heading tracking-normal leading-[1.45] sm:leading-[1.5]">
-            ĐỐI TÁC UY TÍN
+            {t('title')}
           </h2>
           <div className="w-16 h-1 bg-[#ED1C24] rounded-[1px] mt-2" />
         </div>

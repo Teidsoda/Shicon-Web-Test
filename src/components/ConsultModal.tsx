@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import { X, Upload, CheckCircle2, AlertCircle } from 'lucide-react';
-import { CONTACT_INFO } from '@/data/shiconsData';
 
 interface ConsultModalProps {
   isOpen: boolean;
@@ -10,6 +10,7 @@ interface ConsultModalProps {
 }
 
 export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) => {
+  const t = useTranslations('ConsultModal');
   const [fullName, setFullName] = useState('');
   const [contact, setContact] = useState('');
   const [content, setContent] = useState('');
@@ -44,7 +45,7 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
     const file = e.target.files?.[0];
     if (file) {
       if (file.size > 10 * 1024 * 1024) {
-        setErrorMsg('Tệp đính kèm vượt quá 10MB!');
+        setErrorMsg(t('fileTooLarge'));
         setFileName(null);
         return;
       }
@@ -56,7 +57,7 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!fullName.trim() || !contact.trim()) {
-      setErrorMsg('Vui lòng điền họ tên và thông tin liên hệ!');
+      setErrorMsg(t('missingRequired'));
       return;
     }
 
@@ -88,7 +89,7 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
         {/* Close Button */}
         <button
           onClick={onClose}
-          aria-label="Đóng popup"
+          aria-label={t('closeLabel')}
           className="absolute top-5 right-5 p-1.5 text-gray-400 hover:text-gray-800 transition-colors rounded"
         >
           <X className="w-6 h-6" />
@@ -97,10 +98,10 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
         {/* Modal Header */}
         <div className="mb-6 pb-4 border-b border-gray-200">
           <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#ED1C24] block mb-1">
-            YÊU CẦU TƯ VẤN & BÁO GIÁ
+            {t('eyebrow')}
           </span>
           <h3 className="text-xl sm:text-2xl font-extrabold text-[#0040A0] uppercase font-heading tracking-normal leading-[1.45]">
-            GỬI THÔNG TIN CHO CHÚNG TÔI
+            {t('title')}
           </h3>
         </div>
 
@@ -110,10 +111,10 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
               <CheckCircle2 className="w-10 h-10" />
             </div>
             <h4 className="text-xl font-bold text-gray-800 font-heading uppercase">
-              Gửi yêu cầu thành công!
+              {t('successTitle')}
             </h4>
             <p className="text-sm text-gray-600 max-w-md mx-auto">
-              Cảm ơn quý khách đã gửi thông tin. Đội ngũ chuyên gia Shicons E&C sẽ liên hệ trực tiếp trong vòng 24 giờ làm việc.
+              {t('successDesc')}
             </p>
           </div>
         ) : (
@@ -129,12 +130,12 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
-                  Tên của bạn <span className="text-[#ED1C24]">*</span>
+                  {t('nameLabel')} <span className="text-[#ED1C24]">*</span>
                 </label>
                 <input
                   type="text"
                   required
-                  placeholder="Ví dụ: Nguyễn Văn A"
+                  placeholder={t('namePlaceholder')}
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
                   className="w-full px-4 py-3 border border-gray-300 focus:border-[#0040A0] focus:ring-1 focus:ring-[#0040A0] outline-none text-sm rounded-[2px] transition-colors"
@@ -143,12 +144,12 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
 
               <div>
                 <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
-                  Số điện thoại / Email <span className="text-[#ED1C24]">*</span>
+                  {t('contactLabel')} <span className="text-[#ED1C24]">*</span>
                 </label>
                 <input
                   type="text"
                   required
-                  placeholder="0919 xxx xxx hoặc email@domain.com"
+                  placeholder={t('contactPlaceholder')}
                   value={contact}
                   onChange={(e) => setContact(e.target.value)}
                   className="w-full px-4 py-3 border border-gray-300 focus:border-[#0040A0] focus:ring-1 focus:ring-[#0040A0] outline-none text-sm rounded-[2px] transition-colors"
@@ -159,11 +160,11 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
             {/* Row 2: Content (Textarea) */}
             <div>
               <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
-                Nội dung yêu cầu
+                {t('contentLabel')}
               </label>
               <textarea
                 rows={4}
-                placeholder="Mô tả dự án, quy mô, địa điểm hoặc các yêu cầu kỹ thuật cụ thể..."
+                placeholder={t('contentPlaceholder')}
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 focus:border-[#0040A0] focus:ring-1 focus:ring-[#0040A0] outline-none text-sm rounded-[2px] transition-colors resize-none"
@@ -173,7 +174,7 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
             {/* Row 3: File Attachment */}
             <div>
               <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
-                Đính kèm hồ sơ kỹ thuật (nếu có)
+                {t('attachmentLabel')}
               </label>
               <div className="relative border-2 border-dashed border-gray-300 hover:border-[#0040A0] p-4 text-center rounded-[2px] transition-colors bg-slate-50/50">
                 <input
@@ -188,11 +189,11 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
                     {fileName ? (
                       <span className="font-bold text-[#0040A0]">{fileName}</span>
                     ) : (
-                      'Nhấp hoặc kéo thả file tại đây'
+                      t('dropzoneText')
                     )}
                   </span>
                   <span className="text-[11px] text-gray-400">
-                    Định dạng PDF — kích thước tối đa 10MB
+                    {t('dropzoneHint')}
                   </span>
                 </div>
               </div>
@@ -204,7 +205,7 @@ export const ConsultModal: React.FC<ConsultModalProps> = ({ isOpen, onClose }) =
                 type="submit"
                 className="btn-shicons px-12 py-3.5 bg-[#0040A0] hover:bg-[#004DA0] text-white text-sm tracking-wider uppercase shadow-lg mx-auto"
               >
-                GỬI YÊU CẦU
+                {t('submitButton')}
               </button>
             </div>
           </form>

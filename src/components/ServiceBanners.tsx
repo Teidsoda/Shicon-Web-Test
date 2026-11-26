@@ -1,11 +1,13 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { Wind, Activity, Cpu, ShieldAlert, Wrench, ArrowUpRight } from 'lucide-react';
 import { useContent } from '@/context/ContentContext';
 
 export const ServiceBanners: React.FC = () => {
+  const t = useTranslations('ServiceBanners');
   const { services } = useContent();
   const activeDomains = services.filter((s) => s.isActive !== false);
 
@@ -47,21 +49,21 @@ export const ServiceBanners: React.FC = () => {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col sm:flex-row sm:items-end justify-between border-b border-white/10">
         <div>
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#ED1C24] block mb-1">
-            NĂNG LỰC CỐT LÕI
+            {t('eyebrow')}
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white uppercase font-heading tracking-normal leading-[1.45] sm:leading-[1.5]">
-            {activeDomains.length > 0 ? `${activeDomains.length} LĨNH VỰC HOẠT ĐỘNG CHUYÊN SÂU` : 'LĨNH VỰC HOẠT ĐỘNG CHUYÊN SÂU'}
+            {activeDomains.length > 0 ? t('titleCount', { count: activeDomains.length }) : t('titleDefault')}
           </h2>
         </div>
         <div className="mt-3 sm:mt-0 flex items-center gap-4">
           <p className="text-xs sm:text-sm text-gray-400 max-w-md text-left sm:text-right hidden sm:block">
-            Giải pháp tổng thể từ Thiết kế BIM, Thi công lắp đặt đến Kiểm định & Bảo trì cơ điện công nghiệp.
+            {t('subtitle')}
           </p>
           <Link
             href="/linh-vuc-hoat-dong"
             className="text-xs font-bold text-white hover:text-[#ED1C24] uppercase tracking-wider flex items-center gap-1.5 transition-colors"
           >
-            <span>Tất cả lĩnh vực</span>
+            <span>{t('allDomains')}</span>
             <ArrowUpRight className="w-4 h-4" />
           </Link>
         </div>
@@ -70,7 +72,7 @@ export const ServiceBanners: React.FC = () => {
       {/* Full-bleed Portrait Columns (Touching each other, 0 gap) */}
       {activeDomains.length === 0 ? (
         <div className="py-20 text-center text-slate-400 text-sm">
-          Chưa có lĩnh vực nào được bật hiển thị. Vui lòng kích hoạt trong trang Quản trị.
+          {t('emptyState')}
         </div>
       ) : (
         <div className={`grid ${getGridColsClass(activeDomains.length)} w-full min-h-[620px] lg:min-h-[680px]`}>

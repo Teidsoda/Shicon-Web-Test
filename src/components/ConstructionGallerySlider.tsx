@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { ChevronLeft, ChevronRight, Maximize2, X, Play, Pause, Sparkles } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
+import { ChevronLeft, ChevronRight, Maximize2, X } from 'lucide-react';
 
 interface ConstructionGallerySliderProps {
   photos: string[];
@@ -12,6 +13,7 @@ export const ConstructionGallerySlider: React.FC<ConstructionGallerySliderProps>
   photos,
   projectName,
 }) => {
+  const t = useTranslations('Pages.Projects');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
@@ -50,11 +52,11 @@ export const ConstructionGallerySlider: React.FC<ConstructionGallerySliderProps>
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-4 bg-[#ED1C24] rounded-[1px]" />
             <h3 className="text-xl sm:text-2xl font-extrabold text-shicons-heading font-heading uppercase tracking-normal leading-[1.45]">
-              Hình Ảnh Thi Công Thực Tế ({totalPhotos} ảnh)
+              {t('galleryTitle')} ({t('galleryCount', { count: totalPhotos })})
             </h3>
           </div>
           <span className="text-xs font-mono text-gray-500">
-            Tiêu chuẩn 3 ảnh thi công
+            {t('galleryStandard')}
           </span>
         </div>
 
@@ -67,7 +69,7 @@ export const ConstructionGallerySlider: React.FC<ConstructionGallerySliderProps>
             >
               <img
                 src={imgUrl}
-                alt={`${projectName} - Ảnh thi công ${gIdx + 1}`}
+                alt={`${projectName} - ${t('galleryPhotoLabel', { index: gIdx + 1, total: totalPhotos })}`}
                 className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
@@ -76,7 +78,7 @@ export const ConstructionGallerySlider: React.FC<ConstructionGallerySliderProps>
                 </span>
               </div>
               <div className="absolute bottom-2 left-2 px-2 py-0.5 rounded-[1px] bg-black/70 backdrop-blur-sm text-white text-[10px] font-mono">
-                Ảnh {gIdx + 1}/{totalPhotos}
+                {t('galleryPhotoLabel', { index: gIdx + 1, total: totalPhotos })}
               </div>
             </div>
           ))}
@@ -97,7 +99,7 @@ export const ConstructionGallerySlider: React.FC<ConstructionGallerySliderProps>
               </button>
               <img
                 src={selectedPhoto}
-                alt="Phóng to ảnh thi công"
+                alt={t('galleryZoomAlt')}
                 className="max-h-[85vh] w-auto object-contain rounded-[2px] shadow-2xl"
               />
             </div>
@@ -119,9 +121,9 @@ export const ConstructionGallerySlider: React.FC<ConstructionGallerySliderProps>
           <span className="w-1.5 h-5 bg-[#ED1C24] rounded-[1px]" />
           <div>
             <h3 className="text-xl sm:text-2xl font-extrabold text-shicons-heading font-heading uppercase tracking-normal leading-[1.45] flex items-center gap-2">
-              <span>Hình Ảnh Thi Công Thực Tế</span>
+              <span>{t('galleryTitle')}</span>
               <span className="text-xs px-2 py-0.5 rounded-[1px] bg-[#0040A0] text-white font-mono font-bold">
-                {totalPhotos} ảnh
+                {t('galleryCount', { count: totalPhotos })}
               </span>
             </h3>
           </div>
@@ -131,20 +133,20 @@ export const ConstructionGallerySlider: React.FC<ConstructionGallerySliderProps>
         <div className="flex items-center gap-3">
           <div className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[1px] bg-emerald-50 border border-emerald-200 text-emerald-700 text-[11px] font-semibold">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>Tự động trượt ngang</span>
+            <span>{t('galleryAutoSlide')}</span>
           </div>
 
           <div className="flex items-center gap-1.5">
             <button
               onClick={prevSlide}
-              aria-label="Ảnh trước"
+              aria-label={t('galleryPrev')}
               className="w-8 h-8 rounded-[2px] bg-white border border-gray-300 hover:border-[#0040A0] hover:bg-[#0040A0] hover:text-white flex items-center justify-center transition-colors text-gray-700 shadow-sm"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
             <button
               onClick={nextSlide}
-              aria-label="Ảnh sau"
+              aria-label={t('galleryNext')}
               className="w-8 h-8 rounded-[2px] bg-white border border-gray-300 hover:border-[#0040A0] hover:bg-[#0040A0] hover:text-white flex items-center justify-center transition-colors text-gray-700 shadow-sm"
             >
               <ChevronRight className="w-4 h-4" />
@@ -178,7 +180,7 @@ export const ConstructionGallerySlider: React.FC<ConstructionGallerySliderProps>
                 </span>
               </div>
               <div className="absolute top-2 left-2 px-2 py-0.5 rounded-[1px] bg-[#0040A0]/90 backdrop-blur-sm text-white text-[10px] font-mono">
-                Thi công thực tế #{gIdx + 1}
+                {t('galleryLiveBadge', { index: gIdx + 1 })}
               </div>
               <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded-[1px] bg-black/75 backdrop-blur-sm text-white text-[10px] font-mono">
                 {gIdx + 1} / {totalPhotos}
@@ -217,7 +219,7 @@ export const ConstructionGallerySlider: React.FC<ConstructionGallerySliderProps>
             </button>
             <img
               src={selectedPhoto}
-              alt="Phóng to ảnh thi công"
+              alt={t('galleryZoomAlt')}
               className="max-h-[85vh] w-auto object-contain rounded-[2px] shadow-2xl"
             />
           </div>

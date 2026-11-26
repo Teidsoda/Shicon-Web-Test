@@ -1,51 +1,5 @@
-import type { Metadata } from 'next';
-import { Be_Vietnam_Pro, Plus_Jakarta_Sans } from 'next/font/google';
-import './globals.css';
-import { ClientLayout } from '@/components/ClientLayout';
+import React from 'react';
 
-const beVietnamPro = Be_Vietnam_Pro({
-  subsets: ['latin', 'vietnamese'],
-  weight: ['400', '500', '600', '700', '800', '900'],
-  variable: '--font-be-vietnam',
-  display: 'swap',
-});
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-jakarta',
-  display: 'swap',
-});
-
-export const metadata: Metadata = {
-  title: 'SHICONS E&C',
-  description: 'Công ty Cổ phần Shicons E&C — Nhà thầu chuyên thiết kế, cung cấp và thi công trọn gói hệ thống Cơ điện (M&E / MEP) cho các dự án Nhà máy công nghệ cao, Tòa tháp thương mại, Phòng sạch Dược phẩm & Trung tâm dữ liệu.',
-  keywords: [
-    'Shicons', 'Shicons E&C', 'nhà thầu cơ điện', 'phòng sạch bán dẫn',
-    'khí sạch bệnh viện', 'HVAC chiller', 'Revit MEP',
-    'nhà máy', 'tổng thầu MEP'
-  ],
-  authors: [{ name: 'Shicons E&C' }],
-  openGraph: {
-    title: 'SHICONS E&C',
-    description: 'Chuyên gia cơ điện lạnh, phòng sạch, khí sạch bệnh viện và giải pháp thông gió công nghiệp.',
-    url: 'https://shicons.vn',
-    siteName: 'SHICONS E&C',
-    locale: 'vi_VN',
-    type: 'website',
-  },
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="vi" className={`${beVietnamPro.variable} ${plusJakartaSans.variable}`}>
-      <body className="min-h-screen bg-white text-shicons-dark antialiased selection:bg-[#0040A0] selection:text-white">
-        <ClientLayout>{children}</ClientLayout>
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return children;
 }

@@ -1,17 +1,13 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { 
-  Building, 
-  MapPin, 
-  Calendar, 
-  Layers, 
   CheckCircle2, 
   ArrowLeft, 
   ArrowUpRight,
-  ShieldCheck,
-  Maximize2
+  ShieldCheck
 } from 'lucide-react';
 import { PageBanner } from '@/components/PageBanner';
 import { Project } from '@/data/shiconsData';
@@ -25,12 +21,16 @@ interface ProjectDetailClientProps {
 
 export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
   initialProject,
-  otherProjects,
+  otherProjects: initialOtherProjects,
 }) => {
+  const t = useTranslations('Pages.Projects');
   const { projects } = useContent();
 
-  // Find the live project from shared reactive context (so edits in Admin reflect immediately)
+  // Find the live project from shared reactive context (localized + reflects Admin edits)
   const project = projects.find((p) => p.slug === initialProject.slug) || initialProject;
+  const otherProjects = projects.length > 0
+    ? projects.filter((p) => p.slug !== project.slug).slice(0, 3)
+    : initialOtherProjects;
 
   return (
     <div className="flex flex-col">
@@ -38,7 +38,7 @@ export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
         title={project.name}
         subtitle={`${project.client} • ${project.location}`}
         breadcrumbs={[
-          { label: 'Dự án', href: '/du-an' },
+          { label: t('breadcrumb'), href: '/du-an' },
           { label: project.name },
         ]}
         badge={project.categoryLabel}
@@ -54,7 +54,7 @@ export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
               className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-500 hover:text-[#0040A0] transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
-              <span>Quay lại danh sách dự án</span>
+              <span>{t('backToList')}</span>
             </Link>
           </div>
 
@@ -69,14 +69,14 @@ export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-3 left-3 bg-[#0040A0] text-white text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded-[1px] shadow">
-                  Ảnh Nhà Máy &amp; Công Trình
+                  {t('coverBadge')}
                 </div>
               </div>
 
               {/* Description */}
               <div className="space-y-4">
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0040A0] font-heading uppercase tracking-normal leading-[1.45] sm:leading-[1.5]">
-                  Tổng quan Dự án
+                  {t('overviewTitle')}
                 </h2>
                 <div className="w-16 h-1 bg-[#ED1C24] rounded-[1px]" />
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed pt-2">
@@ -88,7 +88,7 @@ export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
               {project.technicalHighlights && project.technicalHighlights.length > 0 && (
                 <div className="space-y-4">
                   <h3 className="text-xl sm:text-2xl font-extrabold text-shicons-heading font-heading uppercase tracking-normal leading-[1.45]">
-                    Điểm Nổi Bật Về Kỹ Thuật &amp; Công Nghệ Thi Công
+                    {t('highlightsTitle')}
                   </h3>
                   <div className="space-y-3 pt-2">
                     {project.technicalHighlights.map((hl, idx) => (
@@ -109,11 +109,11 @@ export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
                   <div className="flex items-center gap-2 text-[#ED1C24]">
                     <ShieldCheck className="w-6 h-6" />
                     <span className="text-xs font-bold uppercase tracking-widest font-mono">
-                      THÁCH THỨC &amp; GIẢI PHÁP KỸ THUẬT
+                      {t('challengesEyebrow')}
                     </span>
                   </div>
                   <h4 className="text-lg font-bold font-heading uppercase">
-                    Xử lý thực tế tại công trường
+                    {t('challengesSubtitle')}
                   </h4>
                   <p className="text-xs sm:text-sm text-gray-300 leading-relaxed pt-1">
                     {project.challengesAndSolutions}
@@ -121,7 +121,7 @@ export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
                 </div>
               )}
 
-              {/* Gallery Photos (Tối thiểu 3 ảnh thi công, nếu nhiều hơn tự trượt ngang) */}
+              {/* Gallery Photos */}
               <ConstructionGallerySlider
                 photos={project.gallery || []}
                 projectName={project.name}
@@ -133,41 +133,41 @@ export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
               {/* Project Meta Card */}
               <div className="p-6 sm:p-8 rounded-[2px] bg-slate-50 border border-gray-200 space-y-5">
                 <h3 className="text-base font-extrabold text-[#0040A0] uppercase font-heading tracking-wider border-b border-gray-200 pb-3">
-                  THÔNG SỐ CÔNG TRÌNH
+                  {t('specsTitle')}
                 </h3>
 
                 <div className="space-y-4 text-xs sm:text-sm">
                   <div>
                     <span className="text-gray-500 font-semibold block text-[11px] uppercase tracking-wider mb-1">
-                      Chủ đầu tư / Khách hàng:
+                      {t('clientLabel')}
                     </span>
                     <strong className="text-shicons-dark text-sm">{project.client}</strong>
                   </div>
 
                   <div>
                     <span className="text-gray-500 font-semibold block text-[11px] uppercase tracking-wider mb-1">
-                      Địa điểm xây dựng:
+                      {t('locationLabel')}
                     </span>
                     <span className="text-gray-800">{project.location}</span>
                   </div>
 
                   <div>
                     <span className="text-gray-500 font-semibold block text-[11px] uppercase tracking-wider mb-1">
-                      Năm thực hiện:
+                      {t('yearLabel')}
                     </span>
                     <span className="font-mono text-gray-800 font-bold">{project.year}</span>
                   </div>
 
                   <div>
                     <span className="text-gray-500 font-semibold block text-[11px] uppercase tracking-wider mb-1">
-                      Quy mô công trình:
+                      {t('scaleLabel')}
                     </span>
                     <span className="font-semibold text-gray-800">{project.scale}</span>
                   </div>
 
                   <div>
                     <span className="text-gray-500 font-semibold block text-[11px] uppercase tracking-wider mb-1">
-                      Tình trạng dự án:
+                      {t('statusLabel')}
                     </span>
                     <span className="inline-block px-2.5 py-1 rounded-[1px] bg-[#0040A0] text-white font-bold text-xs uppercase tracking-wide">
                       {project.status}
@@ -176,7 +176,7 @@ export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
 
                   <div>
                     <span className="text-gray-500 font-semibold block text-[11px] uppercase tracking-wider mb-2">
-                      Phạm vi cơ điện (MEP Scope):
+                      {t('scopeLabel')}
                     </span>
                     <div className="flex flex-wrap gap-1.5">
                       {project.mepScope.map((scope, sIdx) => (
@@ -195,19 +195,19 @@ export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
               {/* Consultation CTA Box */}
               <div className="p-6 rounded-[2px] bg-gradient-to-br from-[#00306E] to-[#0040A0] text-white space-y-4 shadow-lg">
                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#ED1C24] block">
-                  TƯ VẤN DỰ ÁN
+                  {t('consultEyebrow')}
                 </span>
                 <h4 className="text-lg font-extrabold uppercase font-heading leading-snug">
-                  Bạn Cần Báo Giá Thi Công Dự Án Cơ Điện Tương Tự?
+                  {t('consultTitle')}
                 </h4>
                 <p className="text-xs text-gray-200 leading-relaxed">
-                  Đội ngũ kỹ sư dự toán &amp; thiết kế BIM Shicons sẵn sàng khảo sát hiện trạng và lên giải pháp tối ưu trong 24 giờ.
+                  {t('consultDesc')}
                 </p>
                 <Link
                   href="/lien-he"
                   className="btn-shicons w-full py-3 bg-[#ED1C24] hover:bg-[#d0141b] text-white text-xs uppercase font-bold tracking-wider text-center justify-center shadow-md block"
                 >
-                  Yêu Cầu Báo Giá Kỹ Thuật
+                  {t('consultBtn')}
                 </Link>
               </div>
             </div>
@@ -219,17 +219,17 @@ export const ProjectDetailClient: React.FC<ProjectDetailClientProps> = ({
               <div className="flex items-center justify-between">
                 <div>
                   <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0040A0] block mb-1">
-                    CÔNG TRÌNH KHÁC
+                    {t('relatedEyebrow')}
                   </span>
                   <h3 className="text-2xl font-extrabold text-shicons-heading uppercase tracking-normal leading-[1.45] font-heading">
-                    Dự Án Tiêu Biểu Liên Quan
+                    {t('relatedTitle')}
                   </h3>
                 </div>
                 <Link
                   href="/du-an"
                   className="text-xs font-bold text-[#0040A0] hover:text-[#ED1C24] uppercase tracking-wider flex items-center gap-1"
                 >
-                  <span>Xem tất cả</span>
+                  <span>{t('viewAll')}</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
               </div>
